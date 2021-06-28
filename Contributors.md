@@ -10,5 +10,8 @@
 
 2. Aakanksha Contributor
 
+3. Name: Harshita Tripathi
+   GitHub Username: ht170900
+
 
 
