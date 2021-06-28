@@ -43,3 +43,5 @@ patch-2
 
 10. Arushi Singh Contributor
     Github username  : TheArushiSingh
+    
+11. Jagannath Pal
