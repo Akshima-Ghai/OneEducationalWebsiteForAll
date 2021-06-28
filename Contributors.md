@@ -28,3 +28,5 @@
 7. Raunak Kumar Pandey Contributor
    Github Username : RAUNAK-PANDEY
    
+8. Jagannath Pal Contributor
+   Github Username : Jagannath8
