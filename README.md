@@ -7,7 +7,6 @@
 
 - ReactJS
 - Redux
-- Firebase
 - CSS
 
 ## Setup and Installation

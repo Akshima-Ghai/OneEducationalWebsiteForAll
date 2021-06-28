@@ -1,0 +1,12 @@
+.header__nav--li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--light-primary-white);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.header__nav--li a:hover {
+  color: var(--light-primary-purple-medium);
+}
