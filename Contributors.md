@@ -40,3 +40,6 @@ patch-2
 9.  Sanju Raj contributor
     github username: sanjuraj9031
  main
+
+10. Arushi Singh Contributor
+    Github username  : TheArushiSingh
