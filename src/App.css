@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-  /* --night-primary-black: #282828;
-  --night-primary-purple: #3500d3;
-  --night-secondary-purple-dark-1: #240090;
-  --night-secondary-purple-dark-2: #190061;
-  --night-secondary-purple-dark-3: #0c0032; */
-
-  --light-primary-black: #2a2019;
+  --light-primary-black: #141414;
   --light-primary-grey: #898886;
   --light-secondary-grey: #6d6d6c;
   --light-primary-white: #ffffff;
   --light-primary-purple: #946adc;
   --light-primary-purple-medium: #6856b8;
   --light-primary-purple-dark: #2a367c;
+  --light-primary-purple-dark-2: #3500d3;
 }
 
 

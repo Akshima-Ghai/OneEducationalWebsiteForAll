@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.3rem 1rem;
-  background-color: var(--night-primary-white);
+  background-color: var(--light-primary-black);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   height: 9vh;
   flex-wrap: wrap;
@@ -21,7 +21,7 @@
 }
 
 .header__h1--label {
-  color: var(--light-primary-black);
+  color: var(--light-primary-white);
   font-size: 2rem;
 }
 
@@ -34,7 +34,7 @@
 .header_toggle--btn div {
   width: 30px;
   height: 3px;
-  background-color: var(--light-primary-black);
+  background-color: var(--light-primary-white);
   margin: 6px 0;
 }
 
