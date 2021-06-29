@@ -1,0 +1,138 @@
+
+
+.home__main {
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.home__info--container,
+.home__banner {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__info {
+  padding-top: 2.5rem;
+}
+
+.home__h1 {
+  width: 40rem;
+  font-size: 6rem;
+  color:#141639;
+}
+
+.home__p {
+  font-size: 2.25rem;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: #73747b;
+}
+
+.home__banner--img {
+  width: 100%;
+}
+
+.home__dashboard--container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.home__dashboard{
+  width: 90%;
+  background-color: #f3f5f9;
+  padding: 1rem;
+  border-radius: 10px;
+  /* height: 25rem; */
+  display: flex;
+}
+
+.home__dashboard div{
+  flex: 1 1;
+  padding: 3rem 3rem;
+}
+
+.home__dashboard--item-1 h1{
+  color: #1a1a3c;
+  font-size: 4rem;
+
+}
+
+.home__dashboard--item-2 h1,.home__dashboard--item-3 h1{
+  color: #1a1a3c;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.home__dashboard--item-2 p,.home__dashboard--item-3 p{
+  color: #868999;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 2.75rem;
+  letter-spacing: 2.5px;
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+  .home__info {
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .home__main {
+    flex-direction: column-reverse;
+  }
+  .home__banner--img {
+    width: 50%;
+  }
+  .home__info {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home__h1{
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .home__banner--img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .home__h1 {
+    font-size: 1.75rem;
+  }
+  .home__p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .home__banner--img {
+    width: 100%;
+  }
+  .home__h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .home__p {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 330px) {
+  .home__info {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

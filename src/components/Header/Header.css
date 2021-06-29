@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .75rem 1rem;
+}
+
+.header__h1 {
+  padding: 1rem;
+  color: #0a1436;
+  letter-spacing: 0.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header__h1--label {
+  color: #f24638;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.header_toggle--btn {
+  padding-right: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+.header_toggle--btn div {
+  width: 30px;
+  height: 3px;
+  background-color:  #0a1436;
+  margin: 6px 0;
+}
+
+.header__btn--ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.header__btn--a a{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1.25rem;
+  text-decoration: none;
+  transition: all .4s;
+}
+
+.header__btn--login a{
+  border-radius: 10px;
+  margin-right: 2rem;
+  color: #0a1436;
+  border: 2px solid #b8b8b8;
+}
+
+.header__btn--get a{
+  border-radius: 10px;
+  margin-right: 1rem;
+  color: white;
+  border: 2px solid #f24638;
+  background-color: #f24638;
+}
+.header__btn--get a:hover{
+  border: 2px solid #d13d30;
+  background-color: #d13d30;
+}
+
+@media (max-width: 700px) {
+  .header_toggle--btn {
+    display: inline-block;
+  }
+  .header__btn--container{
+    display: none;
+  }
+}
