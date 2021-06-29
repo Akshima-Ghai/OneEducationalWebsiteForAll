@@ -18,14 +18,6 @@ npm install
 npm start
 ```   
 
-## Steps To Contribute
-- Star the Repository 
-- Fork the project in your github acccount
-- Create a new branch with relevent name to the issue
-- Made changes in the branch
-- Commit changes in the branch
-- Make PR to the upstream Repo
-
 
 ## Contribution Guidelines 🏗
    
