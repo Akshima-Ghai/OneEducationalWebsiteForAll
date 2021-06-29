@@ -1,12 +1,9 @@
 
 1. Sujith Dachepally Contributor
   GitHub Username:sujith248
- modification
- main
 
 2. Nikhil Virdhi 
   GitHub - nikhv 
-
 
 2. Aakanksha Contributor
 
@@ -30,16 +27,12 @@
    
  8. Kamlesh Kumar Contributor
     github username : kmles
-patch-2
-    main
     
  10. Name : Liza Deka
      Github username : Baba-Yaga-1
-
    
 9.  Sanju Raj contributor
     github username: sanjuraj9031
- main
 
 10. Arushi Singh Contributor
     Github username  : TheArushiSingh
