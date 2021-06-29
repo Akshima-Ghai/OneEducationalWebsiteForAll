@@ -12,6 +12,13 @@ const Home = () => {
             <p className="home__p">For Free, For Everyone</p>
           </div>
         </div>
+        <div className="home__banner">
+          <img
+            src={ImgSrc.homeBanner}
+            alt="Content Owned By <a href='https://pngtree.com/so/reading-clipart'>reading clipart png from pngtree.com</a>"
+            className="home__banner--img"
+          />
+        </div>
       </div>
     </section>
   )
