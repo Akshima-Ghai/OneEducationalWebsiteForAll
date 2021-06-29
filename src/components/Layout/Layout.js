@@ -10,7 +10,7 @@ const Layout = (props) => {
         <React.Fragment>
             <SideDrawer showSD={showDrawer} toggleSD={() => setShowDrawer(prev => !prev)} />
             <Header toggleSD={() => setShowDrawer(prev => !prev)} />
-            <main style={{marginTop:"9vh",position:"relative"}}>
+            <main>
                 {props.children}
             </main>
         </React.Fragment>
