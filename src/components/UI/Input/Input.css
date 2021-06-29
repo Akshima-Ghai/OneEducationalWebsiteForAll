@@ -1,0 +1,16 @@
+.input__style{
+    padding: .75rem;
+    border: none;
+    border-bottom: 1px solid var(--light-primary-grey);
+    margin-bottom: 1.5rem;
+    font-family: inherit;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--light-primary-black);
+}
+
+.input__style:focus{
+    border: none;
+    border-bottom: 1px solid var(--light-primary-black);
+}
