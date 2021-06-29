@@ -20,7 +20,21 @@ const Home = () => {
           />
         </div>
       </div>
-      
+      <div className="home__dashboard--container">
+        <div className="home__dashboard">
+          <div className="home__dashboard--item-1">
+            <h1>Creating student success with our tech</h1>
+          </div>
+          <div className="home__dashboard--item-2">
+            <h1>Anywhere anytime access</h1>
+            <p>With The Website, students can access learning resources anytime, anywhere, on their mobility tools.</p>
+          </div>
+          <div className="home__dashboard--item-3">
+          <h1>Free Guidance</h1>
+            <p>With The Website, students can free and right guidance and information on career selecting.</p>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }
