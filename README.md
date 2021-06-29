@@ -114,7 +114,7 @@ git push -u origin <your_branch_name>
 <img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif">
 </p>
 
-<a href="https://www.linkedin.com/in/please-add-here-your-profile-id/">
+<a href="https://www.linkedin.com/in/akshima-ghai-196932197/">
 <h5 align="center"><b>Akshima Ghai</b></a>
 
 
