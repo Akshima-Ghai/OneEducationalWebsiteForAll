@@ -24,6 +24,7 @@
     font-weight: bold;
     border: none;
     outline: none;
+    border-radius: 5px;
     font-family: inherit;
     cursor: pointer;
     border: 2px solid #f24638;
@@ -33,6 +34,22 @@
 .login__form--button:hover {
     background-color: white;
     color: #f24638;
+}
+
+.login__forgot--button a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #f24638;
+    padding: 0.75rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 2px solid #f24638;
 }
   
 .login__form--p {

@@ -54,6 +54,7 @@ const Login = () => {
         <p className="login__form--p">
             Not a User, Don't worry you can <Link to="/signup"> SignUp </Link> here
         </p>
+        <p className="login__forgot--button"><Link to="/forgot_password">Forgot Password</Link></p>
         <button className="login__form--button" type="submit">
           Login
         </button>
