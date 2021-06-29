@@ -16,3 +16,4 @@
 | Sanju Raj | [@sanjuraj9031](https://www.github.com/) |
 | Arushi Singh | [@TheArushiSingh](https://www.github.com/TheArushiSingh) |
 | Jagannath Pal | - |    
+| Umang Dobariya | [@Umang2002](https://github.com/Umang2002) |
