@@ -5,9 +5,8 @@
 
 ## Tech Stack
 
-- ReactJS
-- Redux
-- CSS
+<img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-best-web-design-psd-html-cms-development-ecommerce-6.png" width="200" alt="" />
+
 
 ## Setup and Installation
 
@@ -110,9 +109,6 @@ git push -u origin <your_branch_name>
 
 ## Project Admin 👩: Akshima Ghai
 
-<p align="center">
-<img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif">
-</p>
 
 <a href="https://www.linkedin.com/in/akshima-ghai-196932197/">
 <h5 align="center"><b>Akshima Ghai</b></a>
