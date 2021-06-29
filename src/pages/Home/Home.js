@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import { Link } from 'react-router-dom'
+import ImgSrc from './../../shared/ImgSrc'
 
 const Home = () => {
   return (
@@ -8,11 +8,8 @@ const Home = () => {
       <div className="home__main">
         <div className="home__info--container">
           <div className="home__info">
-            <h1 className="home__h1">Education</h1>
-            <p className="home__p">Learn Everything</p>
-            <Link to="/login" className="home__button">
-              Get Started
-            </Link>
+            <h1 className="home__h1">You Can Learn Anything</h1>
+            <p className="home__p">For Free, For Everyone</p>
           </div>
         </div>
       </div>

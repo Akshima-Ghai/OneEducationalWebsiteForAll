@@ -1,14 +1,15 @@
 .home__container {
-  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .home__main {
   display: flex;
 }
 
-.home__info--container{
+.home__info--container,
+.home__banner {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -17,35 +18,102 @@
 }
 
 .home__info {
-  text-align: center;
+  padding-bottom: 10rem;
 }
 
 .home__h1 {
-  font-size: 2rem;
-  color: var(--light-primary-black);
+  width: 40rem;
+  font-size: 6rem;
+  color:#141639;
 }
 
 .home__p {
   font-size: 1.5rem;
   margin: 1rem 0;
   font-weight: bold;
-  color: var(--light-primary-grey);
+  color: #73747b;
 }
 
 .home__button {
   margin: 0.5rem 0;
   display: inline-block;
-  color: var(--light-primary-purple-dark-2);
+  color: var(--light-primary-purple);
   text-decoration: none;
   padding: 1rem 1.5rem;
   font-size: 1.25rem;
   font-weight: bold;
-  border: 2px solid var(--light-primary-purple-dark-2);
+  border: 2px solid var(--light-primary-purple);
   border-radius: 10px;
   transition: all 0.4s;
 }
+.home__button.light {
+  color: var(--night-primary-purple);
+  border-color: var(--night-primary-purple);
+}
 
 .home__button:hover {
-  background-color: var(--light-primary-purple-dark-2);
+  background-color: var(--light-primary-purple);
   color: white;
+}
+
+.home__banner--img {
+  width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+  .home__info {
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .home__main {
+    flex-direction: column-reverse;
+  }
+  .home__banner--img {
+    width: 50%;
+  }
+  .home__info {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .home__banner--img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .home__h1 {
+    font-size: 1.75rem;
+  }
+  .home__p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .home__banner--img {
+    width: 100%;
+  }
+  .home__h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .home__p {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 330px) {
+  .home__info {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
