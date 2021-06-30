@@ -21,7 +21,17 @@ const About = props => {
                 <h1>Is it free?</h1>
                 <p>YES, Forever.</p>
             </div>
-            
+            <div >
+                <h1>Project Admin</h1>
+                <div>
+                    <h1>Name</h1>
+                    <p>Title</p>
+                    <div>
+                        <h1>Social Link</h1>
+                        <h1>Social Link</h1>
+                    </div>
+                </div>
+            </div>
         </section>
     )
 }
