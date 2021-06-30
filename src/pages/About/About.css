@@ -106,3 +106,7 @@
 .about__qf--form button{
     padding: 1rem .75rem;
 }
+
+.about__qf--img{
+    width: 100%;
+}
