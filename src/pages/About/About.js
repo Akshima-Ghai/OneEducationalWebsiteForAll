@@ -5,7 +5,7 @@ import ImgSrc from './../../shared/ImgSrc'
 const About = props => {
     return (
         <section className="about__container">
-            <h1 className="about__heading">Got Questions</h1>
+            <h1 className="about__heading">Who we are</h1>
             <div className="about__div">
                 <img src={ImgSrc.Education} alt="logo" />
                 <h1>What is EduOne?</h1>
@@ -21,25 +21,23 @@ const About = props => {
                 <h1>Is it free?</h1>
                 <p>YES, Forever.</p>
             </div>
-            <div >
-                <h1>Project Admin</h1>
-                <div>
-                    <h1>Name</h1>
-                    <p>Title</p>
-                    <div>
-                        <h1>Social Link</h1>
-                        <h1>Social Link</h1>
-                    </div>
-                </div>
+            <h1 className="about__heading">Our Team</h1>
+            <div className="about__pa--card">
+                <img src={ImgSrc.Woman} alt="profile" />
+                <h1>Akshima Ghai</h1>
+                <p>Project Admin</p>
             </div>
-            <div>
-                <h1>STILL HAVE SOME QUESTIONS?</h1>
+            <h1 className="about__heading">HAVE SOME QUESTIONS?</h1>
+            <div className="about__qf--container">
                 <div>
-                    <div>
-                        Image
-                    </div>
-                    <form>
-                        
+                    <img className="about__qf--img" src={ImgSrc.Message} alt="msg" />
+                </div>
+                <div className="about__form--container">
+                    <form className="about__qf--form">
+                        <input placeholder="Name" type="text" />
+                        <input placeholder="Email" type="email" />
+                        <textarea placeholder="Message"></textarea>
+                        <button className="signup__form--button" type="submit">Send Message</button>
                     </form>
                 </div>
             </div>
