@@ -32,6 +32,17 @@ const About = props => {
                     </div>
                 </div>
             </div>
+            <div>
+                <h1>STILL HAVE SOME QUESTIONS?</h1>
+                <div>
+                    <div>
+                        Image
+                    </div>
+                    <form>
+                        
+                    </form>
+                </div>
+            </div>
         </section>
     )
 }
