@@ -16,7 +16,12 @@ const About = props => {
                 <h1>How does it work?</h1>
                 <p>Students can create an account and use all the features we provide.</p>
             </div>
-
+            <div className="about__div">
+                <img src={ImgSrc.Free} alt="logo" />
+                <h1>Is it free?</h1>
+                <p>YES, Forever.</p>
+            </div>
+            
         </section>
     )
 }
