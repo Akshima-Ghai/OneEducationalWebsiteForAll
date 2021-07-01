@@ -157,6 +157,17 @@
   }
 }
 
+@media (max-width: 350px) {
+  .home__h1 {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+  .home__p {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+
 @media (max-width: 330px) {
   .home__info {
     padding-left: 1rem;
