@@ -135,27 +135,20 @@
   }
 }
 
-@media (max-width: 450px) {
-  .home__h1 {
-    font-size: 1.75rem;
-  }
-  .home__p {
-    font-size: 1.25rem;
-  }
-}
 
 @media (max-width: 450px) {
   .home__banner--img {
     width: 100%;
   }
   .home__h1 {
-    font-size: 1.75rem;
+    font-size: 3.25rem;
     text-align: center;
   }
   .home__p {
-    font-size: 1.25rem;
+    font-size: 2rem;
     text-align: center;
   }
+
 }
 
 @media (max-width: 330px) {
