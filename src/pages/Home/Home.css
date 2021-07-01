@@ -148,7 +148,13 @@
     font-size: 2rem;
     text-align: center;
   }
+  .home__dashboard--item-2 h1, .home__dashboard--item-3 h1{
+    font-size: 2rem;
+  }
 
+  .home__dashboard--item-2 p, .home__dashboard--item-3 p{
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 330px) {
