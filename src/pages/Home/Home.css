@@ -83,6 +83,18 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .home__h1{
+    font-size: 5rem;
+  }
+  .home__dashboard div {
+    padding: 3rem 2rem;
+  }
+  .home__dashboard--item-1 h1{
+    font-size: 3.5rem;
+  }
+}
+
 @media (max-width: 900px) {
   .home__main {
     flex-direction: column-reverse;
@@ -98,6 +110,10 @@
   }
   .home__h1{
     text-align: center;
+    margin: 3rem 0;
+  }
+  .home__dashboard--item-1 h1{
+    font-size: 3.4rem;
   }
 }
 
