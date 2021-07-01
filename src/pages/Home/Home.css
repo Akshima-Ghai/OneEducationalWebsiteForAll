@@ -117,6 +117,18 @@
   }
 }
 
+@media (max-width: 800px) {
+  .home__dashboard{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home__dashboard--item-2 p, .home__dashboard--item-3 p{
+    padding: 0 4rem;
+  }
+}
+
+
 @media (max-width: 600px) {
   .home__banner--img {
     width: 70%;
