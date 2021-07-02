@@ -13,6 +13,37 @@
 
 ## Setup and Installation
 
+A common issue many people may face while setting up the project:
+Running npm install(or npm i) throws these errors - 
+
+<img src="./public/err.jpg"/>
+
+This occurs due to the mismatch in the versions of node and npm installed on your local machine and the ones used in the project.
+
+### Solution
+
+1. Update NodeJS :
+Download the latest version of  Node from it's official website -
+
+```
+https://nodejs.org/en/
+```
+
+This would overwrite the previous outdated version.
+
+2. Update NPM :
+Open your terminal, type the following command and hit enter -
+
+```
+ npm install npm@latest -g
+```
+
+This would update npm to it's latest version available.
+
+And you're done!
+Run the following commands in the project directory to set up the project.
+
+
 ```
 npm install
 ```   
