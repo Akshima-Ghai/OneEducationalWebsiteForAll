@@ -1,8 +1,8 @@
-import React from 'react'
-import './Header.css'
-import { Link,withRouter } from 'react-router-dom'
+import React from "react";
+import "./Header.css";
+import { Link, withRouter } from "react-router-dom";
 
-import Nav from './../Nav/Nav'
+import Nav from "./../Nav/Nav";
 
 const Header = (props) => {
   return (
@@ -20,12 +20,16 @@ const Header = (props) => {
       <Nav />
       <div className="header__btn--container">
         <ul className="header__btn--ul">
-          <li className="header__btn--login header__btn--a"><Link to="/login">Log in</Link></li>
-          <li className="header__btn--get header__btn--a"><Link to="/guidence">Get Started</Link></li>
+          <li className="header__btn--login header__btn--a">
+            <Link to="/login">Log in</Link>
+          </li>
+          <li className="header__btn--get header__btn--a">
+            <Link to="/guidence">Get Started</Link>
+          </li>
         </ul>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default withRouter(Header)
+export default withRouter(Header);
