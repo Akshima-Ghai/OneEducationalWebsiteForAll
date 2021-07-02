@@ -1,5 +1,25 @@
 # OneEducationalWebsiteForAll
 
+<div align="center">
+<br>
+ 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/Akshima-Ghai) 
+[![Open Source Love](https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green)](https://github.com/Akshima-Ghai) 
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) 
+[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)](https://github.com/Akshima-Ghai)
+[![Maintenance](https://img.shields.io/maintenance/yes/2021)](https://github.com/Akshima-Ghai)
+
+[![GitHub contributors](https://img.shields.io/github/contributors-anon/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/graphs/contributors)
+[![](https://badgen.net/github/stars/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/stargazers)
+[![](https://badgen.net/github/forks/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/network/members)
+[![](https://badgen.net/github/open-issues/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/issues)
+[![](https://badgen.net/github/closed-issues/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/issues?q=is%3Aissue+is%3Aclosed)
+[![](https://badgen.net/github/prs/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/pulls)
+[![](https://badgen.net/github/open-prs/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/pulls)
+[![](https://badgen.net/github/closed-prs/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/pulls?q=is%3Apr+is%3Aclosed)
+<br><br>
+</div>
+
 - If I have to describe my project , in simple words , it would be an educational website , but not just that  , it would be the best website , a person or organisation can ever ask for . It will have many features  including VideoLectures , Theory/Notes , TestSeries , DataAnalysis of results , Blogs to motivate or for Guidance  , Attendance System and many more features. We would also deploy it , so that it can be a real-time working  project and it would help everyone to gain a lot of experience and learning curve for this project would also be  great . It would also have the best design which would make it interactive as well as attractive .
 
 - This Project would start from scratch , so that each and every individual can participate and contribute and learn to the maximum extent .
