@@ -3,8 +3,24 @@
   align-items: center;
   justify-content: space-between;
   padding: .75rem 1rem;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  border-bottom: 2px solid blanchedalmond;
+}
+.header.active {
+  background: black;
+  border-bottom: 2px solid gray;
 }
 
+.scroll_color_change.active {
+  color: white;
+  
+}
+.scroll_color_change:hover {
+  background: #f24638ed;
+  color: white;
+}
 .header__h1 {
   padding: 1rem;
   color: #0a1436;
@@ -13,11 +29,17 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+.header__h1.active {
+  color: white;
+}
 
 .header__h1--label {
   color: #f24638;
   font-size: 2rem;
   cursor: pointer;
+}
+.header__h1--label.active {
+  color: rgb(204, 47, 204);
 }
 
 .header_toggle--btn {
@@ -51,10 +73,12 @@
 .header__btn--login a{
   border-radius: 10px;
   margin-right: 2rem;
-  color: #0a1436;
+  color: #847bd8;
   border: 2px solid #b8b8b8;
 }
-
+.header__btn--login.active {
+  color: white;
+}
 .header__btn--get a{
   border-radius: 10px;
   margin-right: 1rem;
@@ -62,6 +86,7 @@
   border: 2px solid #f24638;
   background-color: #f24638;
 }
+
 .header__btn--get a:hover{
   border: 2px solid #d13d30;
   background-color: #d13d30;
