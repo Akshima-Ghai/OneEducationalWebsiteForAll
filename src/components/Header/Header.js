@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+
+import React from "react";
 import "./Header.css";
 import { Link, withRouter } from "react-router-dom";
+
 import Nav from "./../Nav/Nav";
 
 const Header = (props) => {
@@ -29,6 +31,7 @@ const Header = (props) => {
       <div className="header__btn--container">
         <ul className="header__btn--ul">
           <li className="header__btn--login header__btn--a">
+
             <Link to="/login" className={changeColor? "scroll_color_change active" : "scroll_color_change"}>Log in</Link>
           </li>
           <li className="header__btn--get header__btn--a">

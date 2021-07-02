@@ -3,16 +3,21 @@ import { Route, Switch } from "react-router";
 import "./App.css";
 
 import Layout from "./components/Layout/Layout";
-import { Home, Login, Signup, About } from "./pages/PageSrc";
+
+import { Home, Login, Signup, About, FAQ } from "./pages/PageSrc";
+
 
 function App() {
   return (
     <Layout>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/signup" component={Signup} />
-        <Route path="/login" component={Login} />
+
+        <Route path="/about" exact component={About} />
+        <Route path="/signup" exact component={Signup} />
+        <Route path="/login" exact component={Login} />
+        <Route path="/" exact component={Home} />
+        <Route path="/faq" exact component={FAQ} />
+
       </Switch>
     </Layout>
   );
