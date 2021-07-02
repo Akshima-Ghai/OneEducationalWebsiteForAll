@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router";
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 
 import Layout from "./components/Layout/Layout";
 import { Home, Login, Signup, About } from "./pages/PageSrc";
@@ -14,6 +15,7 @@ function App() {
         <Route path="/signup" component={Signup} />
         <Route path="/login" component={Login} />
       </Switch>
+      <Footer/>
     </Layout>
   );
 }
