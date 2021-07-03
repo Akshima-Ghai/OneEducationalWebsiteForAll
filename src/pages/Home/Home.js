@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+
 import ImgSrc from './../../shared/ImgSrc'
 
 const Home = () => {
