@@ -3,11 +3,13 @@ import "./FAQ.css";
 import ImgSrc from "../../shared/ImgSrc";
 
 export default function FAQ() {
-  const [isActive, setActive] = useState("false");
+  const [isOneActive, setOneActive] = useState("false");
+  const [isTwoActive, setTwoActive] = useState("false");
+  const [isThreeActive, setThreeActive] = useState("false");
+  const [isFourActive, setFourActive] = useState("false");
 
-  const handleToggle = () => {
+  const handleToggle = (ques) => {
     setActive(!isActive);
-    console.log("clicked");
   };
   return (
     <>
@@ -17,7 +19,7 @@ export default function FAQ() {
 
           <div
             className={`faq ${isActive ? "" : "active"}`}
-            onClick={handleToggle}
+            onClick={handleToggle.bind("one")}
             key="1"
           >
             <div className="faq__question">

@@ -26,9 +26,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 3rem;
 }
 .faq__question h3 {
   font-size: 1.8rem;
+  line-height: 3rem;
+  color: #141414;
 }
 
 .faq__answer {
