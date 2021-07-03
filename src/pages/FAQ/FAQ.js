@@ -9,7 +9,16 @@ export default function FAQ() {
   const [isFourActive, setFourActive] = useState("false");
 
   const handleToggle = (ques) => {
-    setActive(!isActive);
+    switch(ques){
+      case "one":setOneActive(prev => !prev);
+            break;
+      case "two":setTwoActive(prev => !prev);
+            break;
+      case "three":setThreeActive(prev => !prev);
+            break;
+      case "four":setFourActive(prev => !prev);
+            break;
+      }
   };
   return (
     <>
@@ -18,8 +27,8 @@ export default function FAQ() {
           <h2 className="faq__title">FAQS</h2>
 
           <div
-            className={`faq ${isActive ? "" : "active"}`}
-            onClick={handleToggle.bind("one")}
+            className={`faq ${isOneActive ? "" : "active"}`}
+            onClick={handleToggle.bind(this,"one")}
             key="1"
           >
             <div className="faq__question">
@@ -29,8 +38,8 @@ export default function FAQ() {
                 <path
                   d="M3 3L21 21L39 3"
                   stroke="white"
-                  stroke-width="7"
-                  stroke-strokeLinecap="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
                 />
               </svg>
             </div>
@@ -49,8 +58,8 @@ export default function FAQ() {
           </div>
 
           <div
-            className={`faq ${isActive ? "" : "active"}`}
-            onClick={handleToggle}
+            className={`faq ${isTwoActive ? "" : "active"}`}
+            onClick={handleToggle.bind(this,"two")}
             key="2"
           >
             <div className="faq__question">
@@ -60,8 +69,8 @@ export default function FAQ() {
                 <path
                   d="M3 3L21 21L39 3"
                   stroke="white"
-                  stroke-width="7"
-                  stroke-strokeLinecap="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
                 />
               </svg>
             </div>
@@ -78,8 +87,8 @@ export default function FAQ() {
           </div>
 
           <div
-            className={`faq ${isActive ? "" : "active"}`}
-            onClick={handleToggle}
+            className={`faq ${isThreeActive ? "" : "active"}`}
+            onClick={handleToggle.bind(this,"three")}
             key="3"
           >
             <div className="faq__question">
@@ -89,8 +98,8 @@ export default function FAQ() {
                 <path
                   d="M3 3L21 21L39 3"
                   stroke="white"
-                  stroke-width="7"
-                  stroke-strokeLinecap="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
                 />
               </svg>
             </div>
@@ -108,8 +117,8 @@ export default function FAQ() {
           </div>
 
           <div
-            className={`faq ${isActive ? "" : "active"}`}
-            onClick={handleToggle}
+            className={`faq ${isFourActive ? "" : "active"}`}
+            onClick={handleToggle.bind(this,"four")}
             key="4"
           >
             <div className="faq__question">
@@ -122,8 +131,8 @@ export default function FAQ() {
                 <path
                   d="M3 3L21 21L39 3"
                   stroke="white"
-                  stroke-width="7"
-                  stroke-strokeLinecap="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
                 />
               </svg>
             </div>

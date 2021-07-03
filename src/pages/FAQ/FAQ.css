@@ -37,25 +37,29 @@
 .faq__answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.4s ease;
+  transition: max-height 0.8s ease;
 }
 
 .faq__answer p {
   padding-top: 1rem;
+  padding: 0 3rem;
+  letter-spacing: 2px;
+  color: #4b4b4b;
   line-height: 1.6;
   font-size: 1.4rem;
+  text-align: center;
 }
 
-.faq.active .answer {
+.faq.active .faq__answer {
   max-height: 300px;
-  animation: fade 0.5s ease;
+  animation: fade 0.4s ease;
 }
 
 .faq.active svg {
   transform: rotate(180deg);
 }
 .svg {
-  transition: transform 0.5s ease-in;
+  transition: transform 0.4s ease-in;
 }
 
 @keyframes fade {
