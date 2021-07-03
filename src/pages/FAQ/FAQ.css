@@ -1,9 +1,4 @@
-* {
-  margin: 0;
-  padding-top: 0;
-  box-sizing: border-box;
-}
-section {
+.faq__container {
   min-height: 100vh;
   width: 50%;
   display: flex;
@@ -11,10 +6,10 @@ section {
   align-items: center;
   flex-direction: column;
 }
-.title {
+.faq__title {
   font-size: 3rem;
   color: #f24638;
-  margin: 2rem 0rem;
+  margin: 4rem 0rem;
   display: flex;
   justify-content: center;
 }
@@ -27,37 +22,44 @@ section {
   cursor: pointer;
 }
 
-.question {
+.faq__question {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 3rem;
 }
-.question h3 {
+.faq__question h3 {
   font-size: 1.8rem;
+  line-height: 3rem;
+  color: #141414;
 }
 
-.answer {
+.faq__answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.4s ease;
+  transition: max-height 0.8s ease;
 }
 
-.answer p {
+.faq__answer p {
   padding-top: 1rem;
+  padding: 0 3rem;
+  letter-spacing: 2px;
+  color: #4b4b4b;
   line-height: 1.6;
   font-size: 1.4rem;
+  text-align: center;
 }
 
-.faq.active .answer {
+.faq.active .faq__answer {
   max-height: 300px;
-  animation: fade 0.5s ease;
+  animation: fade 0.4s ease;
 }
 
 .faq.active svg {
   transform: rotate(180deg);
 }
 .svg {
-  transition: transform 0.5s ease-in;
+  transition: transform 0.4s ease-in;
 }
 
 @keyframes fade {
@@ -71,7 +73,7 @@ section {
   }
 }
 
-.confuse--img {
+.faq__confuse--img {
   height: 39em;
   margin-left: -13%;
   margin-top: -9em;
