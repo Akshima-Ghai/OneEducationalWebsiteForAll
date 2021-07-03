@@ -8,8 +8,8 @@ const About = props => {
             <h1 className="about__heading">Who we are</h1>
             <div className="about__div">
                 <img src={ImgSrc.Education} alt="logo" />
-                <h1>What is EduOne?</h1>
-                <p>EduOne is an e-learning website which provide the students with the option to choose their courses as per their needs. Quizzes, and guidence videos are some of the interaction methods through which students can learn.</p>
+                <h1>What is LearnZania?</h1>
+                <p>LearnZania is an e-learning website which provides the students with free course content and study material. Quizzes, expert guidance and doubt assistance from mentors are some of the interaction methods through which students can learn.</p>
             </div>
             <div className="about__div">
                 <img src={ImgSrc.Working} alt="logo" />

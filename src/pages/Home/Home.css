@@ -43,7 +43,7 @@
 
 .home__dashboard{
   width: 90%;
-  background-color: #f3f5f9;
+  background-color: #f24638;
   padding: 1rem;
   border-radius: 10px;
   /* height: 25rem; */
@@ -56,22 +56,22 @@
 }
 
 .home__dashboard--item-1 h1{
-  color: #1a1a3c;
+  color: #fff;
   font-size: 4rem;
 
 }
 
 .home__dashboard--item-2 h1,.home__dashboard--item-3 h1{
-  color: #1a1a3c;
-  font-size: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
   margin-top: 1rem;
 }
 
 .home__dashboard--item-2 p,.home__dashboard--item-3 p{
-  color: #868999;
+  color: #fff;
   margin-top: 2rem;
-  font-weight: bold;
-  font-size: 1.25rem;
+  font-weight: 600;
+  font-size: 1.5rem;
   line-height: 2.75rem;
   letter-spacing: 2.5px;
 }
