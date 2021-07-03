@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./FAQ.css";
 import ImgSrc from "../../shared/ImgSrc";
 
-export default function App() {
+export default function FAQ() {
   const [isActive, setActive] = useState("false");
 
   const handleToggle = () => {
@@ -11,16 +11,16 @@ export default function App() {
   };
   return (
     <>
-      <section>
+      <section className="faq__container">
         <div>
-          <h2 className="title">FAQS</h2>
+          <h2 className="faq__title">FAQS</h2>
 
           <div
             className={`faq ${isActive ? "" : "active"}`}
             onClick={handleToggle}
             key="1"
           >
-            <div className="question">
+            <div className="faq__question">
               <h3>Q: HOW DO I FIGURE OUT WHAT TO LEARN?</h3>
 
               <svg width="15" height="10" viewBox="0 0 42 25">
@@ -33,7 +33,7 @@ export default function App() {
               </svg>
             </div>
 
-            <div className="answer">
+            <div className="faq__answer">
               <p>
                 The most important thing is that you want to learn something
                 that interests you, because once you start learning, you’ll be
@@ -51,7 +51,7 @@ export default function App() {
             onClick={handleToggle}
             key="2"
           >
-            <div className="question">
+            <div className="faq__question">
               <h3>Q: WHICH PROGRAMMING LANGUAGE IS THE BEST TO LEARN?</h3>
 
               <svg width="15" height="10" viewBox="0 0 42 25">
@@ -64,7 +64,7 @@ export default function App() {
               </svg>
             </div>
 
-            <div className="answer">
+            <div className="faq__answer">
               <p>
                 I usually tell most people to start by learning HTML and CSS,
                 then move into learning JavaScript. The reason is that
@@ -80,7 +80,7 @@ export default function App() {
             onClick={handleToggle}
             key="3"
           >
-            <div className="question">
+            <div className="faq__question">
               <h3>Q: WHERE SHOULD I LEARN TECH SKILLS?</h3>
 
               <svg width="15" height="10" viewBox="0 0 42 25">
@@ -93,7 +93,7 @@ export default function App() {
               </svg>
             </div>
 
-            <div className="answer">
+            <div className="faq__answer">
               <p>
                 THIS website :One of the largest online course marketplaces with
                 topic covering practically everything you can think of. Anyone
@@ -110,7 +110,7 @@ export default function App() {
             onClick={handleToggle}
             key="4"
           >
-            <div className="question">
+            <div className="faq__question">
               <h3>
                 Q: WHERE ARE THE BEST PLACES TO LEARN FRONT-END AND BACKEND
                 DEVELOPMENT?
@@ -126,7 +126,7 @@ export default function App() {
               </svg>
             </div>
 
-            <div className="answer">
+            <div className="faq__answer">
               <p>
                 There are tons of online courses and useful resources on
                 front-end and back-end development. Check out this in-depth
@@ -138,16 +138,14 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="img">
+        <div className="faq__img">
           <img
             src={ImgSrc.confuse}
             alt="Content Owned By <a href='https://pngtree.com/so/reading-clipart'>reading clipart png from pngtree.com</a>"
-            className="confuse--img"
+            className="faq__confuse--img"
           />
         </div>
       </section>
     </>
   );
 }
-
-// export default FAQ;
