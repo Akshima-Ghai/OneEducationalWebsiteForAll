@@ -1,6 +1,6 @@
 import React from "react";
-import Sectionscard from "../../components/UI/Sectionscard/Sectionscard";
-import "./Sectionspg.css";
+import Sectionscard from "../../components/UI/Sectionscard/SectionCard";
+import "./Section.css";
 import ImgSrc from "../../shared/ImgSrc";
 const Sectionspg= () => {
   return (

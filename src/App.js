@@ -13,8 +13,8 @@ function App() {
         <Route path="/about" exact component={About} />
         <Route path="/signup" exact component={Signup} />
         <Route path="/login" exact component={Login} />
-        <Route path="/home" exact component={Home} />
         <Route path="/faq" exact component={FAQ} />
+        <Route path="/" exact component={Home} />
         </Layout>
       </Switch>
 
