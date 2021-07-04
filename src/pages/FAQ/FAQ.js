@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./FAQ.css";
 import ImgSrc from "../../shared/ImgSrc";
+import Scrolltop from "../../components/ScrollTop/Scrolltop";
 
 export default function FAQ() {
   const [isOneActive, setOneActive] = useState("false");
@@ -9,26 +10,31 @@ export default function FAQ() {
   const [isFourActive, setFourActive] = useState("false");
 
   const handleToggle = (ques) => {
-    switch(ques){
-      case "one":setOneActive(prev => !prev);
-            break;
-      case "two":setTwoActive(prev => !prev);
-            break;
-      case "three":setThreeActive(prev => !prev);
-            break;
-      case "four":setFourActive(prev => !prev);
-            break;
-      }
+    switch (ques) {
+      case "one":
+        setOneActive((prev) => !prev);
+        break;
+      case "two":
+        setTwoActive((prev) => !prev);
+        break;
+      case "three":
+        setThreeActive((prev) => !prev);
+        break;
+      case "four":
+        setFourActive((prev) => !prev);
+        break;
+    }
   };
   return (
     <>
       <section className="faq__container">
+        <Scrolltop showBelow={250} />
         <div>
           <h2 className="faq__title">FAQS</h2>
 
           <div
             className={`faq ${isOneActive ? "" : "active"}`}
-            onClick={handleToggle.bind(this,"one")}
+            onClick={handleToggle.bind(this, "one")}
             key="1"
           >
             <div className="faq__question">
@@ -59,7 +65,7 @@ export default function FAQ() {
 
           <div
             className={`faq ${isTwoActive ? "" : "active"}`}
-            onClick={handleToggle.bind(this,"two")}
+            onClick={handleToggle.bind(this, "two")}
             key="2"
           >
             <div className="faq__question">
@@ -88,7 +94,7 @@ export default function FAQ() {
 
           <div
             className={`faq ${isThreeActive ? "" : "active"}`}
-            onClick={handleToggle.bind(this,"three")}
+            onClick={handleToggle.bind(this, "three")}
             key="3"
           >
             <div className="faq__question">
@@ -118,7 +124,7 @@ export default function FAQ() {
 
           <div
             className={`faq ${isFourActive ? "" : "active"}`}
-            onClick={handleToggle.bind(this,"four")}
+            onClick={handleToggle.bind(this, "four")}
             key="4"
           >
             <div className="faq__question">

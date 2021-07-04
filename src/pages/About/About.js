@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import ImgSrc from "./../../shared/ImgSrc";
-
+import Scrolltop from "../../components/ScrollTop/Scrolltop";
 const About = (props) => {
   return (
     <section className="about__container">
@@ -50,6 +50,7 @@ const About = (props) => {
           </form>
         </div>
       </div>
+      <Scrolltop showBelow={250} />
     </section>
   );
 };

@@ -1,10 +1,12 @@
-import React from 'react'
-import './Home.css'
-import ImgSrc from './../../shared/ImgSrc'
-
+import React from "react";
+import "./Home.css";
+import ImgSrc from "./../../shared/ImgSrc";
+import Scrolltop from "../../components/ScrollTop/Scrolltop";
 const Home = () => {
   return (
     <section className="home__container">
+      <Scrolltop showBelow={250} />
+
       <div className="home__main">
         <div className="home__info--container">
           <div className="home__info">
@@ -27,16 +29,22 @@ const Home = () => {
           </div>
           <div className="home__dashboard--item-2">
             <h1>Anywhere anytime access</h1>
-            <p>With The Website, students can access learning resources anytime, anywhere, on their mobility tools.</p>
+            <p>
+              With The Website, students can access learning resources anytime,
+              anywhere, on their mobility tools.
+            </p>
           </div>
           <div className="home__dashboard--item-3">
-          <h1>Free Guidance</h1>
-            <p>With The Website, students can free and right guidance and information on career selecting.</p>
+            <h1>Free Guidance</h1>
+            <p>
+              With The Website, students can free and right guidance and
+              information on career selecting.
+            </p>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

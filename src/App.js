@@ -4,20 +4,17 @@ import "./App.css";
 
 import Layout from "./components/Layout/Layout";
 
-import { Home, Login, Signup, About, FAQ } from "./pages/PageSrc";
-
+import { Home, Login, Signup, FAQ, About } from "./pages/PageSrc";
 
 function App() {
   return (
     <Layout>
       <Switch>
-
         <Route path="/about" exact component={About} />
         <Route path="/signup" exact component={Signup} />
         <Route path="/login" exact component={Login} />
         <Route path="/" exact component={Home} />
         <Route path="/faq" exact component={FAQ} />
-
       </Switch>
     </Layout>
   );
