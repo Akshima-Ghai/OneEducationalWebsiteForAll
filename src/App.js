@@ -1,12 +1,17 @@
 import React from "react";
 import { Route, Switch } from "react-router";
 import "./App.css";
+import Footer from "./components/Footer/Footer";
+import { Sectionspg } from "./pages/PageSrc";
 import Layout from "./components/Layout/Layout";
 import { Home, Login, Signup, About, FAQ, Section } from "./pages/PageSrc";
 
 function App() {
   return (
     <Switch>
+      <Route path="/" exact component={Frontpg} />
+      <Route path="/section" exact component={Sectionspg} />
+
       <Layout>
         <Route path="/section" exact component={Section} />
         <Route path="/about" exact component={About} />
@@ -14,6 +19,7 @@ function App() {
         <Route path="/login" exact component={Login} />
         <Route path="/faq" exact component={FAQ} />
         <Route path="/" exact component={Home} />
+        <Footer />
       </Layout>
     </Switch>
   );
