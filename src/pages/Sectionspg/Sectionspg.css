@@ -1,0 +1,103 @@
+.main-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.main-sec-head span {
+  font-size: 3rem;
+  color: var(--light-primary-red);
+}
+.main-sec-head {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+.main_img {
+  width: 50%;
+  height: 30vh;
+}
+.main_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.choose_sec {
+  width: 97%;
+  height: 140vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  background: url("https://cdn.dribbble.com/users/610636/screenshots/7033469/untitled-1-01_2x.png")
+    no-repeat center;
+}
+.section_under {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+
+  margin: 3rem auto 3rem auto;
+  height: 40vh;
+}
+.sec-middle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  margin: 5.5rem auto 4rem auto;
+  height: 40vh;
+}
+@media (max-width: 1300px) {
+  .section_under {
+    height: 40vh;
+  }
+  .sec-middle {
+    height: 40vh;
+  }
+}
+@media (max-width: 1050px) {
+  .section_under {
+    height: 45vh;
+  }
+  .sec-middle {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .section_under {
+    width: 90%;
+    margin: 0rem;
+  }
+}
+@media (max-width: 800px) {
+  .choose_sec {
+    background: url("https://cdn.dribbble.com/users/610636/screenshots/7033469/untitled-1-01_2x.png") no-repeat center;
+    height: 150vh;
+    background-size: 100%;
+  }
+}
+@media (max-width: 690px) {
+  .section_under {
+    background: url("https://cdn.dribbble.com/users/610636/screenshots/7033469/untitled-1-01_2x.png") no-repeat center;
+    background-size:80%;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .sec-middle {
+    background: url("https://cdn.dribbble.com/users/610636/screenshots/7033469/untitled-1-01_2x.png") no-repeat center;
+    background-size:80%;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .choose_sec {
+    background:none;
+    height: 320vh;
+  }
+}

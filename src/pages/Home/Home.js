@@ -1,7 +1,11 @@
+
 import React from "react";
 import "./Home.css";
 import ImgSrc from "./../../shared/ImgSrc";
 import Scrolltop from "../../components/ScrollTop/Scrolltop";
+
+
+
 const Home = () => {
   return (
     <section className="home__container">
@@ -28,18 +32,14 @@ const Home = () => {
             <h1>Creating student success with our tech</h1>
           </div>
           <div className="home__dashboard--item-2">
-            <h1>Anywhere anytime access</h1>
-            <p>
-              With The Website, students can access learning resources anytime,
-              anywhere, on their mobility tools.
-            </p>
+
+            <h1>ANYWHERE ANYTIME ACCESS</h1>
+            <p>Enjoy free access to all LearnZania resources and study material anytime, anywhere from your comfort and ace your preparation.</p>
           </div>
           <div className="home__dashboard--item-3">
-            <h1>Free Guidance</h1>
-            <p>
-              With The Website, students can free and right guidance and
-              information on career selecting.
-            </p>
+          <h1>FREE GUIDANCE</h1>
+            <p>Struggling to choose right career path? Having difficulty in some topic or question? Worry not! Get free and expert guidance from our mentors, who are just a click away!!</p>
+
           </div>
         </div>
       </div>
