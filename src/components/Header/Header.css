@@ -6,11 +6,9 @@
   position: sticky;
   top: 0;
   overflow: hidden;
-  border-bottom: 2px solid blanchedalmond;
 }
 .header.active {
   background: black;
-  border-bottom: 2px solid gray;
 }
 
 .scroll_color_change.active {
@@ -80,16 +78,16 @@
 .header__btn--login a{
   border-radius: 10px;
   margin-right: 2rem;
-  color: #0003b1;
+  color: #585858;
   border: 2px solid #b8b8b8;
   font-weight: bold;
-  transition: 1s ease-in-out;
+  transition: .4s ease-in-out;
 }
 .header__btn--login.active {
   color: white;
 }
 .header__btn--login a:hover {
-  transition: 1s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 
