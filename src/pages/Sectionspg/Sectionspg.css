@@ -41,7 +41,7 @@
   align-items: center;
   width: 90%;
 
-  margin: 2rem auto 3rem auto;
+  margin: 3rem auto 3rem auto;
   height: 40vh;
 }
 .sec-middle {
@@ -49,7 +49,7 @@
   justify-content: space-between;
   width: 100%;
 
-  margin: 4.5rem auto 5.5rem auto;
+  margin: 5.5rem auto 4rem auto;
   height: 40vh;
 }
 @media (max-width: 1300px) {
@@ -77,22 +77,27 @@
 }
 @media (max-width: 800px) {
   .choose_sec {
-    background: url("https://i.pinimg.com/originals/fb/42/05/fb42058b55b6199deba13568849c3b75.jpg");
+    background: url("https://cdn.dribbble.com/users/610636/screenshots/7033469/untitled-1-01_2x.png") no-repeat center;
     height: 150vh;
     background-size: 100%;
   }
 }
 @media (max-width: 690px) {
   .section_under {
+    background: url("https://cdn.dribbble.com/users/610636/screenshots/7033469/untitled-1-01_2x.png") no-repeat center;
+    background-size:80%;
     flex-direction: column;
     height: 100vh;
   }
   .sec-middle {
+    background: url("https://cdn.dribbble.com/users/610636/screenshots/7033469/untitled-1-01_2x.png") no-repeat center;
+    background-size:80%;
     align-items: center;
     flex-direction: column;
     height: 100vh;
   }
   .choose_sec {
+    background:none;
     height: 320vh;
   }
 }
