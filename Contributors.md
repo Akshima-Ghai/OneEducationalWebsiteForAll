@@ -20,3 +20,5 @@
 | Sanjeev Kumar Mendegar        |       [@SanjeevKumar22](https://github.com/SanjeevKumar22)       |
 | Srijan k                      |              [@Srijank](https://github.com/Srijank)              |
 | Aman Bisht                    |          [@AmanBisht01](https://github.com/AmanBisht01)          |
+| Yashoda Rajmani               |          [@yashoda203](https://github.com/yashoda203)            |
+| Fathimathul Afra M P          |          [@AfraMP](https://www.github.com/AfraMP)                |
