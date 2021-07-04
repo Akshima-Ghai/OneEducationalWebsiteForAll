@@ -2,7 +2,7 @@ import React from "react";
 import Sectionscard from "../../components/UI/Sectionscard/SectionCard";
 import "./Section.css";
 import ImgSrc from "../../shared/ImgSrc";
-const Sectionspg= () => {
+const Section = () => {
   return (
     <section>
       <div className="main-container">
@@ -54,4 +54,4 @@ const Sectionspg= () => {
   );
 };
 
-export default Sectionspg;
+export default Section;
