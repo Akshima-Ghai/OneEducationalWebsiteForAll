@@ -3,14 +3,14 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <footer>
-            <div className="main-content">
-                <div className="left box">
-                    <div className="footer-logo">
+        <footer className="footer">
+            <div className="footer__main-content">
+                <div className="footer__left box">
+                    <div className="footer__logo">
                         <img src="" />
                     </div>
                     <h2>Address</h2>
-                    <div className="content">
+                    <div className="footer__box-content">
                         <div className="place">
                             <span className="fas fa-map-marker-alt"></span>
                             <span className="text">India</span>
@@ -26,10 +26,10 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="center box">
+                <div className="footer__center box">
                     <h2>Connect with Us</h2>
-                    <div className="content">
-                        <div className="center">
+                    <div className="footer__box-content">
+                        <div className="social__icons">
                             <div className="icons">
                                 <li><a href="#"><span className="fab fa-facebook-f"></span></a></li>
                                 <li><a href="#"><span
@@ -45,8 +45,8 @@ const Footer = () => {
                         </div>
                     </div>
                     <h2 className="additional">Additional Links</h2>
-                    <div className="content"></div>
-                    <div className="center-bottom">
+                    <div className="footer__box-content"></div>
+                    <div className="footer__center-bottom">
                         <div>
                             <a href="#"><span className="fas fa-user"></span></a>
                             <span className="text">About</span>
@@ -62,9 +62,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="right box">
+                <div className="footer__right box">
                     <h2 className="cont">Contact us</h2>
-                    <div className="content">
+                    <div className="footer__box-content">
                         <form action="#">
                             <div className="name">
                                 <div className="text">Name</div>
@@ -86,7 +86,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="bottom">
+            <div className="footer__bottom">
                 <center>
                     <span className="credit"><a
                         href="#">LearnZania</a> | </span>

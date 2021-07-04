@@ -1,265 +1,255 @@
-footer {
+.footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: grey;
+}
+.footer__main-content {
+  display: flex;
+}
+.footer__main-content .box {
+  flex-basis: 50%;
+  padding: 15px 20px;
+}
+.box h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+}
+.box .footer__box-content {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .footer__box-content:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: white;
+}
+.box .footer__box-content:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 15%;
+  background: orangered;
+  top: -10px;
+}
+
+.social__icons .icons {
+  display: flex;
+}
+.social__icons .icons li {
+  position: relative;
+  list-style: none;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  border-radius: 50%;
+  margin-top: 10px;
+  background: #f12020;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px #ffffff73;
+}
+.social__icons .icons li a {
+  line-height: 50px;
+  font-size: 30px;
+  color: #fff;
+}
+.social__icons .icons li:nth-child(1):hover {
+  background-color: #3b5998;
+}
+.social__icons .icons li:nth-child(2):hover {
+  background-color: #1da1f2;
+}
+.social__icons .icons li:nth-child(3):hover {
+  background-color: #e1306c;
+}
+.social__icons .icons li:nth-child(4):hover {
+  background-color: #2867b2;
+}
+.social__icons .icons li:nth-child(5):hover {
+  background-color: black;
+}
+
+.footer__center .fas {
+  font-size: 24px;
+  background: #f12020;
+  color: white;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.footer__center .fas:hover {
+  background: white;
+  color: #f12020;
+}
+.footer__center .additional {
+  margin-top: 56px;
+}
+.footer__center .text {
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 10px;
+  color: white;
+}
+.footer__center .footer__center-bottom .courses {
+  margin: 15px 0;
+}
+.footer__left .footer__logo {
+  text-align: center;
+  margin-top: 7px;
+}
+.footer__left .footer__logo img {
+  height: 150px;
+  width: 150px;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.footer__left h2 {
+  margin-top: 0px;
+}
+.footer__left .footer__box-content .fas {
+  font-size: 24px;
+  background: #f12020;
+  color: white;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.footer__left .footer__box-content .fas:hover {
+  background: white;
+  color: #f12020;
+}
+.footer__left .footer__box-content .text {
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 10px;
+  color: white;
+}
+.footer__left .footer__box-content .phone {
+  margin: 15px 0;
+}
+.footer__right .cont {
+  margin-bottom: 10px;
+}
+.footer__right form .text {
+  font-size: 18px;
+  color: white;
+}
+.footer__right form textarea {
+  font-size: 16px !important;
+  padding-top: 5px;
+}
+.footer__right form input,
+.footer__right form textarea {
+  width: 75%;
+  font-size: 15px;
+  background: white;
+  color: black;
+  padding-left: 10px;
+  border: 2px solid #f12020;
+  margin: 10px;
+  font-family: sans-serif;
+}
+.footer__right form input {
+  height: 35px;
+}
+.footer__right form button {
+  display: inline-block;
+  background: black;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid white;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.footer__right form button:hover {
+  background: #f24638;
+  color: white;
+  border-color: black;
+}
+.footer__right form button:active {
+  background: none;
+  color: white;
+}
+.footer__bottom center {
+  padding: 5px;
+  font-size: 17px;
+  background: #fff;
+}
+.footer__bottom center span {
+  color: #656565;
+}
+.footer__bottom center a {
+  color: #f12020;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.footer__bottom center a:hover {
+  color: #000;
+}
+@media screen and (max-width: 900px) {
+  .footer {
     position: relative;
     bottom: 0px;
-    width: 100%;
-    background: #2c3e50;
   }
-  .main-content {
-    display: flex;
+  .footer__main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .main-content .box {
-    flex-basis: 50%;
-    padding: 15px 20px;
-  }
-  .box h2 {
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: white;
-  }
-  .box .content {
-    margin: 20px 0 0 0;
-    position: relative;
-  }
-  .box .content:before {
-    position: absolute;
-    content: "";
-    top: -10px;
-    height: 2px;
-    width: 100%;
-    background: yellow;
-  }
-  .box .content:after {
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 15%;
-    background: white;
-    top: -10px;
-  }
-  
-  .center .icons {
-    display: flex;
-  }
-  .center .icons li {
-    position: relative;
-    list-style: none;
-    height: 50px;
-    width: 50px;
-    margin: 0 10px;
-    border-radius: 50%;
-    margin-top: 10px;
-    background: #dde1e7;
-    cursor: pointer;
-    text-align: center;
-    transition: 0.5s;
-    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px #ffffff73;
-  }
-  .center .icons li a {
-    line-height: 50px;
-    font-size: 30px;
-    color: #000;
-  }
-  .center .icons li:nth-child(1):hover {
-    background-color: #3b5998;
-  }
-  .center .icons li:nth-child(2):hover {
-    background-color: #1da1f2;
-  }
-  .center .icons li:nth-child(3):hover {
-    background-color: #e1306c;
-  }
-  .center .icons li:nth-child(4):hover {
-    background-color: #2867b2;
-  }
-  .center .icons li:nth-child(5):hover {
-    background-color: grey;
-  }
-  
-  .center .fas {
-    font-size: 24px;
-    background: white;
-    color: black;
+  .social__icons .icons li {
     height: 45px;
     width: 45px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    transition: 0.5s;
-    cursor: pointer;
-    /* margin-bottom: 10px; */
-  }
-  .center .fas:hover {
-    background: #f12020;
-    color: white;
-  }
-  .center .additional {
-    margin-top: 56px;
-  }
-  .center .text {
-    font-size: 17px;
-    font-weight: 500;
-    padding-left: 10px;
-    color: yellow;
-  }
-  .center .center-bottom .courses {
-    margin: 15px 0;
-  }
-  .left .footer-logo {
-    text-align: center;
-    margin-top: 7px;
-  }
-  .left .footer-logo img {
-    height: 150px;
-    width: 150px;
-    border: 4px solid #f12020;
-    border-radius: 50%;
-  }
-  .left h2 {
-    margin-top: 0px;
-  }
-  .left .content .fas {
-    font-size: 24px;
-    background: white;
-    color: black;
-    height: 45px;
-    width: 45px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-  .left .content .fas:hover {
-    background: #f12020;
-    color: white;
-  }
-  .left .content .text {
-    font-size: 17px;
-    font-weight: 500;
-    padding-left: 10px;
-    color: yellow;
-  }
-  .left .content .phone {
-    margin: 15px 0;
-  }
-  
-  .right .cont {
-    margin-bottom: 10px;
-  }
-  .right form .text {
-    font-size: 18px;
-    color: white;
-  }
-  .right form textarea {
-    font-size: 16px !important;
-    padding-top: 5px;
-  }
-  .right form input,
-  .right form textarea {
-    width: 75%;
-    font-size: 15px;
-    background: white;
-    color: black;
-    padding-left: 10px;
-    border: 1px solid #222222;
-    margin: 10px;
-    font-family: sans-serif;
-  }
-  .right form input:focus,
-  .right form textarea:focus {
-    outline-color: #3498db;
-  }
-  .right form input {
-    height: 35px;
-  }
-  .right form button {
-    display: inline-block;
-    background: #f12020;
-    color: #fff;
-    font-size: 20px;
-    padding: 3px 10px;
-    margin-left: 10px;
+    margin: 0 5px;
     margin-top: 5px;
-    font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid #f12020;
-    transition: all 0.3s ease;
-    cursor: pointer;
   }
-  .right form button:hover {
-    background: none;
-    color: white;
+  .social__icons .icons li a {
+    line-height: 45px;
+    font-size: 25px;
   }
-  .right form button:active {
-    background: none;
-    color: white;
+  .footer__left .footer__box-content .fas {
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
   }
-  
-  .bottom center {
-    padding: 5px;
-    font-size: 17px;
-    background: #fff;
+  .footer__left .footer__box-content .text {
+    padding-left: 3px;
   }
-  .bottom center span {
-    color: #656565;
+  .footer__left .footer__logo {
+    text-align: left;
   }
-  .bottom center a {
-    color: #000;
-    text-decoration: none;
+  .footer__left h2 {
+    margin-top: 30px;
   }
-  .bottom center a:hover {
-    color: #f12020;
-    text-decoration: underline;
+  .footer__center .fas {
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
   }
-  @media screen and (max-width: 900px) {
-    footer {
-      position: relative;
-      bottom: 0px;
-    }
-    .main-content {
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-    .center .icons li {
-      height: 45px;
-      width: 45px;
-      margin: 0 5px;
-      margin-top: 5px;
-    }
-    .center .icons li a {
-      line-height: 45px;
-      font-size: 25px;
-    }
-    .center .icons li.shadow-2 a {
-      height: 30px;
-      width: 30px;
-      line-height: 30px;
-      font-size: 22px;
-    }
-    .left .content .fas {
-      font-size: 16px;
-      height: 40px;
-      width: 40px;
-      line-height: 40px;
-    }
-    .left .content .text {
-      padding-left: 3px;
-    }
-    .left .footer-logo {
-      text-align: left;
-    }
-    .left h2 {
-      margin-top: 30px;
-    }
-    .center .fas {
-      font-size: 16px;
-      height: 40px;
-      width: 40px;
-      line-height: 40px;
-    }
-    .additional {
-      margin-top: 50px;
-    }
+  .additional {
+    margin-top: 50px;
   }
-  
+}
