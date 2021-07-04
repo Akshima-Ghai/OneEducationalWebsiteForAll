@@ -15,20 +15,15 @@ const Header = (props) => {
   };
   window.addEventListener("scroll", ChangeNavColor);
   return (
-    <header className={changeColor ? "header active" : "header"}>
+    <header className="header">
       <div onClick={() => props.history.push("/")}>
-        <h1 className={changeColor ? "header__h1 active" : "header__h1"}>
+        <h1 className="header__h1">
           LEARN
-          <label
-            className={
-              changeColor ? "header__h1--label active" : "header__h1--label"
-            }
-          >
-            Zania
-          </label>
+          <label className="header__h1--label">Zania</label>
         </h1>
       </div>
       <div onClick={props.toggleSD} className="header_toggle--btn">
+        {/* for responsiveness in small screen  */}
         <div></div>
         <div></div>
         <div></div>
@@ -37,14 +32,7 @@ const Header = (props) => {
       <div className="header__btn--container">
         <ul className="header__btn--ul">
           <li className="header__btn--login header__btn--a">
-            <Link
-              to="/login"
-              className={
-                changeColor
-                  ? "scroll_color_change active"
-                  : "scroll_color_change"
-              }
-            >
+            <Link to="/login" className="scroll_color_change">
               Log in
             </Link>
           </li>
