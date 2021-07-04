@@ -2,38 +2,49 @@ import React, { useState } from "react";
 import "./FAQ.css";
 import ImgSrc from "../../shared/ImgSrc";
 
-export default function App() {
-  const [isActive, setActive] = useState("false");
+export default function FAQ() {
+  const [isOneActive, setOneActive] = useState("false");
+  const [isTwoActive, setTwoActive] = useState("false");
+  const [isThreeActive, setThreeActive] = useState("false");
+  const [isFourActive, setFourActive] = useState("false");
 
-  const handleToggle = () => {
-    setActive(!isActive);
-    console.log("clicked");
+  const handleToggle = (ques) => {
+    switch(ques){
+      case "one":setOneActive(prev => !prev);
+            break;
+      case "two":setTwoActive(prev => !prev);
+            break;
+      case "three":setThreeActive(prev => !prev);
+            break;
+      case "four":setFourActive(prev => !prev);
+            break;
+      }
   };
   return (
     <>
-      <section>
+      <section className="faq__container">
         <div>
-          <h2 className="title">FAQS</h2>
+          <h2 className="faq__title">FAQS</h2>
 
           <div
-            className={`faq ${isActive ? "" : "active"}`}
-            onClick={handleToggle}
+            className={`faq ${isOneActive ? "" : "active"}`}
+            onClick={handleToggle.bind(this,"one")}
             key="1"
           >
-            <div className="question">
+            <div className="faq__question">
               <h3>Q: HOW DO I FIGURE OUT WHAT TO LEARN?</h3>
 
               <svg width="15" height="10" viewBox="0 0 42 25">
                 <path
                   d="M3 3L21 21L39 3"
                   stroke="white"
-                  stroke-width="7"
-                  stroke-strokeLinecap="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
                 />
               </svg>
             </div>
 
-            <div className="answer">
+            <div className="faq__answer">
               <p>
                 The most important thing is that you want to learn something
                 that interests you, because once you start learning, you’ll be
@@ -47,24 +58,24 @@ export default function App() {
           </div>
 
           <div
-            className={`faq ${isActive ? "" : "active"}`}
-            onClick={handleToggle}
+            className={`faq ${isTwoActive ? "" : "active"}`}
+            onClick={handleToggle.bind(this,"two")}
             key="2"
           >
-            <div className="question">
+            <div className="faq__question">
               <h3>Q: WHICH PROGRAMMING LANGUAGE IS THE BEST TO LEARN?</h3>
 
               <svg width="15" height="10" viewBox="0 0 42 25">
                 <path
                   d="M3 3L21 21L39 3"
                   stroke="white"
-                  stroke-width="7"
-                  stroke-strokeLinecap="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
                 />
               </svg>
             </div>
 
-            <div className="answer">
+            <div className="faq__answer">
               <p>
                 I usually tell most people to start by learning HTML and CSS,
                 then move into learning JavaScript. The reason is that
@@ -76,24 +87,24 @@ export default function App() {
           </div>
 
           <div
-            className={`faq ${isActive ? "" : "active"}`}
-            onClick={handleToggle}
+            className={`faq ${isThreeActive ? "" : "active"}`}
+            onClick={handleToggle.bind(this,"three")}
             key="3"
           >
-            <div className="question">
+            <div className="faq__question">
               <h3>Q: WHERE SHOULD I LEARN TECH SKILLS?</h3>
 
               <svg width="15" height="10" viewBox="0 0 42 25">
                 <path
                   d="M3 3L21 21L39 3"
                   stroke="white"
-                  stroke-width="7"
-                  stroke-strokeLinecap="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
                 />
               </svg>
             </div>
 
-            <div className="answer">
+            <div className="faq__answer">
               <p>
                 THIS website :One of the largest online course marketplaces with
                 topic covering practically everything you can think of. Anyone
@@ -106,11 +117,11 @@ export default function App() {
           </div>
 
           <div
-            className={`faq ${isActive ? "" : "active"}`}
-            onClick={handleToggle}
+            className={`faq ${isFourActive ? "" : "active"}`}
+            onClick={handleToggle.bind(this,"four")}
             key="4"
           >
-            <div className="question">
+            <div className="faq__question">
               <h3>
                 Q: WHERE ARE THE BEST PLACES TO LEARN FRONT-END AND BACKEND
                 DEVELOPMENT?
@@ -120,13 +131,13 @@ export default function App() {
                 <path
                   d="M3 3L21 21L39 3"
                   stroke="white"
-                  stroke-width="7"
-                  stroke-strokeLinecap="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
                 />
               </svg>
             </div>
 
-            <div className="answer">
+            <div className="faq__answer">
               <p>
                 There are tons of online courses and useful resources on
                 front-end and back-end development. Check out this in-depth
@@ -138,16 +149,14 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="img">
+        <div className="faq__img">
           <img
             src={ImgSrc.confuse}
             alt="Content Owned By <a href='https://pngtree.com/so/reading-clipart'>reading clipart png from pngtree.com</a>"
-            className="confuse--img"
+            className="faq__confuse--img"
           />
         </div>
       </section>
     </>
   );
 }
-
-// export default FAQ;
