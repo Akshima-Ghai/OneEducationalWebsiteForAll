@@ -13,6 +13,7 @@ import more from './../assets/more.png'
 import Frontpg from './../assets/Frontpg.png'
 import Student from './../assets/Student.png'
 import Teacher from './../assets/Teacher.png'
+import confuse from "./../assets/confuse.png";
 export default {
     homeBanner:HomeBanner,
     Education,
@@ -28,5 +29,6 @@ export default {
     more,
     Frontpg,
     Student,
-    Teacher
+    Teacher,
+    confuse,
 }

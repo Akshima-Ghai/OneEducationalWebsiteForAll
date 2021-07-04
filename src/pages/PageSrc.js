@@ -5,3 +5,4 @@ export { default as About } from './About/About'
 export { default as Sectionspg} from './Sectionspg/Sectionspg'
 export {default as Sectionscard} from '../components/UI/Sectionscard/Sectionscard'
 export {default as Frontpg} from './Frontpg/Frontpg'
+export { default as FAQ } from "./FAQ/FAQ";
