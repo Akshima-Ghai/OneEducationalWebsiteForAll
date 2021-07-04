@@ -35,7 +35,7 @@ const Header = (props) => {
             <Link to="/login" className={changeColor? "scroll_color_change active" : "scroll_color_change"}>Log in</Link>
           </li>
           <li className="header__btn--get header__btn--a">
-            <Link to="/guidence">Get Started</Link>
+            <Link to="/section">Get Started</Link>
           </li>
         </ul>
       </div>
