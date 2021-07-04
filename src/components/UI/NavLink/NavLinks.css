@@ -1,12 +1,20 @@
-.header__nav--li a {
+.header__nav--li a{
   display: inline-block;
   text-decoration: none;
-  color: #3b3e55;
-  font-weight: bold;
+  color: rgb(51, 50, 50);
+  font-weight: 900;
   font-size: 1.5rem;
   padding: 1.5rem;
+}
+.nav_scroll_color_change.ac {
+  color: white;
+}
+.nav_scroll_color_change.ac:hover {
+  color: #F2AA4CFF;
 }
 
 .header__nav--li a:hover {
   color: #f24638;
+  transform: scale(1.1);
+
 }

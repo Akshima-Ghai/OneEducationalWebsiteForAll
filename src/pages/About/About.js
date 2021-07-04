@@ -1,6 +1,6 @@
-import React from 'react'
-import "./About.css"
-import ImgSrc from './../../shared/ImgSrc'
+import React from "react";
+import "./About.css";
+import ImgSrc from "./../../shared/ImgSrc";
 
 const About = props => {
     return (
@@ -45,4 +45,4 @@ const About = props => {
     )
 }
 
-export default About
+export default About;
