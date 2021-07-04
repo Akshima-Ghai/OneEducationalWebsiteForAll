@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router';
 import './App.css';
 import {Sectionspg} from './pages/PageSrc'
 import Layout from './components/Layout/Layout'
-import { Home, Login, Signup, About,FAQ,Frontpg} from './pages/PageSrc'
+import { Home, Login, Signup, About,FAQ, Section} from './pages/PageSrc'
 
 
 function App() {
@@ -13,12 +13,14 @@ function App() {
 
       <Route path="/" exact component={Frontpg} />
       <Route path="/section" exact component={Sectionspg}/>
+
       <Layout>
+        <Route path="/section" exact component={Section}/>
         <Route path="/about" exact component={About} />
         <Route path="/signup" exact component={Signup} />
         <Route path="/login" exact component={Login} />
-        <Route path="/home" exact component={Home} />
         <Route path="/faq" exact component={FAQ} />
+        <Route path="/" exact component={Home} />
         </Layout>
 
       </Switch>

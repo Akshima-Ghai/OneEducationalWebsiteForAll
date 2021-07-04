@@ -49,7 +49,7 @@ const Header = (props) => {
             </Link>
           </li>
           <li className="header__btn--get header__btn--a">
-            <Link to="/guidence">Get Started</Link>
+            <Link to="/section">Get Started</Link>
           </li>
         </ul>
       </div>
