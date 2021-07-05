@@ -6,11 +6,9 @@
   font-size: 1.5rem;
   padding: 1.5rem;
 }
-.nav_scroll_color_change.ac {
-  color: rgb(44, 43, 43);
-}
+
 .nav_scroll_color_change.ac:hover {
-  color: #f2aa4cff;
+  color: rgb(238, 8, 8);
 }
 
 .header__nav--li a:hover {
