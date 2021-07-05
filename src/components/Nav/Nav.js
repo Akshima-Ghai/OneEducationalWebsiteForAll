@@ -1,19 +1,17 @@
 import React from "react";
 import "./Nav.css";
 
-
 import NavLink from "./../UI/NavLink/NavLinks";
 
 export default function Nav(props) {
   return (
     <nav className="header__nav">
       <ul className="header__ul">
+        <NavLink href="/section">Get Started</NavLink>
         <NavLink href="/about">About</NavLink>
-        <NavLink href="/courses">Courses</NavLink>
-        <NavLink href="/Quiz">Quiz</NavLink>
-        <NavLink href="/guidance">Guidance</NavLink>
-        <NavLink href="/faq">FAQ</NavLink>
-
+        <NavLink href="/features">Features</NavLink>
+        {/* <NavLink href="/guidance">Guidance</NavLink> */}
+        <NavLink href="/faq">F.A.Q.</NavLink>
       </ul>
     </nav>
   );
