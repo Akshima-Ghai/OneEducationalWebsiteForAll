@@ -4,32 +4,59 @@ import './Footer.css'
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="footer__main-content">
-                <div className="footer__left box">
-                    <div className="footer__logo">
-                        <img src="" />
-                    </div>
-                    <h2>Address</h2>
-                    <div className="footer__box-content">
-                        <div className="place">
+    <div className="footer__main-content">         
+        <div className="footer_top">
+            <div className="footer_top_box">
+        <h2>Get in touch</h2>
+        <div className="hr"></div>
+        <p>Enjoy free access to all LearnZania resources and study material anytime, anywhere from your comfort and ace 
+            your preparation.You can get in touch with us through any of the means below. </p>
+
+        <div className="footer_top_contact">
+                        <div className="cont-icon">
+                            <span className="fas fa-phone"></span>
+                            <span className="fas fa-envelope"></span>
                             <span className="fas fa-map-marker-alt"></span>
+                        </div>
+                        <div className="text">
+                            
+                            <span className="text">+91 1234567890</span>
+                            <span className="text">example123@gmail.com</span>
                             <span className="text">India</span>
                         </div>
-                        <div className="phone">
-                            <span className="fas fa-phone"></span>
-                            <span className="text">+91 1234567890</span>
-                        </div>
-                        <div className="email">
-                            <a href="mailto:example123@gmail.com"><span className="fas fa-envelope"></span></a>
-                            <span className="text">example123@gmail.com</span>
-                        </div>
+                        
                     </div>
-                </div>
-
-                <div className="footer__center box">
-                    <h2>Connect with Us</h2>
-                    <div className="footer__box-content">
-                        <div className="social__icons">
+                    </div>
+     
+        <div className="footer_mid-box">
+        <form className="qf--form">
+            <h1>Have something to say ?</h1>
+            <input placeholder="Name" type="text" />
+            <input placeholder="Email" type="email" />
+            <textarea placeholder="Message"></textarea>
+            <button className="signup__form--button" type="submit">
+              Send Message
+            </button>
+          </form>
+          </div>
+          </div>
+                <div className="footer_bottom">
+                    <div className="bottom_content">
+                    <div className="footer_bottom_name">
+                        <h1>LearnZania</h1>
+                        <p>Struggling to choose right career path? Having difficulty in some topic or question? 
+                        <br></br>
+                           Don't worry!! Enjoy free access to all LearnZania resources and study material anytime, anywhere from your comfort and ace 
+            your preparation.Get free and expert guidance from our mentors too.</p>
+                    </div>
+                    <div className="footer_bottom_about">
+                        <h1>About Us</h1>
+                        <p>If you are not geting proper resources or need a montor support we are here to help you. We have proper resources for your study
+                            as well as mentors to guide you.
+                        </p>
+                    </div>
+                    <div className="footer_bottom_connect">
+                    <h1>Connect with Us</h1>
                             <div className="icons">
                                 <li><a href="#"><span className="fab fa-facebook-f"></span></a></li>
                                 <li><a href="#"><span
@@ -43,55 +70,43 @@ const Footer = () => {
                                 </li>
                             </div>
                         </div>
-                    </div>
-                    <h2 className="additional">Additional Links</h2>
-                    <div className="footer__box-content"></div>
-                    <div className="footer__center-bottom">
-                        <div>
-                            <a href="#"><span className="fas fa-user"></span></a>
-                            <span className="text">About</span>
                         </div>
-                        <div className="courses">
-                            <a href="#"><span className="fas fa-graduation-cap"></span></a>
-                            <span className="text">Courses</span>
+                    <div className="footer_bottom_bottom">
+                    <div className="footer_bottom_links">
+                        <div className="links-dv">
+                            <div className="navi">
+                            <span className="text">Home</span>
+                            </div>
+                            <div className="navi">
+                            <span className="text">Portfolio</span>
+                            </div>
                         </div>
-                        <div>
-                            <a href="#"><span className="fas fa-comments"></span></a>
-                            <span className="text">Guidance</span>
+                        <div className="links-dv">
+                            <div className="navi">
+                            <span className="text">Services</span>
+                            </div>
+                            <div className="navi">
+                            <span className="text">Team Member</span>
+                            </div>
+                        </div>
+                        <div className="links-dv">
+                        <div  className="navi">
+                            <span className="text">Client</span>
+                            </div>
+                            <div className="navi">
+                            <span className="text">Contact</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div className="footer__right box">
-                    <h2 className="cont">Contact us</h2>
-                    <div className="footer__box-content">
-                        <form action="#">
-                            <div className="name">
-                                <div className="text">Name</div>
-                                <input type="text" placeholder="Enter your Name" />
-                            </div>
-                            <div className="email">
-                                <div className="text">Email *</div>
-                                <input type="email" placeholder="Enter your Email-id" required />
-                            </div>
-                            <div className="msg">
-                                <div className="text">Message *</div>
-                                <textarea className="msg" rows="4" cols="25" placeholder="Enter your message!" required></textarea>
-                            </div>
-                            <div className="btn">
-                                <button type="submit">Send</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
             </div>
-
-            <div className="footer__bottom">
+            <div className="copyright">
                 <center>
                     <span className="credit"><a
-                        href="#">LearnZania</a> | </span>
+                        href="#" style={{color:"white",textDecoration:'none',marginTop:"0.5rem"}}>LearnZania</a> | </span>
                     <span className="far fa-copyright"></span><span> 2021 All rights reserved.</span>
                 </center>
+            </div>
+            </div>
             </div>
         </footer>
     )
