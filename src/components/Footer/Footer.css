@@ -68,7 +68,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(9, 71, 206);
+  background: rgb(209, 57, 57);
   animation: drag 2s linear infinite;
 }
 @keyframes drag {
