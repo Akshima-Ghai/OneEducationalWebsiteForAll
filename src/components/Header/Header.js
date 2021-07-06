@@ -33,11 +33,11 @@ const Header = (props) => {
         <ul className="header__btn--ul">
           <li className="header__btn--login header__btn--a">
             <Link to="/login" className="scroll_color_change">
-              Log in
+              Login
             </Link>
           </li>
           <li className="header__btn--get header__btn--a">
-            <Link to="/section">Get Started</Link>
+            <Link to="/signup">Sign up</Link>
           </li>
         </ul>
       </div>

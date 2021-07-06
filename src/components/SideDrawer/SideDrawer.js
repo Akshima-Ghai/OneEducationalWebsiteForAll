@@ -13,8 +13,8 @@ const SideDrawer = (props) => {
       className="sidedrawer__container"
     >
       <ul onClick={props.toggleSD}>
-        <NavLink sd={true} href="/">
-          Home
+        <NavLink sd={true} href="/section">
+          Get Started
         </NavLink>
         <NavLink sd={true} href="/feature">
           Feature
@@ -28,6 +28,7 @@ const SideDrawer = (props) => {
         <NavLink sd={true} href="/signup">
           Signup
         </NavLink>
+
         <NavLink sd={true} href="/faq">
           FAQ
         </NavLink>
