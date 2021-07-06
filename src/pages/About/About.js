@@ -34,26 +34,9 @@ const About = (props) => {
         <h1>Akshima Ghai</h1>
         <p>Project Admin</p>
       </div>
-      <h1 className="about__heading">HAVE SOME QUESTIONS?</h1>
-      <div className="about__qf--container">
-        <div>
-          <img className="about__qf--img" src={ImgSrc.Message} alt="msg" />
-        </div>
-        <div className="about__form--container">
-          <form className="about__qf--form">
-            <input placeholder="Name" type="text" />
-            <input placeholder="Email" type="email" />
-            <textarea placeholder="Message"></textarea>
-            <button className="signup__form--button" type="submit">
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
       <Scrolltop showBelow={250} />
     </section>
   );
 };
-
 
 export default About;

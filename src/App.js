@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Layout from "./components/Layout/Layout";
-import { Home, Login, Signup, About, FAQ, Section } from "./pages/PageSrc";
+import { Home, Login, Signup, About, FAQ, Section} from "./pages/PageSrc";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         <Route path="/login" exact component={Login} />
         <Route path="/faq" exact component={FAQ} />
         <Route path="/" exact component={Home} />
+       
         <Footer />
       </Layout>
     </Switch>
