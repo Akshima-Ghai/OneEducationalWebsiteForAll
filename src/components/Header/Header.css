@@ -60,10 +60,10 @@
 }
 
 .header__btn--login a {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   margin-right: 2rem;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 35px;
+  padding-left: 35px;
   color: whitesmoke;
   border: 2px solid #b8b8b8;
   font-weight: bold;
@@ -76,17 +76,18 @@
 }
 
 .header__btn--get a {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   margin-right: 1rem;
-  color: white;
-  padding-right: 20px;
-  padding-left: 20px;
-  border: 2px solid #dc1c13;
-  background-color: #ff0000;
+  /* color: white; */
+  padding-right: 35px;
+  padding-left: 35px;
+  background-color: #e2e5e8;
+  border: 2px solid #b8b8b8;
+  color: black;
 }
 
 .header__btn--get a:hover {
-  background-color: #e2e5e8;
+  background-color: #cabfbf;
   border: 2px solid #b8b8b8;
   color: black;
 }
