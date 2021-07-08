@@ -8,6 +8,13 @@
   overflow: hidden;
 }
 
+
+.header__logo{
+  width: 10rem;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
 .header__h1 {
   padding: 1rem;
   color: #0a1436;
