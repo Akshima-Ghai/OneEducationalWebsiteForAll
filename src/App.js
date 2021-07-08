@@ -3,21 +3,30 @@ import { Route, Switch } from "react-router";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Layout from "./components/Layout/Layout";
-import { Home, Login, Signup, About, FAQ, Section, SingleQuiz} from "./pages/PageSrc";
+import {
+  Home,
+  Login,
+  Signup,
+  About,
+  FAQ,
+  Section,
+  SingleQuiz,
+  QuizList,
+} from "./pages/PageSrc";
 
 function App() {
   return (
     <Switch>
       <Layout>
         <Route path="/quiz/:qid" exact component={SingleQuiz} />
-        {/* <Route path="/section" exact component={Section} /> */}
+        <Route path="/quiz" exact component={QuizList} />
         <Route path="/section" exact component={Section} />
         <Route path="/about" exact component={About} />
         <Route path="/signup" exact component={Signup} />
         <Route path="/login" exact component={Login} />
         <Route path="/faq" exact component={FAQ} />
         <Route path="/" exact component={Home} />
-       
+
         <Footer />
       </Layout>
     </Switch>

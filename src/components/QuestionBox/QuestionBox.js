@@ -1,24 +1,50 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./QuestionBox.css";
-  
-// Function to question inside our app
-const QuestionBox = ({ question, options, selected}) => {
-  const [answer, setAnswer] = useState(options);
+
+class ListItem extends React.Component {
+  onClickAnswer = () => {
+    this.props.answerCallback(this.props.index);
+  };
+  render() {
+    return (
+      <li
+        onClick={(event) => {
+          event.target.style.backgroundColor = "red";
+          event.target.style.color = "white";
+          setTimeout(() => {
+            event.target.style.backgroundColor = "transparent";
+            event.target.style.color = "#222";
+            this.onClickAnswer();
+          }, 250);
+        }}
+      >
+        {this.props.answerItem}
+      </li>
+    );
+  }
+}
+
+const QuestionBox = (props) => {
   return (
-    <div className="questionBox">
-        <div className="question">{question}</div>
-        {answer.map((text, index) => (
-          <button
-              key={index}
-              className="answerBtn"
-              onClick={()=>{
-                    setAnswer();
-                    selected(text);
-                  }}> {text}
-         </button>
-        ))}
+    <div className="quizbox__container">
+      <div className="quizbox__main">
+        <h1>
+          {props.questionIndex}. {props.questionDatum.prompt}
+        </h1>
+        <ul>
+          {props.answers.map(function (answer, index) {
+            return (
+              <ListItem
+                answerItem={answer}
+                answerCallback={props.answerCallback}
+                index={index}
+              />
+            );
+          }, this)}
+        </ul>
+      </div>
     </div>
-  )
+  );
 };
-  
+
 export default QuestionBox;

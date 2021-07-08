@@ -1,101 +1,71 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./SingleQuiz.css";
-import QuestionBox from './../../../components/QuestionBox/QuestionBox';
-import Result from './../../../components/ResultBox/ResultBox';
+import QuestionBox from "./../../../components/QuestionBox/QuestionBox";
+import ResultBox from "./../../../components/ResultBox/ResultBox";
 
-class SingleQuiz extends Component {
-    constructor() {
-        super();
-        this.state = {
-        questionBank: [],
-        score: 0,
-        responses: 0
-        };
+class SingleQuiz extends React.Component {
+  state = {
+    questionData: [],
+    progress: 0,
+    score: 0,
+  };
+
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  fetchData = () => {
+    let fetchedQuestion = [
+      { prompt: "Question 1", answers: ["a", "b", "c", "d"], correct: 2 },
+      { prompt: "Question 2", answers: ["a", "b", "c", "d"], correct: 0 },
+    ];
+
+    this.setState({
+      questionData: fetchedQuestion,
+    });
+  };
+
+  checkAnswer = (index) => {
+    var correct = this.state.questionData[this.state.progress].correct;
+    var newScore = 0,
+      newProgress = 0;
+    if (correct === index) {
+      newScore = this.state.score + 1;
+      this.setState({ score: newScore });
+      newProgress = this.state.progress + 1;
+      this.setState({ progress: newProgress });
+    } else {
+      newProgress = this.state.progress + 1;
+      this.setState({ progress: newProgress });
     }
+  };
 
-    // Function to get question from ./question
-    getQuestions = () => {
-        const question = [
-            {
-              question:
-                "how build the app ?",
-              answers: ["vinayak", "sarthak", "somil", "devesh"],
-              correct: "vinayak",
-              questionId: "099099"
-            },
-            {
-              question:
-                "how build the app ?",
-              answers: ["vinayak", "sarthak", "somil", "devesh"],
-              correct: "vinayak",
-              questionId: "093909"
-            },
-            {
-              question:
-                "how build the app ?",
-              answers: ["vinayak", "sarthak", "somil", "devesh"],
-              correct: "vinayak",
-              questionId: "009039"
-            },
-            {
-              question:
-                "how build the app ?",
-              answers: ["vinayak", "sarthak", "somil", "devesh"],
-              correct: "vinayak",
-              questionId: "090089"
-            }]
-        
-        this.setState({questionBank: question});
-        
-    };
+  resetQuiz = () => {
+    this.setState({ score: 0, progress: 0 });
+  };
 
-    // Set state back to default and call function
-    playAgain = () => {
-        this.getQuestions();
-        this.setState({score: 0, responses: 0});
-    };
-
-    // Function to compute scores
-    computeAnswer = (answer, correctAns) => {
-        if (answer === correctAns) {
-        this.setState({
-            score: this.state.score + 1
-        });
-        }
-        this.setState({
-        responses: this.state.responses < 5
-            ? this.state.responses + 1
-            : 5
-        });
-    };
-
-    // componentDidMount function to get question
-    componentDidMount() {
-        this.getQuestions();
-    }
-
-    render() {
-        return (<div className="container">
-        <div className="title">
-            QuizOn
+  render() {
+    var questionDatum = this.state.questionData[this.state.progress];
+    if (this.state.questionData.length > this.state.progress) {
+      return (
+        <div>
+          <QuestionBox
+            questionIndex={this.state.progress + 1}
+            answers={questionDatum.answers}
+            answerCallback={this.checkAnswer}
+            questionDatum={questionDatum}
+          />
         </div>
-
-        {this.state.questionBank.length > 0 &&
-        this.state.responses < 5 &&
-        this.state.questionBank.map(({question, answers,
-        correct, questionId}) => <QuestionBox question=
-        {question} options={answers} key={questionId}
-        selected={answer => this.computeAnswer(answer, correct)}/>)}
-
-        {
-            this.state.responses === 5
-            ? (<Result score={this.state.score}
-                playAgain={this.playAgain}/>)
-            : null
-        }
-
-        </div>)
+      );
+    } else {
+      return (
+        <ResultBox
+          resetQuiz={this.resetQuiz}
+          score={(this.state.score / this.state.questionData.length) * 100}
+        />
+      );
     }
+  }
 }
 
-export default SingleQuiz
+export default SingleQuiz;
