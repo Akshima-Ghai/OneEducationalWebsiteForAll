@@ -5,6 +5,8 @@
   padding: 0.75rem 1rem;
   position: relative;
   top: 0;
+  border: 2px solid #f24638;
+  background-color: #f24638;
   overflow: hidden;
 }
 
@@ -17,7 +19,7 @@
 
 .header__h1 {
   padding: 1rem;
-  color: #0a1436;
+  color: #f8f8f8;
   letter-spacing: 0.25rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -27,7 +29,7 @@
 }
 
 .header__h1--label {
-  color: #f24638;
+  color: black;
   font-size: 2rem;
   cursor: pointer;
   text-shadow: 2px 1px 3px grey;
@@ -57,36 +59,44 @@
   display: inline-block;
   font-weight: bold;
   font-size: 1.3rem;
+  color: #f8f8f8;
+  /* border: 50%; */
   padding: 1.25rem;
   text-decoration: none;
   transition: all 0.4s;
 }
 
 .header__btn--login a {
-  border-radius: 10px;
+  /* border-radius: 20px; */
   margin-right: 2rem;
-  color: #585858;
-  border: 2px solid #b8b8b8;
+  padding-right: 35px;
+  padding-left: 35px;
+  color: whitesmoke;
+  border: 2px solid #9e352c;
   font-weight: bold;
   transition: 0.4s ease-in-out;
 }
 .header__btn--login a:hover {
-  border: 2px solid #f24638;
-  background-color: #f24638;
-  color: white;
+  /* border: 2px solid #f24638; */
+  background-color: #ffffff;
+  color: black;
 }
 
 .header__btn--get a {
-  border-radius: 10px;
+  /* border-radius: 20px; */
   margin-right: 1rem;
-  color: white;
-  border: 2px solid #f24638;
-  background-color: #f24638;
+  /* color: white; */
+  padding-right: 35px;
+  padding-left: 35px;
+  background-color: #fff;
+  border: 2px solid #b8b8b8;
+  color: black;
 }
 
 .header__btn--get a:hover {
-  border: 2px solid #d13d30;
-  background-color: #d13d30;
+  background-color: #f24638;
+  border: 2px solid #b8b8b8;
+  color: white;
 }
 
 @media (max-width: 700px) {
