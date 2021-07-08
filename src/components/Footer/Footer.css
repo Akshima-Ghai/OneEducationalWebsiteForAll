@@ -2,8 +2,9 @@
   width: 100%;
   margin:1rem 0rem;
   height:125vh;
-  padding:1rem;
-  border:2px solid whitesmoke;
+  /* padding:1rem;
+  border:2px solid whitesmoke; */
+  padding-top: 4rem;
 }
 .footer__main-content {
   display:flex;
