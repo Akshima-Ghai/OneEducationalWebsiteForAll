@@ -3,12 +3,14 @@ import { Route, Switch } from "react-router";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Layout from "./components/Layout/Layout";
-import { Home, Login, Signup, About, FAQ, Section} from "./pages/PageSrc";
+import { Home, Login, Signup, About, FAQ, Section, SingleQuiz} from "./pages/PageSrc";
 
 function App() {
   return (
     <Switch>
       <Layout>
+        <Route path="/quiz/:qid" exact component={SingleQuiz} />
+        {/* <Route path="/section" exact component={Section} /> */}
         <Route path="/section" exact component={Section} />
         <Route path="/about" exact component={About} />
         <Route path="/signup" exact component={Signup} />

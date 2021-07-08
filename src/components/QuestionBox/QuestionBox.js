@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "../style.css";
+import "./QuestionBox.css";
   
 // Function to question inside our app
 const QuestionBox = ({ question, options, selected}) => {
