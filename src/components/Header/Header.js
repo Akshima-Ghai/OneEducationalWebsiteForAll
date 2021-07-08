@@ -4,16 +4,28 @@ import { Link, withRouter } from "react-router-dom";
 
 import Nav from "./../Nav/Nav";
 
+function ThemeToggleBtn(props) {
+  return (
+    <label className="header__switch">
+      <input type="checkbox" className="toggle__checkbox" />
+      <span onClick={props.onClick} className="slider round"></span>
+    </label>
+  );
+}
+
 const Header = (props) => {
-  const [changeColor, setChangeColor] = useState(false);
-  const ChangeNavColor = () => {
-    if (window.scrollY > 70) {
-      setChangeColor(true);
+  const [isDark, setIsDark] = useState(false);
+
+  const handleThemeBtn = () => {
+    let currentTheme = isDark;
+    if (currentTheme === true) {
+      document.documentElement.dataset.theme = "light";
     } else {
-      setChangeColor(false);
+      document.documentElement.dataset.theme = "dark";
     }
+    setIsDark((prev) => !prev);
   };
-  window.addEventListener("scroll", ChangeNavColor);
+
   return (
     <header className="header">
       <div onClick={() => props.history.push("/")}>
@@ -22,6 +34,7 @@ const Header = (props) => {
           <label className="header__h1--label">Zania</label>
         </h1>
       </div>
+      <ThemeToggleBtn onClick={handleThemeBtn} />
       <div onClick={props.toggleSD} className="header_toggle--btn">
         {/* for responsiveness in small screen  */}
         <div></div>
