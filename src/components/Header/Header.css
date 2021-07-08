@@ -19,13 +19,6 @@
   cursor: pointer;
   font-size: 2rem;
   font-family: "cursive";
-  margin-top: 2.5rem;
-}
-
-.header__logo{
-  padding: 1rem;
-  width: 10rem;
-  cursor: pointer;
 }
 
 .header__h1--label {
