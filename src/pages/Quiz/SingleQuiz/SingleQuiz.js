@@ -1,8 +1,7 @@
 import React, {Component} from "react";
-import ReactDOM from "react-dom";
 import "./SingleQuiz.css";
 import QuestionBox from './../../../components/QuestionBox/QuestionBox';
-// import Result from './components/ResultBox';
+import Result from './../../../components/ResultBox/ResultBox';
 
 class SingleQuiz extends Component {
     constructor() {
@@ -16,9 +15,38 @@ class SingleQuiz extends Component {
 
     // Function to get question from ./question
     getQuestions = () => {
-        questionAPI().then(question => {
+        const question = [
+            {
+              question:
+                "how build the app ?",
+              answers: ["vinayak", "sarthak", "somil", "devesh"],
+              correct: "vinayak",
+              questionId: "099099"
+            },
+            {
+              question:
+                "how build the app ?",
+              answers: ["vinayak", "sarthak", "somil", "devesh"],
+              correct: "vinayak",
+              questionId: "093909"
+            },
+            {
+              question:
+                "how build the app ?",
+              answers: ["vinayak", "sarthak", "somil", "devesh"],
+              correct: "vinayak",
+              questionId: "009039"
+            },
+            {
+              question:
+                "how build the app ?",
+              answers: ["vinayak", "sarthak", "somil", "devesh"],
+              correct: "vinayak",
+              questionId: "090089"
+            }]
+        
         this.setState({questionBank: question});
-        });
+        
     };
 
     // Set state back to default and call function
