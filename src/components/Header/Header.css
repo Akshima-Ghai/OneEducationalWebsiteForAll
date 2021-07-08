@@ -65,13 +65,13 @@
   padding-right: 35px;
   padding-left: 35px;
   color: whitesmoke;
-  border: 2px solid #b8b8b8;
+  border: 2px solid #9e352c;
   font-weight: bold;
   transition: 0.4s ease-in-out;
 }
 .header__btn--login a:hover {
   /* border: 2px solid #f24638; */
-  background-color: #e2e5e8;
+  background-color: #ffffff;
   color: black;
 }
 
@@ -81,15 +81,15 @@
   /* color: white; */
   padding-right: 35px;
   padding-left: 35px;
-  background-color: #e2e5e8;
+  background-color: #fff;
   border: 2px solid #b8b8b8;
   color: black;
 }
 
 .header__btn--get a:hover {
-  background-color: #cabfbf;
+  background-color: #f24638;
   border: 2px solid #b8b8b8;
-  color: black;
+  color: white;
 }
 
 @media (max-width: 700px) {
