@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
+import ImgSrc from "./../../shared/ImgSrc";
 import { Link, withRouter } from "react-router-dom";
 
 import Nav from "./../Nav/Nav";
@@ -16,7 +17,8 @@ const Header = (props) => {
   window.addEventListener("scroll", ChangeNavColor);
   return (
     <header className="header">
-      <div onClick={() => props.history.push("/")}>
+      <div onClick={() => props.history.push("/")} style={{display:"flex"}}>
+        <img src={ImgSrc.Logo} alt="logo" className="header__logo"/>  
         <h1 className="header__h1">
           LEARN
           <label className="header__h1--label">Zania</label>
