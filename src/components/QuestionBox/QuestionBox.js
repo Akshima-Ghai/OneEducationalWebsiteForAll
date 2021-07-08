@@ -27,6 +27,7 @@ class ListItem extends React.Component {
 const QuestionBox = (props) => {
   return (
     <div className="quizbox__container">
+      <h1 className="quizbox__head">ReactJS Quiz</h1>
       <div className="quizbox__main">
         <h1>
           {props.questionIndex}. {props.questionDatum.prompt}

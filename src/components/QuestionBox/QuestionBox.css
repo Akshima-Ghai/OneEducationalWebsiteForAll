@@ -3,6 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.quizbox__head {
+  color: #f24638;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 4rem;
 }
 
 .quizbox__main {

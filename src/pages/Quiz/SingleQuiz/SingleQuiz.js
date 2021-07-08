@@ -16,8 +16,51 @@ class SingleQuiz extends React.Component {
 
   fetchData = () => {
     let fetchedQuestion = [
-      { prompt: "Question 1", answers: ["a", "b", "c", "d"], correct: 2 },
-      { prompt: "Question 2", answers: ["a", "b", "c", "d"], correct: 0 },
+      {
+        prompt: "Everything in React is a _________",
+        answers: ["Module", "Component", "Package", "Class"],
+        correct: 1,
+      },
+      {
+        prompt: "In which directory React Components are saved?",
+        answers: [
+          "Inside js/components/",
+          "Inside vendor/components/",
+          "Inside vendor/components/",
+          "Inside vendor/",
+        ],
+        correct: 0,
+      },
+      {
+        prompt: "What is Babel?",
+        answers: [
+          "A transpiler.",
+          "An interpreter",
+          "A Compiler",
+          "Both Compiler and Transpilar",
+        ],
+        correct: 3,
+      },
+      {
+        prompt: "How many elements does a react component return?",
+        answers: [
+          "1 Element",
+          "2 Elements",
+          "Multiple Elements",
+          "None of the above",
+        ],
+        correct: 2,
+      },
+      {
+        prompt: "What is ReactJS?",
+        answers: [
+          "Server-side Framework",
+          "User-interface framework",
+          "A Library for building interaction interfaces",
+          "None of the above",
+        ],
+        correct: 2,
+      },
     ];
 
     this.setState({
