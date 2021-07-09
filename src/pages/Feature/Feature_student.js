@@ -16,7 +16,7 @@ const Feature_student = (props) => {
             </div>
             <button className="btn">Try for Free</button>
           </div>
-          <img className="image1" src={ImgSrc.FeatureStudentImage1} />
+          <img className="image1" src={ImgSrc.FeatureStudentImage1} alt="" />
         </div>
       </div>
 
@@ -24,7 +24,7 @@ const Feature_student = (props) => {
 
       <div className="container2">
       <div className="inside_container2">
-        <img className="image2" src={ImgSrc.FeatureStudentImage2} />
+        <img className="image2" src={ImgSrc.FeatureStudentImage2} alt="" />
           <div className="main_info2">
             <h1 className="heading_block2">
               About <label>Education</label>
@@ -47,7 +47,7 @@ const Feature_student = (props) => {
               in selecting their correct career path
             </div>
           </div>
-          <img className="image2" src={ImgSrc.FeatureStudentImage3} />
+          <img className="image2" src={ImgSrc.FeatureStudentImage3} alt=""/>
         </div>
       </div>
 
@@ -60,7 +60,7 @@ const Feature_student = (props) => {
       </div>
       <div className="inside_cont3-box">
         <div className="inside_container3">
-          <img className="image3" src={ImgSrc.FeatureStudentImage4} />
+          <img className="image3" src={ImgSrc.FeatureStudentImage4} alt=""/>
           <div className="main_info3">
             <h1 className="heading_block3">
               As a <label>Student</label>
@@ -72,7 +72,7 @@ const Feature_student = (props) => {
           </div>
           </div>
           <div className="inside_container3">
-          <img className="image3" src={ImgSrc.FeatureStudentImage5} />
+          <img className="image3" src={ImgSrc.FeatureStudentImage5} alt=""/>
           <div className="main_info3">
             <h1 className="heading_block3">
               As a <label>Teacher</label>

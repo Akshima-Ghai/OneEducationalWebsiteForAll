@@ -5,12 +5,14 @@ import Footer from "./components/Footer/Footer";
 import Layout from "./components/Layout/Layout";
 import Feature_student from "./pages/Feature/Feature_student";
 import Feature_teacher from "./pages/Feature/Feature_teacher";
-import { Home, Login, Signup, About, FAQ, Section} from "./pages/PageSrc";
+import { Home, Login, Signup, About, FAQ, Section,SingleQuiz,QuizList} from "./pages/PageSrc";
 
 function App() {
   return (
     <Switch>
       <Layout>
+        <Route path="/quiz/:qid" exact component={SingleQuiz} />
+        <Route path="/quiz" exact component={QuizList} />
         <Route path="/section" exact component={Section} />
         <Route path="/about" exact component={About} />
         <Route path="/signup" exact component={Signup} />
