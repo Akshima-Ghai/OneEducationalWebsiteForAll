@@ -128,7 +128,7 @@ label {
    margin:2rem;
    justify-content: space-evenly;
    width:27%;
-   height:50rem;
+   height:45rem;
    border:2px solid rgb(230, 230, 230);
 }
 .heading3{
@@ -220,7 +220,7 @@ label {
 @media (max-width: 700px){
   .inside_container3{
     width:40%;
-    height:47rem;
+    height:45rem;
   }
   
   .inside_container2{

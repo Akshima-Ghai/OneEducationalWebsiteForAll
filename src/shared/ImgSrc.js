@@ -19,6 +19,9 @@ import FeatureStudentImage2 from "./../assets/feature_student_page_img2.png";
 import FeatureStudentImage3 from "./../assets/feature_student_page_img3.png";
 import FeatureStudentImage4 from "./../assets/feature_student_page_img4.png";
 import FeatureStudentImage5 from "./../assets/feature_student_page_img5.png";
+import FeatureTeacherImage1 from "./../assets/feature_teacher_page_img1.png";
+import FeatureTeacherImage2 from "./../assets/feature_teacher_page_img2.png";
+import FeatureTeacherImage3 from "./../assets/feature_teacher_page_img3.png";
 export default {
 
     homeBanner:HomeBanner,
@@ -42,5 +45,8 @@ export default {
     FeatureStudentImage3,
     FeatureStudentImage4,
     FeatureStudentImage5,
+    FeatureTeacherImage1,
+    FeatureTeacherImage2,
+    FeatureTeacherImage3,
 }
 
