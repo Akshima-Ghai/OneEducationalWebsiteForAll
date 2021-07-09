@@ -1,0 +1,155 @@
+/* This is block 1 */
+
+.container1 {
+  display: block;
+  margin-top: 7rem;
+}
+.inside_container1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.image1 {
+  width: 40%;
+  margin-right: 10rem;
+}
+.main_info1 {
+  display: block;
+  margin: auto;
+}
+.heading_block1_1 {
+  font-size: 5rem;
+  color: red;
+}
+.heading_block1_2 {
+  font-size: 5rem;
+}
+.paragraph1 {
+  font-size: 1.5rem;
+  line-height: 20px;
+  width: 85%;
+}
+.btn {
+  border-radius: 23px;
+  padding: 0.5rem;
+  margin-top: 1.8rem;
+  cursor: pointer;
+}
+
+/* This is block 2 */
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+}
+.inside_container2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: auto;
+}
+.image2 {
+  width: 35%;
+  margin-left: 10rem;
+}
+.main_info2 {
+  display: block;
+  padding-left: 20rem;
+  margin-bottom: 3rem;
+}
+.heading_block2_1 {
+  font-size: 5rem;
+}
+label {
+  color: red;
+}
+.paragraph2 {
+  font-size: 1.5rem;
+  line-height: 25px;
+  width: 85%;
+  padding-right: 6rem;
+}
+
+/* This is block 3 */
+
+.container3 {
+  display: block;
+  margin-top: 8rem;
+}
+.inside_container3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.image3 {
+  width: 30%;
+  margin-right: 15rem;
+}
+.main_info3 {
+  display: block;
+  margin: auto;
+  padding: 0 19rem;
+}
+.heading_block3_1 {
+  font-size: 5rem;
+}
+label {
+  color: red;
+}
+.paragraph3 {
+  font-size: 1.5rem;
+  line-height: 26px;
+  width: 85%;
+  margin-top: 2rem;
+  
+}
+
+    /* This is block 4 */
+
+.heading4 {
+  display: flex;
+  margin: auto;
+  font-size: 2.2rem;
+  margin-top: 8rem;
+  justify-content: center;
+}
+.container4 {
+  display: block;
+  margin-top: 8rem;
+}
+.image4 {
+  width: 28%;
+  margin-left: 13rem;
+}
+.main_info4 {
+  display: block;
+  margin: auto;
+  padding: 0 18rem;
+}
+.heading_block4_1 {
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+.paragraph4 {
+    font-size: 1.5rem;
+    line-height: 23px;
+    margin-top: 1rem;
+}
+.btn4 {
+  display: block;
+  cursor: pointer;
+  padding: 0.5rem 2.6rem;
+  margin: 2.5rem auto;
+  margin-left: 8rem;
+  border-radius: 20px;
+}
+
+    /* This is Block 5 */
+
+.container5 {
+  display: block;
+}
+.image5 {
+  width: 30%;
+}

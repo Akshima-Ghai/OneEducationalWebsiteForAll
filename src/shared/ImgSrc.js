@@ -14,7 +14,13 @@ import Frontpg from './../assets/Frontpg.png'
 import Student from './../assets/Student.png'
 import Teacher from './../assets/Teacher.png'
 import confuse from "./../assets/confuse.png";
+import FeatureStudentImage1 from "./../assets/feature_student_page_img1.png";
+import FeatureStudentImage2 from "./../assets/feature_student_page_img2.png";
+import FeatureStudentImage3 from "./../assets/feature_student_page_img3.png";
+import FeatureStudentImage4 from "./../assets/feature_student_page_img4.png";
+import FeatureStudentImage5 from "./../assets/feature_student_page_img5.png";
 export default {
+
     homeBanner:HomeBanner,
     Education,
     Message,
@@ -31,5 +37,10 @@ export default {
     Student,
     Teacher,
     confuse,
+    FeatureStudentImage1,
+    FeatureStudentImage2,
+    FeatureStudentImage3,
+    FeatureStudentImage4,
+    FeatureStudentImage5,
 }
 
