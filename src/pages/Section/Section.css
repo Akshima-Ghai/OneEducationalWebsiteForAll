@@ -34,7 +34,7 @@
   margin: auto;
   margin-top: 6rem;
   margin-bottom: 3rem;
-  background: url("https://cdn.dribbble.com/users/610636/screenshots/7033469/untitled-1-01_2x.png")
+  background: url("https://image.freepik.com/free-vector/woman-lift-her-hand-with-confused-face_10045-323.jpg")
     no-repeat center;
 }
 .section_under {
@@ -43,7 +43,7 @@
   align-items: center;
   width: 90%;
 
-  margin: 3rem auto 3rem auto;
+  margin: 3rem auto 4rem auto;
   height: 40vh;
 }
 .sec-middle {
@@ -79,7 +79,7 @@
 }
 @media (max-width: 800px) {
   .choose_sec {
-    background: url("https://cdn.dribbble.com/users/610636/screenshots/7033469/untitled-1-01_2x.png")
+    background: url("https://image.freepik.com/free-vector/woman-lift-her-hand-with-confused-face_10045-323.jpg")
       no-repeat center;
     height: 150vh;
     background-size: 100%;
@@ -87,16 +87,17 @@
 }
 @media (max-width: 690px) {
   .section_under {
-    background: url("https://cdn.dribbble.com/users/610636/screenshots/7033469/untitled-1-01_2x.png")
-      no-repeat center;
+    background: url("https://image.freepik.com/free-vector/woman-lift-her-hand-with-confused-face_10045-323.jpg")
+      no-repeat;
+      background-position: 8rem 20rem;
     background-size: 80%;
     flex-direction: column;
     height: 100vh;
   }
   .sec-middle {
-    background: url("https://cdn.dribbble.com/users/610636/screenshots/7033469/untitled-1-01_2x.png")
+    background: url("https://image.freepik.com/free-vector/woman-lift-her-hand-with-confused-face_10045-323.jpg")
       no-repeat center;
-    background-size: 80%;
+    background-size: 70%;
     align-items: center;
     flex-direction: column;
     height: 100vh;

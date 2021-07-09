@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./FAQ.css";
 import ImgSrc from "../../shared/ImgSrc";
 import Scrolltop from "../../components/ScrollTop/Scrolltop";
+import { Fragment } from "react";
 
 export default function FAQ() {
   const [isOneActive, setOneActive] = useState("false");
@@ -26,7 +27,7 @@ export default function FAQ() {
     }
   };
   return (
-    <>
+    <Fragment>
       <section className="faq__container">
         <Scrolltop showBelow={250} />
         <div>
@@ -163,6 +164,6 @@ export default function FAQ() {
           />
         </div>
       </section>
-    </>
+    </ Fragment>
   );
 }

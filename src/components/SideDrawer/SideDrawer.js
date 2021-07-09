@@ -16,7 +16,7 @@ const SideDrawer = (props) => {
         <NavLink sd={true} href="/section">
           Get Started
         </NavLink>
-        <NavLink sd={true} href="/feature">
+        <NavLink sd={true} href="/Feature_Student">
           Feature
         </NavLink>
         <NavLink sd={true} href="/about">
