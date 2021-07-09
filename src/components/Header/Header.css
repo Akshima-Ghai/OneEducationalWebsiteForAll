@@ -22,7 +22,7 @@
 }
 
 .header__h1--label {
-  color: black;
+  color: var(--header-color);
   font-size: 2rem;
   cursor: pointer;
   text-shadow: 2px 1px 3px grey;
@@ -79,15 +79,15 @@
   /* border-radius: 20px; */
   margin-right: 1rem;
   /* color: white; */
+  color: var(--primary-footer-text);
   padding-right: 35px;
   padding-left: 35px;
-  background-color: #fff;
+  background-color: var(--header-button);
   border: 2px solid #b8b8b8;
-  color: black;
 }
 
 .header__btn--get a:hover {
-  background-color: #f24638;
+  background-color: var(--primary-main);
   border: 2px solid #b8b8b8;
   color: white;
 }

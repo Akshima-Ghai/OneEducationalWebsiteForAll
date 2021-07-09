@@ -1,3 +1,7 @@
+.home__container {
+  background-color: var(--primary-body);
+}
+
 .home__main {
   display: flex;
   margin-bottom: 10rem;
@@ -19,14 +23,14 @@
 .home__h1 {
   width: 40rem;
   font-size: 6rem;
-  color: #141639;
+  color: var(--primary-home-head);
 }
 
 .home__p {
   font-size: 2.25rem;
   margin: 2rem 0;
   font-weight: bold;
-  color: #73747b;
+  color: var(--primary-home-p);
 }
 
 .home__banner--img {
@@ -36,7 +40,7 @@
 .home__dashboard--container {
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 .home__dashboard {
