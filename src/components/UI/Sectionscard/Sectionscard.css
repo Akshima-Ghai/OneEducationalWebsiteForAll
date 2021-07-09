@@ -1,6 +1,6 @@
 .sections {
   border-radius: 25px;
-background: #b3d3d6;
+background: 		#FA8072;
 box-shadow:  6px 6px 12px #e3e3e3,
              -6px -6px 12px #ffffff;
   border-radius: 5px;
@@ -52,7 +52,7 @@ box-shadow:  6px 6px 12px #e3e3e3,
 }
 .sections:hover {
   transform: scale(1);
-  background-color: rgb(172, 183, 243);
+  background-color: 	#FF6347;
 }
 .sections:hover {
   width: 73%;
