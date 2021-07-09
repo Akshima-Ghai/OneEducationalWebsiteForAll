@@ -12,6 +12,8 @@
 
   --primary-home-head: #141639;
   --primary-home-p: #73747b;
+
+  --primary-form: white;
 }
 
 [data-theme="dark"] {
@@ -26,6 +28,8 @@
 
   --primary-home-head: #fff;
   --primary-home-p: #818391;
+
+  --primary-form: #141414;
 }
 
 * {

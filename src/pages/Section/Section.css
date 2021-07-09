@@ -2,16 +2,18 @@
   display: flex;
   width: 100%;
   flex-direction: row;
+  background-color: var(--primary-body);
 }
 .main-sec-head span {
   font-size: 3rem;
-  color: var(--light-primary-red);
+  color: #f24638;
 }
 .main-sec-head {
   font-weight: 700;
   font-size: 3rem;
   margin-top: 3rem;
   padding: 2rem;
+  color: #f24638;
 }
 .main_img {
   width: 50%;
