@@ -1,6 +1,6 @@
 .faq__container {
+  background-color: var(--primary-body);
   min-height: 100vh;
-  width: 50%;
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -31,7 +31,7 @@
 .faq__question h3 {
   font-size: 1.8rem;
   line-height: 3rem;
-  color: #141414;
+  color: var(--primary-footer-text);
 }
 
 .faq__answer {
@@ -44,7 +44,7 @@
   padding-top: 1rem;
   padding: 0 3rem;
   letter-spacing: 2px;
-  color: #4b4b4b;
+  color: var(--primary-footer-para);
   line-height: 1.6;
   font-size: 1.4rem;
   text-align: center;

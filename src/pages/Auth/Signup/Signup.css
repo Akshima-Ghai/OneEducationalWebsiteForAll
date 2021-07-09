@@ -1,68 +1,69 @@
 .signup__container {
-    min-height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-body);
 }
-  
+
 .signup__form {
-    width: 45rem;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 5px;
-    background-color: var(--light-primary-white);
-    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.2);
+  width: 45rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: var(--primary-form);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
 }
-  
+
 .signup__form--button {
-    background-color: #f24638;
-    color: white;
-    padding: 0.75rem;
-    margin-top: 2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    font-family: inherit;
-    cursor: pointer;
-    border: 2px solid #f24638;
-    transition: all 0.4s;
+  background-color: #f24638;
+  color: white;
+  padding: 0.75rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+  border: 2px solid #f24638;
+  transition: all 0.4s;
 }
-  
+
 .signup__form--button:hover {
-    background-color: white;
-    color: #f24638;
+  background-color: var(--header-button);
+  color: #f24638;
 }
-  
+
 .signup__form--p {
-    font-size: 1.1rem;
-    margin: 0.5rem 1rem;
-    margin-left: 2px;
-    font-weight: bold;
-    color: var(--light-primary-grey);
+  font-size: 1.1rem;
+  margin: 0.5rem 1rem;
+  margin-left: 2px;
+  font-weight: bold;
+  color: var(--primary-footer-text);
 }
 
-.signup__form--p a{
-    color:#f24638;
-    text-decoration: none;
+.signup__form--p a {
+  color: #f24638;
+  text-decoration: none;
 }
 
-.signup__heading--container{
-    padding: 1rem 0 3rem 0;
-    display: flex;
-    justify-content: center;
+.signup__heading--container {
+  padding: 1rem 0 3rem 0;
+  display: flex;
+  justify-content: center;
 }
 
-.signup__heading--container h1{
-    text-transform: uppercase;
-    font-size: 1.75rem;
-    color: #3b3e55;
+.signup__heading--container h1 {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  color: var(--primary-footer-text);
 }
-  
+
 @media (max-width: 345px) {
-    .signup__form {
-      width: 40rem;
-    }
+  .signup__form {
+    width: 40rem;
+  }
 }

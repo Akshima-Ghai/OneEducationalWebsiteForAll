@@ -1,4 +1,6 @@
-
+.home__container {
+  background-color: var(--primary-body);
+}
 
 .home__main {
   display: flex;
@@ -21,27 +23,27 @@
 .home__h1 {
   width: 40rem;
   font-size: 6rem;
-  color:#141639;
+  color: var(--primary-home-head);
 }
 
 .home__p {
   font-size: 2.25rem;
   margin: 2rem 0;
   font-weight: bold;
-  color: #73747b;
+  color: var(--primary-home-p);
 }
 
 .home__banner--img {
   width: 100%;
 }
 
-.home__dashboard--container{
+.home__dashboard--container {
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
-.home__dashboard{
+.home__dashboard {
   width: 90%;
   background-color: #f24638;
   padding: 1rem;
@@ -50,24 +52,25 @@
   display: flex;
 }
 
-.home__dashboard div{
+.home__dashboard div {
   flex: 1 1;
   padding: 3rem 3rem;
 }
 
-.home__dashboard--item-1 h1{
+.home__dashboard--item-1 h1 {
   color: #fff;
   font-size: 4rem;
-
 }
 
-.home__dashboard--item-2 h1,.home__dashboard--item-3 h1{
+.home__dashboard--item-2 h1,
+.home__dashboard--item-3 h1 {
   color: #fff;
   font-size: 2rem;
   margin-top: 1rem;
 }
 
-.home__dashboard--item-2 p,.home__dashboard--item-3 p{
+.home__dashboard--item-2 p,
+.home__dashboard--item-3 p {
   color: #fff;
   margin-top: 2rem;
   font-weight: 600;
@@ -84,13 +87,13 @@
 }
 
 @media (max-width: 1000px) {
-  .home__h1{
+  .home__h1 {
     font-size: 5rem;
   }
   .home__dashboard div {
     padding: 3rem 2rem;
   }
-  .home__dashboard--item-1 h1{
+  .home__dashboard--item-1 h1 {
     font-size: 3.5rem;
   }
 }
@@ -108,33 +111,32 @@
     flex-direction: column;
     align-items: center;
   }
-  .home__h1{
+  .home__h1 {
     text-align: center;
     margin: 3rem 0;
   }
-  .home__dashboard--item-1 h1{
+  .home__dashboard--item-1 h1 {
     font-size: 3.4rem;
   }
 }
 
 @media (max-width: 800px) {
-  .home__dashboard{
+  .home__dashboard {
     flex-direction: column;
     text-align: center;
   }
 
-  .home__dashboard--item-2 p, .home__dashboard--item-3 p{
+  .home__dashboard--item-2 p,
+  .home__dashboard--item-3 p {
     padding: 0 4rem;
   }
 }
-
 
 @media (max-width: 600px) {
   .home__banner--img {
     width: 70%;
   }
 }
-
 
 @media (max-width: 450px) {
   .home__banner--img {
@@ -148,11 +150,13 @@
     font-size: 2rem;
     text-align: center;
   }
-  .home__dashboard--item-2 h1, .home__dashboard--item-3 h1{
+  .home__dashboard--item-2 h1,
+  .home__dashboard--item-3 h1 {
     font-size: 2rem;
   }
 
-  .home__dashboard--item-2 p, .home__dashboard--item-3 p{
+  .home__dashboard--item-2 p,
+  .home__dashboard--item-3 p {
     font-size: 1.5rem;
   }
 }

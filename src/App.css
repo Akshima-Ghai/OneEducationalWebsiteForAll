@@ -1,17 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-:root {
-  --light-primary-black: #141414;
-  --light-primary-grey: #898886;
-  --light-secondary-grey: #6d6d6c;
-  --light-primary-white: #ffffff;
-  --light-primary-purple: #946adc;
-  --light-primary-purple-medium: #6856b8;
-  --light-primary-purple-dark: #2a367c;
-  --light-primary-red:#E94B3CFF;
-  --light-primary-purple-dark-2: #3500d3;
+[data-theme="light"] {
+  --primary-main: #f24638;
+  --primary-body: #ffffff;
+  --header-color: #141414;
+  --header-button: white;
+  --primary-footer: white;
+  --primary-footer-text: #252525;
+  --primary-footer-para: rgb(71, 71, 71);
+  --primary-footer-form-border: transparent;
+
+  --primary-home-head: #141639;
+  --primary-home-p: #73747b;
+
+  --primary-form: white;
 }
 
+[data-theme="dark"] {
+  --primary-main: #141414;
+  --primary-body: #222222;
+  --header-color: #f24638;
+  --header-button: transparent;
+  --primary-footer: #111111;
+  --primary-footer-text: #ffffff;
+  --primary-footer-para: #aaaaaa;
+  --primary-footer-form-border: #ddd;
+
+  --primary-home-head: #fff;
+  --primary-home-p: #818391;
+
+  --primary-form: #141414;
+}
 
 * {
   margin: 0;
@@ -24,7 +43,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (min-width: 1600px) {
