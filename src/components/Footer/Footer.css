@@ -3,6 +3,7 @@
   height: 125vh;
   padding: 2rem;
   border: 2px solid whitesmoke;
+  padding-top: 4rem;
 }
 .footer__main-content {
   display: flex;

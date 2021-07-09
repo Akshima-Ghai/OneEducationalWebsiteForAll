@@ -1,0 +1,39 @@
+.quizlist__main {
+  min-height: 90vh;
+}
+
+.quizlist__container {
+  padding: 7.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quizlist__quiz--card {
+  background: linear-gradient(
+    to right bottom,
+    #ff5040,
+    #f24638,
+    rgb(209, 57, 57)
+  );
+  padding: 3rem;
+  border-radius: 5px;
+  width: 60rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.quizlist__quiz--card a {
+  text-decoration: none;
+}
+
+.quizlist__quiz--card a h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.quizlist__quiz--card a p {
+  color: white;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
