@@ -42,7 +42,7 @@
 .btn {
   width:30%;
   border-radius: 8px;
-  background-color: rgb(255,69,11,0.49);
+  background-color: rgb(255, 60, 0);
   padding: 1rem ;
   border: none;
   cursor:pointer;
@@ -128,7 +128,7 @@ label {
    margin:2rem;
    justify-content: space-evenly;
    width:27%;
-   height:45rem;
+   height:47rem;
    border:2px solid rgb(230, 230, 230);
 }
 .heading3{
@@ -166,7 +166,7 @@ label {
 .btn3{
   width:35%;
   border-radius: 8px;
-  background-color: rgba(255, 68, 11, 0.568);
+  background-color: rgb(255, 60, 0);
   padding:1rem 0.5rem;
   border: none;
   cursor:pointer;
