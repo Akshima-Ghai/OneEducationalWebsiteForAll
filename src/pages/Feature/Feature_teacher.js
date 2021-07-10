@@ -8,7 +8,7 @@ const Feature_teacher = (props) => {
   return (
     <Fragment>
       {/* This is for first block */}
-
+    <div className="whole_body">
       <div className="container1">
         <Slide left>
           <div className="inside_container1 down">
@@ -24,7 +24,7 @@ const Feature_teacher = (props) => {
           </div>
         </Slide>
       </div>
-
+      
       {/* This is for second block */}
 
       <div className="container2">
@@ -110,6 +110,7 @@ const Feature_teacher = (props) => {
             </div>
           </Slide>
         </div>
+      </div>
       </div>
     </Fragment>
   );
