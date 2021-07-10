@@ -178,3 +178,10 @@
     padding-right: 1rem;
   }
 }
+
+.preloader{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
