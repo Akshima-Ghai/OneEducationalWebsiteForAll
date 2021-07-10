@@ -28,7 +28,7 @@ const Header = (props) => {
 
   return (
     <header className="header">
-      <div onClick={() => props.history.push("/")}> 
+      <div onClick={() => props.history.push("/")}>
         <h1 className="header__h1">
           LEARN
           <label className="header__h1--label">Zania</label>

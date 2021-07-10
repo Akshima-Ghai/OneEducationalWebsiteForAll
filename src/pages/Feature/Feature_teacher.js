@@ -3,6 +3,7 @@ import "./Feature.css";
 import ImgSrc from "../../shared/ImgSrc";
 import Slide from "react-reveal/Slide";
 import Bounce from "react-reveal/Bounce";
+import Footer from "../../components/Footer/Footer";
 
 const Feature_teacher = (props) => {
   return (
@@ -44,8 +45,7 @@ const Feature_teacher = (props) => {
           </Slide>
         </div>
 
-        
-          <div className="inside_container2 down">
+        <div className="inside_container2 down">
           <Slide left>
             <div className="main_info2">
               <h1 className="heading_block2">
@@ -57,9 +57,8 @@ const Feature_teacher = (props) => {
               </div>
             </div>
             <img className="image2" src={ImgSrc.FeatureTeacherImage3} alt="" />
-            </Slide>
-          </div>
-        
+          </Slide>
+        </div>
       </div>
 
       {/* This is third block */}
@@ -87,7 +86,6 @@ const Feature_teacher = (props) => {
                 <div className="paragraph3">
                   Start learning from the best teachers!
                 </div>
-                
               </div>
             </div>
           </Slide>
@@ -111,6 +109,7 @@ const Feature_teacher = (props) => {
           </Slide>
         </div>
       </div>
+      <Footer />
     </Fragment>
   );
 };
