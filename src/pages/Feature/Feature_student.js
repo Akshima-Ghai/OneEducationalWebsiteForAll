@@ -4,6 +4,7 @@ import ImgSrc from "../../shared/ImgSrc";
 import { Fragment } from "react";
 import Slide from "react-reveal/Slide";
 import Bounce from "react-reveal/Bounce";
+import Footer from "../../components/Footer/Footer";
 
 const Feature_student = (props) => {
   return (
@@ -113,6 +114,7 @@ const Feature_student = (props) => {
         </div>
       </div>
       </div>
+      <Footer />
     </Fragment>
   );
 };
