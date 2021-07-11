@@ -9,7 +9,7 @@
   --primary-footer-text: #252525;
   --primary-footer-para: rgb(71, 71, 71);
   --primary-footer-form-border: transparent;
-
+  --primary-ourteam-card: white;
   --primary-home-head: #141639;
   --primary-home-p: #73747b;
 
@@ -25,7 +25,7 @@
   --primary-footer-text: #ffffff;
   --primary-footer-para: #aaaaaa;
   --primary-footer-form-border: #ddd;
-
+  --primary-ourteam-card: #333;
   --primary-home-head: #fff;
   --primary-home-p: #818391;
 
