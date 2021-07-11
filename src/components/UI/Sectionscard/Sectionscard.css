@@ -1,6 +1,6 @@
 .sections {
   border-radius: 25px;
-background: 		#FA8072;
+background:#f24638;;
 box-shadow:  6px 6px 12px #e3e3e3,
              -6px -6px 12px #ffffff;
   border-radius: 5px;
@@ -13,27 +13,28 @@ box-shadow:  6px 6px 12px #e3e3e3,
   align-items: center;
   font-family: "Montserrat", sans-serif;
   transition: 1s ease out;
+  border-radius: 7px;
 }
 .sections span {
   font-size: 2rem;
   width: 90%;
   padding: auto;
+  text-align: center;
   font-weight: 600;
   word-wrap: break-word;
 }
 .sections p {
   width: 90%;
   margin: auto;
-  padding: 1rem;
   height: 40%;
   font-size: medium;
+  text-align: center;
   border-radius: 5px;
-  background: rgb(255, 255, 255);
   word-wrap: break-word;
 }
 .section-img {
-  width: 15%;
-  margin: 2rem;
+  width: 10%;
+  margin: 1rem;
 }
 .section-div {
   display: flex;
@@ -47,12 +48,12 @@ box-shadow:  6px 6px 12px #e3e3e3,
   align-items: center;
   width: 90%;
   height: 20vh;
-
+  color: #ffffff;
   margin: auto;
 }
 .sections:hover {
   transform: scale(1);
-  background-color: 	#FF6347;
+  background-color: rgb(172, 183, 243);
 }
 .sections:hover {
   width: 73%;
@@ -97,3 +98,4 @@ box-shadow:  6px 6px 12px #e3e3e3,
     width: 20%;
   }
 }
+

@@ -3,6 +3,7 @@ import "./FAQ.css";
 import ImgSrc from "../../shared/ImgSrc";
 import Scrolltop from "../../components/ScrollTop/Scrolltop";
 import { Fragment } from "react";
+import Footer from "../../components/Footer/Footer";
 
 export default function FAQ() {
   const [isOneActive, setOneActive] = useState("false");
@@ -164,6 +165,7 @@ export default function FAQ() {
           />
         </div>
       </section>
-    </ Fragment>
+      <Footer />
+    </Fragment>
   );
 }
