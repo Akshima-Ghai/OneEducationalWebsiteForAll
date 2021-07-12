@@ -5,6 +5,7 @@
   --primary-body: #ffffff;
   --header-color: #141414;
   --header-button: white;
+  --header-signup: #f34638;
   --primary-footer: white;
   --primary-footer-text: #252525;
   --primary-footer-para: rgb(71, 71, 71);
@@ -21,6 +22,7 @@
   --primary-body: #222222;
   --header-color: #f24638;
   --header-button: transparent;
+  --header-signup: #f24638;
   --primary-footer: #111111;
   --primary-footer-text: #ffffff;
   --primary-footer-para: #aaaaaa;

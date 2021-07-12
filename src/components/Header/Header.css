@@ -87,7 +87,7 @@
 }
 
 .header__btn--get a:hover {
-  background-color: var(--primary-main);
+  background-color: var(--header-signup);
   border: 2px solid #b8b8b8;
   color: white;
 }
