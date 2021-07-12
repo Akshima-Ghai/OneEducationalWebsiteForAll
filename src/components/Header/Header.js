@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
+import ImgSrc from "./../../shared/ImgSrc";
 import { Link, withRouter } from "react-router-dom";
 
 import Nav from "./../Nav/Nav";
@@ -29,6 +30,11 @@ const Header = (props) => {
   return (
     <header className="header">
       <div onClick={() => props.history.push("/")}>
+        <img 
+          src={ImgSrc.Logo} 
+          alt="LearnZania Logo"
+          className="header__logo" 
+        />
         <h1 className="header__h1">
           LEARN
           <label className="header__h1--label">Zania</label>
