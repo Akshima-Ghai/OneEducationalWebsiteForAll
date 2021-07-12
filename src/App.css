@@ -6,10 +6,11 @@
   --header-color: #141414;
   --header-button: white;
   --primary-footer: white;
+  --section-title: #141414;
   --primary-footer-text: #252525;
   --primary-footer-para: rgb(71, 71, 71);
   --primary-footer-form-border: transparent;
-
+  --primary-section-box: #e3e3e3;
   --primary-home-head: #141639;
   --primary-home-p: #73747b;
 
@@ -22,10 +23,11 @@
   --header-color: #f24638;
   --header-button: transparent;
   --primary-footer: #111111;
+  --section-title: white;
   --primary-footer-text: #ffffff;
   --primary-footer-para: #aaaaaa;
   --primary-footer-form-border: #ddd;
-
+  --primary-section-box: #111;
   --primary-home-head: #fff;
   --primary-home-p: #818391;
 
