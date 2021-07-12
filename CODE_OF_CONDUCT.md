@@ -13,7 +13,7 @@ We pledge to act and interact in ways that contribute to an open ⏲️, welcomi
 diverse🌟, inclusive🌠, and healthy community⚕️.
 
 
-## Enforcement Responsibilities <img src = "https://www.fastemoji.com/%E2%95%AD(%E0%B0%A0%E0%B0%A0%E7%9B%8A%E0%B0%A0%E0%B0%A0)%E2%95%AE-Meaning-Emoji-Emoticon-Responsibility-Ascii-Art-Generous-Task-Good-Japanese-Kaomoji-Smileys-61947.html">
+## Enforcement Responsibilities 💫
 
 Community leaders have the right and responsibility to remove, edit, or reject
 comments, commits, code, wiki edits, issues, and other contributions that are
@@ -21,7 +21,7 @@ not aligned to this Code of Conduct, and will communicate reasons for moderation
 decisions when appropriate.
 
 
-## Enforcement Guidelines 
+## Enforcement Guidelines 💯
 
 Community leaders will follow these Community Impact Guidelines in determining
 the consequences for any action they deem in violation of this Code of Conduct:
