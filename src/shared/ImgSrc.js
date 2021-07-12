@@ -1,4 +1,4 @@
-import Logo from './../assets/logos/LearnZania.png'
+import Logo from './../assets/logos/LearnZaniaLogo.png'
 import HomeBanner from './../assets/home_banner.png'
 import Education from './../assets/education.png'
 import Message from './../assets/message.png'
