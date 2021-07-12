@@ -1,3 +1,4 @@
+import Logo from './../assets/logos/LearnZania.png'
 import HomeBanner from './../assets/home_banner.png'
 import Education from './../assets/education.png'
 import Message from './../assets/message.png'
@@ -24,6 +25,7 @@ import FeatureTeacherImage2 from "./../assets/feature_teacher_page_img2.png";
 import FeatureTeacherImage3 from "./../assets/feature_teacher_page_img3.png";
 export default {
 
+    Logo,
     homeBanner:HomeBanner,
     Education,
     Message,
