@@ -3,6 +3,7 @@ import './SignupStudent.css'
 import { Link } from 'react-router-dom'
 import InputField from './../../../components/UI/InputField/InputField'
 import Footer from "../../../components/Footer/Footer";
+import studentimg from "../../../assets/student_signup.png"
 
 const inputValidator = (field) => {
     let isValid = true
@@ -39,9 +40,12 @@ const SignupStudent = () => {
         <div>
             <section className="signup__container">
                 <form className="signup__form" onSubmit={onSubmitHandler}>
+                    <p className="signup__form--p">
+                        Already a user you can <Link to="/login"> Login </Link> here
+                    </p>
                     <div className="signup__heading--container">
                         <h1 className="signup__heading">
-                            Sign up
+                            Create an Account
                         </h1>
                     </div>
                     <InputField
@@ -80,13 +84,13 @@ const SignupStudent = () => {
                         placeholder="Year"
                         onChange={(event) => setYear(event.target.value)}
                     />
-                    <p className="signup__form--p">
-                        Already a user you can <Link to="/login"> Login </Link> here
-                    </p>
                     <button className="signup__form--button" type="submit">
                         Sign Up
                     </button>
                 </form>
+                <div className="signup__img">
+                    <img src={studentimg} />
+                </div>
             </section>
             <Footer />
         </div>
