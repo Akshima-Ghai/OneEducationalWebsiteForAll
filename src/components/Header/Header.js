@@ -1,29 +1,34 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import "./Header.css";
 import { Link, withRouter } from "react-router-dom";
 
 import Nav from "./../Nav/Nav";
+import useDarkMode from "../../hooks/useDarkMode";
 
-function ThemeToggleBtn(props) {
+function ThemeToggleBtn(props) {  
   return (
     <label className="header__switch">
-      <input type="checkbox" className="toggle__checkbox" />
+      <input
+        type="checkbox"
+        className="toggle__checkbox"
+        checked={props.isDark === "dark"}
+      />
       <span onClick={props.onClick} className="slider round"></span>
     </label>
   );
 }
 
 const Header = (props) => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark , setTheme]= useDarkMode()
 
   const handleThemeBtn = () => {
-    let currentTheme = isDark;
-    if (currentTheme === true) {
+    if (isDark === "dark") {
       document.documentElement.dataset.theme = "light";
+      setTheme("light")
     } else {
       document.documentElement.dataset.theme = "dark";
+      setTheme("dark")
     }
-    setIsDark((prev) => !prev);
   };
 
   return (
@@ -34,7 +39,7 @@ const Header = (props) => {
           <label className="header__h1--label">Zania</label>
         </h1>
       </div>
-      <ThemeToggleBtn onClick={handleThemeBtn} />
+      <ThemeToggleBtn onClick={handleThemeBtn} isDark={isDark} />
       <div onClick={props.toggleSD} className="header_toggle--btn">
         {/* for responsiveness in small screen  */}
         <div></div>
