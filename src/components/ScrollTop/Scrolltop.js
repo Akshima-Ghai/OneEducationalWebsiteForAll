@@ -17,8 +17,11 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "#DCDCDC",
     },
     [theme.breakpoints.up("xs")]: {
-      right: "4%",
+      right: "8%",
       backgroundColor: "#f24638",
+    },
+    [theme.breakpoints.up("sm")]: {
+      right: "4%",
     },
     [theme.breakpoints.up("lg")]: {
       right: "2.5%",
