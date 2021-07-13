@@ -12,6 +12,6 @@
 }
 
 .header__nav--li a:hover {
-  color: rgb(44, 43, 43);
+  color: var(--header-color);
   transform: scale(1.1);
 }
