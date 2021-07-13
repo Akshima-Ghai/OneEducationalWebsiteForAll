@@ -19,6 +19,8 @@
   cursor: pointer;
   font-size: 2rem;
   font-family: "cursive";
+  display : inline-block;
+  padding-top: 3rem
 }
 
 .header__h1--label {
@@ -27,6 +29,11 @@
   cursor: pointer;
   text-shadow: 2px 1px 3px grey;
   font-weight: 900;
+}
+
+.header__logo{
+  width: 20%;
+  float: left;
 }
 
 .header_toggle--btn {
@@ -87,7 +94,7 @@
 }
 
 .header__btn--get a:hover {
-  background-color: var(--primary-main);
+  background-color: var(--header-signup);
   border: 2px solid #b8b8b8;
   color: white;
 }
