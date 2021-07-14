@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Signup.css";
 import Footer from "../../../components/Footer/Footer";
+import {Link} from "react-router-dom"
 import Slide from "react-reveal/Slide";
 import Student from "../../../assets/Student_option.png"
 import Teacher from "../../../assets/Teacher_option.png"
@@ -24,7 +25,7 @@ const Login = () => {
                 <div className="paragraph3">
                   Start learning from the best teachers!
                 </div>
-                <button className="btn3">Join</button>
+                <Link to="./SignupStudent" className="btn3">Join</Link>
               </div>
             </div>
           </Slide>
@@ -42,7 +43,7 @@ const Login = () => {
                 <div className="paragraph3">
                   Are you ready to share your knowledge and experience ?
                 </div>
-                <button className="btn3">Join</button>
+                <Link to="./SignupTeacher" className="btn3">Join</Link>
               </div>
             </div>
           </Slide>

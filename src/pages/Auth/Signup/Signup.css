@@ -32,6 +32,13 @@
   height: 52rem;
 }
 
+.signup--options__container .btn3 {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px;
+  text-align: center;
+}
+
 @media (max-width: 1080px) {
   .signup--options__container .inside_container3 {
     width: 75%;
