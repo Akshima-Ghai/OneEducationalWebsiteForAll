@@ -1,14 +1,13 @@
 # OneEducationalWebsiteForAll
 
-<div align="center">
+<div align="center">  
 <br>
  
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/Akshima-Ghai) 
-[![Open Source Love](https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green)](https://github.com/Akshima-Ghai) 
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/docs/getting-started.html)
-<br>
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=95)](https://github.com/Akshima-Ghai) 
+[![Build by Devlopers](https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-Green)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll) 
 [![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/blob/main/README.md)
 [![Maintenance](https://img.shields.io/maintenance/yes/2021)](https://github.com/Akshima-Ghai)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/Akshima-Ghai)
 
 [![GitHub contributors](https://img.shields.io/github/contributors-anon/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/graphs/contributors)
 [![](https://badgen.net/github/stars/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/stargazers)
@@ -18,10 +17,11 @@
 [![](https://badgen.net/github/prs/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/pulls)
 [![](https://badgen.net/github/open-prs/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/pulls)
 [![](https://badgen.net/github/closed-prs/Akshima-Ghai/OneEducationalWebsiteForAll)](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/pulls?q=is%3Apr+is%3Aclosed)
-<br><br>
+
+<br>
 </div>
 
-- If I have to describe my project , in simple words , it would be an educational website , but not just that  , it would be the best website , a person or organisation can ever ask for . It will have many features  including VideoLectures , Theory/Notes , TestSeries , DataAnalysis of results , Blogs to motivate or for Guidance  , Attendance System and many more features. We would also deploy it , so that it can be a real-time working  project and it would help everyone to gain a lot of experience and learning curve for this project would also be  great . It would also have the best design which would make it interactive as well as attractive .
+- If I have to describe my project , in simple words , it would be an educational website , but not just that , it would be the best website , a person or organisation can ever ask for . It will have many features including VideoLectures , Theory/Notes , TestSeries , DataAnalysis of results , Blogs to motivate or for Guidance , Attendance System and many more features. We would also deploy it , so that it can be a real-time working project and it would help everyone to gain a lot of experience and learning curve for this project would also be great . It would also have the best design which would make it interactive as well as attractive .
 
 - This Project would start from scratch , so that each and every individual can participate and contribute and learn to the maximum extent .
 
@@ -29,13 +29,15 @@
 
 ## Tech Stack
 
-<img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-best-web-design-psd-html-cms-development-ecommerce-6.png" width="200" alt="" />
-
+[![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)](https://reactjs.org/docs/getting-started.html)
+[![Express](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)](https://reactjs.org/docs/getting-started.html)
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org/docs/getting-started.html)
+[![NodeJs](https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node-dot-js&logoColor=white)](https://reactjs.org/docs/getting-started.html)
 
 ## Setup and Installation
 
 A common issue many people may face while setting up the project:
-Running npm install(or npm i) throws these errors - 
+Running npm install(or npm i) throws these errors -
 
 <img src="./public/err.jpg"/>
 
@@ -44,7 +46,7 @@ This occurs due to the mismatch in the versions of node and npm installed on you
 ### Solution
 
 1. Update NodeJS :
-Download the latest version of  Node from it's official website -
+   Download the latest version of Node from it's official website -
 
 ```
 https://nodejs.org/en/
@@ -53,7 +55,7 @@ https://nodejs.org/en/
 This would overwrite the previous outdated version.
 
 2. Update NPM :
-Open your terminal, type the following command and hit enter -
+   Open your terminal, type the following command and hit enter -
 
 ```
  npm install npm@latest -g
@@ -64,29 +66,27 @@ This would update npm to it's latest version available.
 And you're done!
 Run the following commands in the project directory to set up the project.
 
-
 ```
 npm install
-```   
+```
 
 ```
 npm start
-```   
-
+```
 
 ## Contribution Guidelines 🏗
-   
+
 Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further
 
-To start contributing, follow the below guidelines: 
+To start contributing, follow the below guidelines:
 
-**🌟.**  Star🌟 the project to bookmark and appreciate the work.
+**🌟.** Star🌟 the project to bookmark and appreciate the work.
 
-**0.**  Take a look at the existing [issues](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
+**0.** Take a look at the existing [issues](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
-**1.**  Fork [this](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll) repository.
+**1.** Fork [this](https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll) repository.
 
-**2.**  Clone your forked copy of the project.
+**2.** Clone your forked copy of the project.
 
 ```
 git clone --depth 1 https://github.com/<your_user_name>/OneEducationalWebsiteForAll.git
@@ -104,7 +104,8 @@ cd OneEducationalWebsiteForAll
 git remote add upstream https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll.git
 
 ```
-*5.** Check the remotes for this repository.
+
+\*5.\*\* Check the remotes for this repository.
 
 ```
 git remote -v
@@ -129,7 +130,7 @@ git checkout -b <your_branch_name>
 **9.** Track your changes:heavy_check_mark: .
 
 ```
-git add . 
+git add .
 ```
 
 **10.** Commit your changes .
@@ -156,13 +157,11 @@ git push -u origin <your_branch_name>
 
 ## Project Admin 👩: Akshima Ghai
 
-
 <a href="https://www.linkedin.com/in/akshima-ghai-196932197/">
 <h5 align="center"><b>Akshima Ghai</b></a>
 
+# License
 
-
-# License 
 <p align="center">
 <a href="https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/blob/main/LICENSE">
 <img width=35% src="https://media0.giphy.com/media/3ornjXbo3cjqh2BIyY/200.gif"></p>
