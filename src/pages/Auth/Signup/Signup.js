@@ -1,19 +1,51 @@
 import React, { useState } from "react";
 import "./Signup.css";
-import { Link } from "react-router-dom";
 import Footer from "../../../components/Footer/Footer";
+import Slide from "react-reveal/Slide";
+import Student from "../../../assets/Student_option.png"
+import Teacher from "../../../assets/Teacher_option.png"
 
 const Login = () => {
   return (
     <div>
       <section className="signup--options__container">
-        <div className="signup__options">
-          <div className="signup__options--student">
-            <Link to="/SignupStudent">Sign Up as a Student</Link>
-          </div>
-          <div className="signup__options--teacher">
-            <Link to="/SignupTeacher">Sign Up as a Teacher</Link>
-          </div>
+        <div className="inside_cont3-box">
+          <Slide left>
+            <div className="inside_container3">
+              <img
+                className="image3"
+                src={Student}
+                alt=""
+              />
+              <div className="main_info3">
+                <h1 className="heading_block3">
+                  SignUp As a <label>Student</label>
+                </h1>
+                <div className="paragraph3">
+                  Start learning from the best teachers!
+                </div>
+                <button className="btn3">Join</button>
+              </div>
+            </div>
+          </Slide>
+          <Slide right>
+            <div className="inside_container3">
+              <img
+                className="image3"
+                src={Teacher}
+                alt=""
+              />
+              <div className="main_info3">
+                <h1 className="heading_block3">
+                  SignUp As a <label>Teacher</label>
+                </h1>
+                <div className="paragraph3">
+                  Are you ready to share your knowledge and experience ?
+                </div>
+                <button className="btn3">Join</button>
+              </div>
+            </div>
+          </Slide>
         </div>
       </section>
       <Footer />
