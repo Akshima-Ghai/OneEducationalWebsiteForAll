@@ -45,8 +45,12 @@
 .header_toggle--btn div {
   width: 30px;
   height: 3px;
-  background-color: #0a1436;
+  background-color: var(--header-color);
   margin: 6px 0;
+}
+
+.header_toggle--btn:hover div{ 
+  background: white;
 }
 
 .header__btn--ul {
