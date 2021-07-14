@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import ImgSrc from "./../../shared/ImgSrc";
 import Scrolltop from "../../components/ScrollTop/Scrolltop";
@@ -26,6 +27,10 @@ const Home = () => {
           <div className="home__main">
             <div className="home__info--container">
               <div className="home__info">
+                <div className="home__btn">
+                  <Link to="/login" className="home__btn--login">Login</Link>
+                  <Link to="/signup" className="home__btn--signup">SignUp</Link>
+                </div>
                 <h1 className="home__h1">You Can Learn Anything</h1>
                 <p className="home__p">For Free, For Everyone</p>
               </div>
