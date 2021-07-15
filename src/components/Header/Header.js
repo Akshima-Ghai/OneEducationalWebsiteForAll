@@ -11,14 +11,14 @@ const Header = (props) => {
   const [isDarkMode, setIsDarkMode] = useState(() => false);
   const handleThemeBtn = () => {
     let currentTheme = isDarkMode;
-    if (currentTheme === true) {
+    // if (currentTheme === true) {
 
-      document.documentElement.dataset.theme = "light";
-      setTheme("light")
-    } else {
-      document.documentElement.dataset.theme = "dark";
-      setTheme("dark")
-    }
+    //   document.documentElement.dataset.theme = "light";
+    //   setTheme("light")
+    // } else {
+    //   document.documentElement.dataset.theme = "dark";
+    //   setTheme("dark")
+    // }
 
     setIsDarkMode((prev) => !prev);
 
