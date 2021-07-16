@@ -1,6 +1,7 @@
-import React, { useState , useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import ImgSrc from "./../../shared/ImgSrc";
+import Headroom from "react-headroom";
 import DarkModeToggle from "react-dark-mode-toggle";
 import { Link, withRouter } from "react-router-dom";
 import Nav from "./../Nav/Nav";
@@ -12,14 +13,14 @@ const Header = (props) => {
   const [isDarkMode, setIsDarkMode] = useState(() => false);
   const handleThemeBtn = () => {
     let currentTheme = isDarkMode;
-    if (currentTheme === true) {
+    // if (currentTheme === true) {
 
-      document.documentElement.dataset.theme = "light";
-      setTheme("light")
-    } else {
-      document.documentElement.dataset.theme = "dark";
-      setTheme("dark")
-    }
+    //   document.documentElement.dataset.theme = "light";
+    //   setTheme("light")
+    // } else {
+    //   document.documentElement.dataset.theme = "dark";
+    //   setTheme("dark")
+    // }
 
     setIsDarkMode((prev) => !prev);
 

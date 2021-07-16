@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "learnzania-web server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll.git"
+  },
+  "keywords": [
+    "OneEducationWebsiteForAll",
+    "OpenSource",
+    "MERN"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll/issues"
+  },
+  "homepage": "https://github.com/Akshima-Ghai/OneEducationalWebsiteForAll#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "mongoose": "^5.13.2",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}

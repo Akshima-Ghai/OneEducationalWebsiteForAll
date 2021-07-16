@@ -76,7 +76,7 @@ const Feature_student = (props) => {
 
         <div className="inside_cont3-box">
           <Slide left>
-            <div className="inside_container3">
+            <div className="inside_container3 containers">
               <img
                 className="image3"
                 src={ImgSrc.FeatureStudentImage4}
@@ -94,7 +94,7 @@ const Feature_student = (props) => {
             </div>
           </Slide>
           <Slide right>
-            <div className="inside_container3">
+            <div className="inside_container3 containers">
               <img
                 className="image3"
                 src={ImgSrc.FeatureStudentImage5}
