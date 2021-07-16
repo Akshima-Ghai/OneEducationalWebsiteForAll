@@ -167,7 +167,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 785px) {
   .home__btn {
     display: inline-block;
   }

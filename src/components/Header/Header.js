@@ -8,6 +8,7 @@ import useDarkMode from "../../hooks/useDarkMode";
 
 
 const Header = (props) => {
+  const [theme,setTheme]=useState();
   const [isDarkMode, setIsDarkMode] = useState(() => false);
   const handleThemeBtn = () => {
     let currentTheme = isDarkMode;
@@ -27,7 +28,7 @@ const Header = (props) => {
   return (
     <div>
       <header className="header">
-        <div onClick={() => props.history.push("/")}>
+        <div onClick={() => props.history.push("/")} className="header_name">
           <img
             src={ImgSrc.Logo}
             alt="LearnZania Logo"
@@ -39,14 +40,9 @@ const Header = (props) => {
           </h1>
         </div>
 
-        <div onClick={props.toggleSD} className="header_toggle--btn">
-          {/* for responsiveness in small screen  */}
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <Nav />
-
+       
+        <div className="nav_links"><Nav /></div>
+        
         <div className="header__btn--container">
           <ul className="header__btn--ul">
             <li className="header__btn--login header__btn--a">
@@ -58,13 +54,19 @@ const Header = (props) => {
               <Link to="/signup">Sign up</Link>
             </li>
           </ul>
-        </div>
+          </div>
         <DarkModeToggle
           className="dark_mode_toogle"
           onChange={handleThemeBtn}
           checked={isDarkMode}
           size={55}
         />
+         <div onClick={props.toggleSD} className="header_toggle--btn">
+          {/* for responsiveness in small screen  */}
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </header>
     </div>
   );
