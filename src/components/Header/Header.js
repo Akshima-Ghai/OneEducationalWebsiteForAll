@@ -9,6 +9,7 @@ import useDarkMode from "../../hooks/useDarkMode";
 
 
 const Header = (props) => {
+  const [theme,setTheme]=useState();
   const [isDarkMode, setIsDarkMode] = useState(() => false);
   const handleThemeBtn = () => {
     let currentTheme = isDarkMode;
@@ -26,50 +27,49 @@ const Header = (props) => {
   };
 
   return (
-    <Headroom style={{ position: "fixed" }}>
-      <div>
-        <header className="header">
-          <div onClick={() => props.history.push("/")}>
-            <img
-              src={ImgSrc.Logo}
-              alt="LearnZania Logo"
-              className="header__logo"
-            />
-            <h1 className="header__h1">
-              LEARN
-              <label className="header__h1--label">Zania</label>
-            </h1>
-          </div>
-
-          <div onClick={props.toggleSD} className="header_toggle--btn">
-            {/* for responsiveness in small screen  */}
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <Nav />
-
-          <div className="header__btn--container">
-            <ul className="header__btn--ul">
-              <li className="header__btn--login header__btn--a">
-                <Link to="/login" className="scroll_color_change">
-                  Login
-                </Link>
-              </li>
-              <li className="header__btn--get header__btn--a">
-                <Link to="/signup">Sign up</Link>
-              </li>
-            </ul>
-          </div>
-          <DarkModeToggle
-            className="dark_mode_toogle"
-            onChange={handleThemeBtn}
-            checked={isDarkMode}
-            size={55}
+    <div>
+      <header className="header">
+        <div onClick={() => props.history.push("/")} className="header_name">
+          <img
+            src={ImgSrc.Logo}
+            alt="LearnZania Logo"
+            className="header__logo"
           />
-        </header>
-      </div>
-    </Headroom>
+          <h1 className="header__h1">
+            LEARN
+            <label className="header__h1--label">Zania</label>
+          </h1>
+        </div>
+
+       
+        <div className="nav_links"><Nav /></div>
+        
+        <div className="header__btn--container">
+          <ul className="header__btn--ul">
+            <li className="header__btn--login header__btn--a">
+              <Link to="/login" className="scroll_color_change">
+                Login
+              </Link>
+            </li>
+            <li className="header__btn--get header__btn--a">
+              <Link to="/signup">Sign up</Link>
+            </li>
+          </ul>
+          </div>
+        <DarkModeToggle
+          className="dark_mode_toogle"
+          onChange={handleThemeBtn}
+          checked={isDarkMode}
+          size={55}
+        />
+         <div onClick={props.toggleSD} className="header_toggle--btn">
+          {/* for responsiveness in small screen  */}
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </header>
+    </div>
   );
 };
 
