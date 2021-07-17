@@ -38,7 +38,7 @@ function Teacher() {
         </div>
         <div className="teacher__info--container1">
           <div className="teacher__info1">
-            <h1 className="teacher__h11"> About<span style={{color: '#FF450B'}}> Education </span></h1>
+            <h1 className="teacher__h11"> About<span style={{color: '#FF450B'}}> Learnzania </span></h1>
             <p className="teacher_p1">Video Lectures , Theory/Notes , TestSeries ,<br/>
              Data Analysis of results ,<br/>
               Blogs to motivate or for Guidance  ,<br/>
@@ -53,7 +53,7 @@ function Teacher() {
         <div className="teacher__main2">
         <div className="teacher__info--container2">
           <div className="teacher__info2">
-            <h1 className="teacher__h12"> Why<span style={{color: '#FF450B'}}> Education ?</span></h1>
+            <h1 className="teacher__h12"> Why<span style={{color: '#FF450B'}}> Learnzania ?</span></h1>
             <p className="teacher_p2">We provide , students with free<br/>
              and right guidance and help them in selecting their<br/>
               correct career path,join us<br/>

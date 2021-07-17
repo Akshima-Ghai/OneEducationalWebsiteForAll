@@ -38,7 +38,7 @@ function Student() {
         </div>
         <div className="student__info--container1">
           <div className="student__info1">
-            <h1 className="student__h11"> About<span style={{color: '#FF450B'}}> Education </span></h1>
+            <h1 className="student__h11"> About<span style={{color: '#FF450B'}}> Learnzania </span></h1>
             <p className="student_p1">Video Lectures , Theory/Notes , <br/>
             TestSeries , Data Analysis of results ,<br/>
             Blogs to motivate or for Guidance  ,<br/>
@@ -53,7 +53,7 @@ function Student() {
         <div className="student__main2">
         <div className="student__info--container2">
           <div className="student__info2">
-            <h1 className="student__h12"> Why<span style={{color: '#FF450B'}}> Education ?</span></h1>
+            <h1 className="student__h12"> Why<span style={{color: '#FF450B'}}> Learnzania ?</span></h1>
             <p className="student_p2">We provide , students with free  <br/>
             and right guidance and help them <br/>
             in selecting their correct career path<br/></p>

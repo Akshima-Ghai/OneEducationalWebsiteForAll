@@ -40,9 +40,9 @@ function Teacher_join() {
         <div className="teacher_join__info--container1">
           <div className="teacher_join__info1">
             <h1 className="teacher_join__h11"> Tutorial <span style={{color: '#FF450B'}}>Videos </span></h1>
-            <p className="teacher_join_p1">Get the best possible video leactures Video Lectures <br/>
-            available on the web free of cost,<br/>
-            with new technologies and interactive sessions.<br/></p>
+            <p className="teacher_join_p1">Help the student community develop by<br/>
+             providing your knowledge through videos,<br/>
+             creating the next generation educational resources<br/></p>
             <a href="#" class="ali">View More</a>
           </div>
         </div>
@@ -55,10 +55,10 @@ function Teacher_join() {
         <div className="teacher_join__info--container2">
           <div className="teacher_join__info2">
             <h1 className="teacher_join__h12"> On Demand <span style={{color: '#FF450B'}}> Test-series</span></h1>
-            <p className="teacher_join_p2">Learning isn’t enough,<br/>
-            to test your skill set is seldom a wise decesion,<br/>
-            keeping that in mind,<br/>
-            we have made the best probable test- series<br/></p>
+            <p className="teacher_join_p2">Help us create the most suitable<br/>
+             test-series for students,grade their<br/>
+              answers and give feedbacks on their <br/>
+              reports<br/></p>
             <a href="#" class="ali">View More</a>
           </div>
         </div>
@@ -84,10 +84,11 @@ function Teacher_join() {
         <div className="teacher_join__info--container1">
           <div className="teacher_join__info1">
             <h1 className="teacher_join__h11"> Tech <span style={{color: '#FF450B'}}> Blogs </span></h1>
-            <p className="teacher_join_p1">Sharing what you know,with the world,<br/>
-            and learning from others experience,<br/>
-            is the best way to grow,believing in this <br/>
-            we have Blogs customized for your users<br/></p>
+            <p className="teacher_join_p1">Sharing your past experiences with <br/>
+            newbies,makes their life much<br/> 
+            easier,but it’s only you who can <br/>
+            provide them useful tips,so don’t<br/>
+             hesitate start sharing!<br/></p>
             <a href="#" class="ali">View More</a>
           </div>
         </div>
@@ -99,11 +100,10 @@ function Teacher_join() {
         <div className="teacher_join__info--container2">
           <div className="teacher_join__info2">
             <h1 className="teacher_join__h12"> Your<span style={{color: '#FF450B'}}> Motivation ?</span></h1>
-            <p className="teacher_join_p2">Failures dishearten  people,<br/>
-            and we understand that,<br/>
-            thus we bring our motivational series to help you,<br/>
-            learn from failures,and <br/>
-            look towards a bright future<br/></p>
+            <p className="teacher_join_p2">Nobody knows better than a teacher<br/>
+             what their students lacks in,their difficulties,<br/>
+             their anxieties,thus help us reach them out,<br/>
+             with your motivational talks!<br/></p>
             <a href="#" class="ali">View More</a>
           </div>
         </div>
