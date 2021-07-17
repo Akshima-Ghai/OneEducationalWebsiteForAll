@@ -42,6 +42,7 @@ function Student_join() {
             <p className="student_join_p1">Get the best possible video leactures Video Lectures <br/>
             available on the web free of cost,<br/>
             with new technologies and interactive sessions.<br/></p>
+            <a href="#" class="alin">View More</a>
           </div>
         </div>
         </div>
@@ -57,6 +58,7 @@ function Student_join() {
             to test your skill set is seldom a wise decesion,<br/>
             keeping that in mind,<br/>
             we have made the best probable test- series<br/></p>
+            <a href="#" class="alin">View More</a>
           </div>
         </div>
       <div className="ws3">
@@ -85,6 +87,7 @@ function Student_join() {
             and learning from others experience,<br/>
             is the best way to grow,believing in this <br/>
             we have Blogs customized for your users<br/></p>
+            <a href="#" class="alin">View More</a>
           </div>
         </div>
         </div>
@@ -100,6 +103,7 @@ function Student_join() {
             thus we bring our motivational series to help you,<br/>
             learn from failures,and <br/>
             look towards a bright future<br/></p>
+            <a href="#" class="alin">View More</a>
           </div>
         </div>
       <div className="ws5">

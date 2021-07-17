@@ -207,4 +207,13 @@ text-align:center;
       }
 
 
-      
+      .ali{
+        text-decoration:none;
+        color:orangered;
+        font-size:1.5rem;
+      }
+
+      .ali:hover{
+        text-decoration-style:bold;
+        text-decoration:underline;
+      }
