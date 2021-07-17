@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+::-webkit-scrollbar{
+  width: 18px;
+}
+::-webkit-scrollbar-track {
+  background: #f1faee;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#f24638, transparent,#f24638);
+  border-radius: 20px;
+  box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%),
+    inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
 [data-theme="light"] {
   --primary-main: #f24638;
   --primary-body: #ffffff;
