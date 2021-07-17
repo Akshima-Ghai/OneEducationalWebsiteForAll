@@ -37,6 +37,7 @@ import studentjoin from "./../assets/studentjoin.jpg";
 import teacherjoin from "./../assets/teacherjoin.jpg";
 import Whyedu1 from "./../assets/Whyedu1.png";
 import Whyedu2 from "./../assets/Whyedu2.png";
+import pro from "./../assets/pro.jpg";
 export default {
 
     Logo,
@@ -77,6 +78,7 @@ export default {
     teacher1,
     teacher2,
     Whyedu1,
-    Whyedu2
+    Whyedu2,
+    pro
 }
 
