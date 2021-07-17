@@ -2,7 +2,7 @@ import React from "react";
 import "./Student_join.css";
 import ImgSrc from "../../shared/ImgSrc";
 import StarIcon from '@material-ui/icons/Star';
-
+import Footer from "../../components/Footer/Footer";
 import { CarouselWrapper } from 'react-pretty-carousel';
 
 function Student_join() {
@@ -203,6 +203,7 @@ function Student_join() {
    
 
 </div>
+
 )
    
 }

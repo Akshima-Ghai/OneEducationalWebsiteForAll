@@ -2,6 +2,7 @@ import React from "react";
 import "./Teacher_join.css";
 import ImgSrc from "../../shared/ImgSrc";
 import StarIcon from '@material-ui/icons/Star';
+import Footer from "../../components/Footer/Footer";
 
 import { CarouselWrapper } from 'react-pretty-carousel';
 
@@ -203,6 +204,7 @@ function Teacher_join() {
    
 
 </div>
+
 )
    
 }

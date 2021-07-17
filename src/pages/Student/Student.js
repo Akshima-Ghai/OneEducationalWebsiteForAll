@@ -2,6 +2,8 @@ import React from "react";
 import "./Student.css";
 import ImgSrc from "../../shared/ImgSrc";
 import{Link}from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
+
 function Student() {
     return (
         <div>
