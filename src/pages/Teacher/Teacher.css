@@ -1,0 +1,201 @@
+.teacher__container{
+    max-width:1200px;
+    margin: auto;
+}
+  .teacher__main{
+      display:flex;
+      justify-content: space-between;
+     padding-top: 70px;
+  }
+  
+  .teacher__info {
+    padding-top: 100px;
+    align:left;
+  }
+  
+  .teacher__h1 {
+    width: 40rem;
+    font-size: 6rem;
+    color:#141639;
+  }
+  
+  .teacher_p {
+    font-size: 1.50rem;
+    margin: 2rem 0;
+    font-weight: bold;
+    color: #73747b;
+  }
+  
+  .teacher2--img {
+    width: 590px;
+    height:470px;
+  }
+
+
+  .button1{
+      color:white;
+      background-color:orangered;
+      text-decoration:none;
+      padding:15px;
+      border-radius:1rem;
+      font-size:rem;
+  }
+
+  .button1:hover{
+      color:white;
+      background-color:rgb(241, 130, 56);
+  }
+
+  .Aboutedu2--img{
+      width: 500px;
+      height:500px;
+  }
+
+  .teacher__container1{
+    max-width:1200px;
+    margin: auto;
+}
+  .teacher__main1{
+      display:flex;
+      justify-content: space-between;
+     padding-top: 70px;
+  }
+  
+  .teacher__info1 {
+    padding-top: 150px;
+    align:left;
+  }
+  
+  .teacher__h11 {
+    width: 40rem;
+    font-size: 4rem;
+    color:#141639;
+  }
+  
+  .teacher_p1 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    font-weight: bold;
+    color: #73747b;
+  }
+
+  .Whyedu2--img{
+      width:450px;
+      height:380px;
+  }
+
+  .teacher__container2{
+    max-width:1200px;
+    margin: auto;
+}
+  .teacher__main2{
+      display:flex;
+      justify-content: space-between;
+     padding-top: 70px;
+  }
+  
+  .teacher__info2 {
+    padding-top: 100px;
+    align:left;
+  }
+  
+  .teacher__h12 {
+    width: 40rem;
+    font-size: 4rem;
+    color:#141639;
+  }
+  
+  .teacher_p2 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    font-weight: bold;
+    color: #73747b;
+  }
+
+  .teacher__h3{
+      font-size:3rem;
+      text-align:center;
+      margin-top:9rem;
+  }
+
+  .cards {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    padding: 2px 16px;
+    
+  }
+  
+  .cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .studentjoin--img{
+      width:100%;
+      height:70%;
+      
+  }
+
+  .containers{
+      text-align:center;
+  }
+
+  .buttons{
+      text-decoration:none;
+      padding:10px;
+      color:white;
+      background-color:orangered;
+      margin-top:3rem;
+      border-radius:8px;
+  }
+
+  .buttons:hover{
+      color:white;background-color:rgba(236, 107, 32, 0.884);
+  }
+  .joinhs{
+      font-size:4rem;
+  }
+
+  .ps{
+      font-size:2rem;
+  }
+
+  .cardtt {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    padding: 2px 16px;
+    
+  }
+  
+  .cardtt:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .teacherjoin--img{
+      width:100%;
+      height:70%;
+     
+  }
+
+  .containertt{
+      text-align:center;
+  }
+
+  .joinhtt{
+    font-size:4rem;
+}
+
+.ptt{
+    font-size:2rem;
+}
+
+.teacher__containerj{
+    max-width:1200px;
+    margin: auto;
+}
+  .teacher__mainj{
+      display:flex;
+      justify-content: space-between;
+     padding-top: 70px;
+  }

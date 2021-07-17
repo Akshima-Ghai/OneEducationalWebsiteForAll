@@ -30,10 +30,13 @@ import ws4 from "./../assets/ws4.jpg";
 import ws5 from "./../assets/ws5.png";
 import ws6 from "./../assets/ws6.png";
 import Aboutedu1 from "./../assets/Aboutedu1.png";
+import Aboutedu2 from "./../assets/Aboutedu2.png";
 import teacher1 from "./../assets/teacher1.jpg";
+import teacher2 from "./../assets/teacher2.png";
 import studentjoin from "./../assets/studentjoin.jpg";
 import teacherjoin from "./../assets/teacherjoin.jpg";
 import Whyedu1 from "./../assets/Whyedu1.png";
+import Whyedu2 from "./../assets/Whyedu2.png";
 export default {
 
     Logo,
@@ -68,9 +71,12 @@ export default {
     ws5,
     ws6,
     Aboutedu1,
+    Aboutedu2,
     studentjoin,
     teacherjoin,
     teacher1,
-    Whyedu1
+    teacher2,
+    Whyedu1,
+    Whyedu2
 }
 

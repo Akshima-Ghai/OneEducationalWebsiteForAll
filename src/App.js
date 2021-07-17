@@ -7,6 +7,7 @@ import Feature_student from "./pages/Feature/Feature_student";
 import Feature_teacher from "./pages/Feature/Feature_teacher";
 import { Home, Login, Signup, SignupStudent, SignupTeacher, About, FAQ, Section,SingleQuiz,QuizList} from "./pages/PageSrc";
 import Student from "./pages/Student/Student";
+import Teacher from "./pages/Teacher/Teacher";
 import Student_join from "./pages/Student_join/Student_join";
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Feature_Student" exact component={Feature_student} />
         <Route path="/Feature_Teacher" exact component={Feature_teacher} />
         <Route path="/student" exact component={Student} />
+        <Route path="/teacher" exact component={Teacher} />
         <Route path="/student_join" exact component={Student_join} />
         
         {/* <Footer /> */}
