@@ -99,7 +99,7 @@ function Student() {
                  <h4 class="joinhtt">As a <span style={{color: '#FF450B'}}>Teacher</span></h4> 
                  <p class="ptt"> Are you ready to share your knowledge and experience?</p> <br/><br/>
                  <div class="jcenter">
-                 <a href="http://google.com" role="button" class="buttons">Join</a>
+                 <Link to="/Teacher_join" role="button" class="buttons">Join</Link>
                  </div>
                 
           </div>
