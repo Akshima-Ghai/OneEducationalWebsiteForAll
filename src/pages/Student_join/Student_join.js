@@ -5,6 +5,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import StarIcon from '@material-ui/icons/Star';
 
+import { CarouselWrapper } from 'react-pretty-carousel';
+
 function Student_join() {
     return (
         <div>
@@ -123,7 +125,7 @@ function Student_join() {
           />
            </div>
            <div className="cardsd">
-             <Carousel>
+             <CarouselWrapper items={1} mode="gallery">
                <div class="cardt">
                 <img
                     src={ImgSrc.pro}
@@ -191,7 +193,7 @@ function Student_join() {
                     when an unknown printer took .</p> 
                  </div>
                 </div>
-             </Carousel>
+             </CarouselWrapper>
            </div>
         </div>
     </section>

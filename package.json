@@ -13,6 +13,7 @@
     "react-dark-mode-toggle": "^0.2.0",
     "react-dom": "^17.0.2",
     "react-headroom": "^3.0.0",
+    "react-pretty-carousel": "^1.0.19",
     "react-redux": "^7.2.4",
     "react-responsive-carousel": "^3.2.19",
     "react-reveal": "^1.2.2",

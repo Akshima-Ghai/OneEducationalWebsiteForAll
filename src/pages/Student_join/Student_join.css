@@ -129,9 +129,32 @@
 }
 
 .c_info{
-    display:flex;
-    justify-content: space-between;
-   padding-top: 70px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.cardsd {
+  display: flex;
+  align-items: center;
+}
+
+.cardsd * {
+  user-select: none;
+  text-align: center;
+}
+
+.rpc-content-control-btns {
+  display: none !important;
+}
+.rpc-control-dot {
+  background-color: rgba(255, 68, 0, 0.64) !important;
+}
+.rpc-control-dot.active {
+  background-color: orangered !important;
+}
+.rpc-content-control-dots {
+  margin-top: 30px;
 }
 
 .ra-rating-star {
@@ -158,6 +181,8 @@ text-align:center;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         width: 100%;
+        display: flex;
+        flex-direction: column;
       }
 
       .carousel {
@@ -166,11 +191,9 @@ text-align:center;
       }
 
       .pro--img{
-          width:20px;
+          border-radius: 50%;
           height:200px;
-          padding:90px;
-          padding-top:10px;
-          padding-bottom:10px;
+          margin:auto;
       }
 
       .joinht{
