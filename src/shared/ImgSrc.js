@@ -23,6 +23,17 @@ import FeatureStudentImage5 from "./../assets/feature_student_page_img5.png";
 import FeatureTeacherImage1 from "./../assets/feature_teacher_page_img1.png";
 import FeatureTeacherImage2 from "./../assets/feature_teacher_page_img2.png";
 import FeatureTeacherImage3 from "./../assets/feature_teacher_page_img3.png";
+import ws1 from "./../assets/ws1.png";
+import ws2 from "./../assets/ws2.png";
+import ws3 from "./../assets/ws3.png";
+import ws4 from "./../assets/ws4.jpg";
+import ws5 from "./../assets/ws5.png";
+import ws6 from "./../assets/ws6.png";
+import Aboutedu1 from "./../assets/Aboutedu1.png";
+import teacher1 from "./../assets/teacher1.jpg";
+import studentjoin from "./../assets/studentjoin.jpg";
+import teacherjoin from "./../assets/teacherjoin.jpg";
+import Whyedu1 from "./../assets/Whyedu1.png";
 export default {
 
     Logo,
@@ -50,5 +61,16 @@ export default {
     FeatureTeacherImage1,
     FeatureTeacherImage2,
     FeatureTeacherImage3,
+    ws1,
+    ws2,
+    ws3,
+    ws4,
+    ws5,
+    ws6,
+    Aboutedu1,
+    studentjoin,
+    teacherjoin,
+    teacher1,
+    Whyedu1
 }
 
