@@ -1,8 +1,6 @@
 import React from "react";
 import "./Student_join.css";
 import ImgSrc from "../../shared/ImgSrc";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import { Carousel } from 'react-responsive-carousel';
 import StarIcon from '@material-ui/icons/Star';
 
 import { CarouselWrapper } from 'react-pretty-carousel';
