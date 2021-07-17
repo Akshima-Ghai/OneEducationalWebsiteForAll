@@ -1,0 +1,24 @@
+.back-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    right: 15px;
+    bottom: 25px;
+    background:  rgb(252, 39, 24);
+    color: #fff;
+    transition: display 0.5s ease-in-out;
+    z-index: 99999;
+    
+}
+.back-to-top:hover{
+    background-color: rgb(112, 11, 4);
+    box-shadow: 0 6px 6px 0px lightgray;
+}
+.scrollButton {
+    z-index: 200;
+    position: fixed;
+    bottom: 0;
+    transition: opacity 0.3s ease;
+   
+}

@@ -5,6 +5,7 @@ import "./App.css";
 import Layout from "./components/Layout/Layout";
 
 import { Home, Login, Signup, About, FAQ } from "./pages/PageSrc";
+import ScrollToTop from "./pages/ScrollToTop";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/faq" exact component={FAQ} />
 
       </Switch>
+      <ScrollToTop/>
     </Layout>
   );
 }
