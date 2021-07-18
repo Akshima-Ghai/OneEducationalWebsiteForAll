@@ -1,10 +1,38 @@
-import React from "react";
-import "./About.css";
-import ImgSrc from "./../../shared/ImgSrc";
+import React,{ useState, useEffect } from "react";
+import axios from "axios";
 import Scrolltop from "../../components/ScrollTop/Scrolltop";
 import Footer from "../../components/Footer/Footer";
+import ImgSrc from "./../../shared/ImgSrc";
+import "./About.css";
 
 const About = (props) => {
+
+  const [contributors, setContributors] = useState([]);
+  const [adminmentors, setAdminMentors] = useState([]);
+  const adminmentors_ids = [58785998, 78724676];
+
+  const apiURL = "https://api.github.com/repos/Akshima-Ghai/OneEducationalWebsiteForAll/contributors";
+
+  useEffect(() =>
+  {
+    const fetchData = async () =>
+    {
+      const res = await axios.get(apiURL);
+      setAdminMentors(res.data.filter(contributor => adminmentors_ids.includes(contributor.id)));
+      setContributors(res.data.filter(contributor => !adminmentors_ids.includes(contributor.id)));
+    };
+    fetchData();
+  }, []);
+
+  const getrole = (id) => {
+    switch(id){
+      case 58785998 : return "Admin"; 
+      case 78724676 : return "Mentor";
+      default : return "Contributor";
+    }
+  }
+
+
   return (
     <div>
       <section className="about__container">
@@ -31,11 +59,42 @@ const About = (props) => {
           <h1>Is it free?</h1>
           <p>YES, Forever.</p>
         </div>
+        <br/>
+        <br/>
         <h1 className="about__heading">Our Team</h1>
-        <div className="about__pa--card">
-          <img src={ImgSrc.Woman} alt="profile" />
-          <h1>Akshima Ghai</h1>
-          <p>Project Admin</p>
+        <div className="contributors__list">
+          {adminmentors.map((mentor, index) => {
+            return (
+              <div className="contributor" key={index}>
+                <div className="contributor__img">
+                  <img src={mentor.avatar_url} alt="contributor-avatar" />
+                </div>
+                <div className={`contributor__details mentor__details`}>
+                  <a href={mentor.html_url} target="_blank"><h3>{mentor.login}</h3></a>
+                  <p> Project { getrole(mentor.id) }</p>
+                </div>
+              </div>
+              )
+            })
+          }
+        </div>
+        <div className="contributors__list">
+          {contributors.map((contributor, index) => {
+            return (
+              <div className="contributor" key={index}>
+                <div className="contributor__img">
+                  <img src={contributor.avatar_url} alt="contributor-pic" />
+                </div>
+                {
+                <div className="contributor__details">
+                  <a href={contributor.html_url} target="_blank"><h3>{contributor.login}</h3></a>
+                  <p>{ getrole(contributor.id) }</p>
+                </div>
+                }
+              </div>
+              )
+            })
+          }
         </div>
         <Scrolltop showBelow={250} />
       </section>
