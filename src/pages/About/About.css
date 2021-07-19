@@ -50,8 +50,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 280px;
-  height:340px;
+  width: 200px;
+  height:250px;
   overflow:hidden;
   object-fit: contain;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
@@ -76,6 +76,10 @@
   height:auto;
 }
 
+.github__icon{
+  width:30px;
+}
+
 .contributor__details{
   height: 20%;
   width: 100%;
@@ -96,15 +100,22 @@
   transform: scale(1.075);
 }
 
+.fa-github{
+  font-size:20px;
+  color:#333;
+  background-color:#FFF;
+  margin-right:5px;
+  border-radius:50%;
+}
+
 .contributor__details h3 {
-  text-transform: uppercase;
-  font-size:16px;
+  font-size:14px;
   color:rgb(209, 57, 57);
   margin-bottom:5px;
 }
 
 .contributor__details p{
-  font-size:14px;
+  font-size:12px;
 }
 
 .mentor__details{
@@ -115,6 +126,27 @@
 .mentor__details h3{
   color:#FFF;
 }
+
+.view__more--button {
+  background-color: #f24638;
+  color: white;
+  padding: 0.75rem 1.75rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: inherit;
+  cursor: pointer;
+  border: 2px solid #f24638;
+  transition: all 0.4s;
+}
+
+.view__more--button:hover {
+  background-color: var(--header-button);
+  color: #f24638;
+}
+
 
 /* Media Queries */
 

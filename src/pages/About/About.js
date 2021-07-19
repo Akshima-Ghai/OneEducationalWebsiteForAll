@@ -1,5 +1,6 @@
 import React,{ useState, useEffect } from "react";
 import axios from "axios";
+import GitHubIcon from '@material-ui/icons/GitHub';
 import Scrolltop from "../../components/ScrollTop/Scrolltop";
 import Footer from "../../components/Footer/Footer";
 import ImgSrc from "./../../shared/ImgSrc";
@@ -8,6 +9,7 @@ import "./About.css";
 const About = (props) => {
 
   const [contributors, setContributors] = useState([]);
+  const [viewnumber, setViewNumber] = useState(15);
   const [adminmentors, setAdminMentors] = useState([]);
   const adminmentors_ids = [58785998, 78724676];
 
@@ -32,6 +34,10 @@ const About = (props) => {
     }
   }
 
+  const handleViewMore = (e) => {
+    e.preventDefault(); 
+    setViewNumber(viewnumber + 15);
+  }
 
   return (
     <div>
@@ -70,7 +76,8 @@ const About = (props) => {
                   <img src={mentor.avatar_url} alt="contributor-avatar" />
                 </div>
                 <div className={`contributor__details mentor__details`}>
-                  <a href={mentor.html_url} target="_blank"><h3>{mentor.login}</h3></a>
+                  <a href={mentor.html_url} target="_blank">
+                  <h3><i className="fab fa-github" aria-hidden="true"></i>@{mentor.login}</h3></a>
                   <p> Project { getrole(mentor.id) }</p>
                 </div>
               </div>
@@ -79,7 +86,7 @@ const About = (props) => {
           }
         </div>
         <div className="contributors__list">
-          {contributors.map((contributor, index) => {
+          {contributors.slice(0,viewnumber).map((contributor, index) => {
             return (
               <div className="contributor" key={index}>
                 <div className="contributor__img">
@@ -87,7 +94,8 @@ const About = (props) => {
                 </div>
                 {
                 <div className="contributor__details">
-                  <a href={contributor.html_url} target="_blank"><h3>{contributor.login}</h3></a>
+                  <a href={contributor.html_url} target="_blank">
+                  <h3><i className="fab fa-github" aria-hidden="true"></i>@{contributor.login}</h3></a>
                   <p>{ getrole(contributor.id) }</p>
                 </div>
                 }
@@ -96,6 +104,11 @@ const About = (props) => {
             })
           }
         </div>
+        { viewnumber < contributors.length ?
+          <button className="view__more--button" onClick={ handleViewMore }>
+            View More
+          </button>
+        : null }
         <Scrolltop showBelow={250} />
       </section>
       <Footer />
