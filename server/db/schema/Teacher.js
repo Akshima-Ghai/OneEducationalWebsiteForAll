@@ -30,6 +30,15 @@ const teacherSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  quiz_list:[
+    {
+      qid:{
+        type:mongoose.Schema.Types.ObjectId,
+        required:true,
+        ref:"quizzes"
+    }
+    }
+  ],
 });
 
 const Teacher = mongoose.model("teacher", teacherSchema);
