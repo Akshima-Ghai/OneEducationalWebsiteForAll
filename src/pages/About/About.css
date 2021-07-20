@@ -127,11 +127,16 @@
   color:#FFF;
 }
 
+.view__options{
+  display: flex;
+  justify-content: center;
+}
+
 .view__more--button {
   background-color: #f24638;
   color: white;
   padding: 0.75rem 1.75rem;
-  margin-top: 2rem;
+  margin: 2rem 1rem;
   font-weight: bold;
   border: none;
   outline: none;

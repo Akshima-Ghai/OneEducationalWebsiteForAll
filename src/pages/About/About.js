@@ -39,6 +39,11 @@ const About = (props) => {
     setViewNumber(viewnumber + 15);
   }
 
+  const handleViewLess = (e) => {
+    e.preventDefault(); 
+    setViewNumber(viewnumber - 15);
+  }
+
   return (
     <div>
       <section className="about__container">
@@ -104,11 +109,18 @@ const About = (props) => {
             })
           }
         </div>
-        { viewnumber < contributors.length ?
+        <div className="view__options">
+          { viewnumber < contributors.length ?
           <button className="view__more--button" onClick={ handleViewMore }>
             View More
           </button>
+          : null }
+          { viewnumber > contributors.length ?
+          <button className="view__more--button" onClick={ handleViewLess }>
+            View Less
+          </button>
         : null }
+        </div>
         <Scrolltop showBelow={250} />
       </section>
       <Footer />
