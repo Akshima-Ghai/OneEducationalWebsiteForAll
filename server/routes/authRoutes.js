@@ -1,6 +1,6 @@
 const express = require('express');
 const authRouter = express.Router();
-const { studentSignUp, teacherSignUp } = require('./../controllers/auth');
+const { studentSignUp, teacherSignUp, studentLogin, teacherLogin } = require('./../controllers/auth');
 
 //Tags
 /**
@@ -84,7 +84,133 @@ authRouter.post('/student-signup', studentSignUp);
  */
 authRouter.post('/teacher-signup', teacherSignUp); 
 
-module.exports = authRouter;
+/**
+ * @swagger
+ * /student-login:
+ *  post:
+ *     description: student login route
+ *     tags: [Auth]
+ *     requestBody:
+ *        required: true
+ *        content: 
+ *            application/json: 
+ *                schema:
+ *                    type: object  
+ *                    properties:
+ *                          email: 
+ *                              type: string
+ *                              description: email entered for login
+ *                          password: 
+ *                               type: string 
+ *                               description: password entered for login
+ *     responses:
+ *        '200':
+ *            summary: Student Logged in Successfully (token sent)
+ *            content:
+ *               application/json:
+ *                   schema: 
+ *                      type: object  
+ *                      properties:
+ *                           accesstoken: 
+ *                                type: string
+ *                                description: accesstoken for student to access platform for a week 
+ *        '400': 
+ *            summary: Invalid Credentials
+ *            content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for Invalid Credentials
+ *        '401': 
+ *           summary: Student not found with this email
+ *           content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for student not found with this email
+ *        '500':
+ *            summary: Internal Error
+ *            content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for Internal error accures
+ */
+ authRouter.post('/student-login', studentLogin);
+
+ /**
+ * @swagger
+ * /teacher-login:
+ *  post:
+ *     description: teacher login route
+ *     tags: [Auth]
+ *     requestBody:
+ *        required: true
+ *        content: 
+ *            application/json: 
+ *                schema:
+ *                    type: object  
+ *                    properties:
+ *                          email: 
+ *                              type: string
+ *                              description: email entered for login
+ *                          password: 
+ *                               type: string 
+ *                               description: password entered for login
+ *     responses:
+ *        '200':
+ *            summary: Teacher Logged in Successfully (token sent)
+ *            content:
+ *               application/json:
+ *                   schema: 
+ *                      type: object  
+ *                      properties:
+ *                           accesstoken: 
+ *                                type: string
+ *                                description: accesstoken for teacher to access platform for a week 
+ *        '400': 
+ *            summary: Invalid Credentials
+ *            content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for Invalid Credentials
+ *        '401': 
+ *           summary: Teacher not found with this email
+ *           content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for teacher not found with this email
+ *        '500':
+ *            summary: Internal Error
+ *            content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for Internal error accures
+ */
+ authRouter.post('/teacher-login', teacherLogin);
+
+ module.exports = authRouter;
 
 
 // Models
