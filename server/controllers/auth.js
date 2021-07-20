@@ -30,8 +30,7 @@ exports.studentSignUp = async (req, res) => {
       created_at,
     });
 
-    const token = createwebToken(student._id);
-    
+    const token = createwebToken(student._id); 
     return res.status(200).json({ accesstoken: token });
   } 
   catch (err) {
@@ -62,15 +61,58 @@ exports.teacherSignUp = async (req, res) => {
       });
   
       const token = createwebToken(teacher._id);
-      
       return res.status(200).json({ accesstoken: token });
     } 
     catch (err) {
-      if (err.code === 11000) {console.log("email already registered");
+      if (err.code === 11000) {
         return res.status(500).json({ error: "Email already registered" });
       }
       return res.status(500).json({ error: "500 Internal Error" });
     }
+};
+
+exports.studentLogin = async (req, res) => {
+
+  const { email, password } = req.body;
+
+  try {
+    const student = await Student.findOne({ email: email });
+    if (student) {
+      const validPassword = await bcrypt.compare(password, student.password);
+      if (validPassword) {
+        const token = createwebToken(student._id);
+        return res.status(200).json({ accesstoken: token });
+      } else {
+        return res.status(400).json({ error: "Invalid Credentials" });
+      }
+    } else {
+      return res.status(401).json({ error: "Student not found registered with this email" });
+    }
+  } catch (err) {
+    return res.status(500).json({ error: "500 Internal Server Error" });
+  }
+};
+
+exports.teacherLogin = async (req, res) => {
+  
+  const { email, password } = req.body;
+
+  try {
+    const teacher = await Teacher.findOne({ email: email });
+    if (teacher) {
+      const validPassword = await bcrypt.compare(password, teacher.password);
+      if (validPassword) {
+        const token = createwebToken(teacher._id);
+        return res.status(200).json({ accesstoken: token });
+      } else {
+        return res.status(400).json({ error: "Invalid Credentials" });
+      }
+    } else {
+      return res.status(401).json({ error: "Teacher not found registered with this email" });
+    }
+  } catch (err) {
+    return res.status(500).json({ error: "500 Internal Server Error" });
+  }
 };
 
 
