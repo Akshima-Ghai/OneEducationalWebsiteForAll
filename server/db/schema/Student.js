@@ -30,6 +30,20 @@ const studentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  my_queries:[
+    {
+      title:String,
+      description:String
+    }
+  ],
+  quiz_record:[
+    {
+      quiz_title:String,
+      quiz_marks:Number,
+      quiz_total:Number,
+      quiz_percent:Number,
+    }
+  ]
 });
 
 const Student = mongoose.model("student", studentSchema);

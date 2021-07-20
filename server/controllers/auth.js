@@ -4,10 +4,10 @@ const bcrypt = require("bcrypt");
 const moment = require("moment");
 const jwt = require("jsonwebtoken");
 
-const maxage = 7 * 24 * 60 * 60;
+const MAX_AGE = 7 * 24 * 60 * 60;
 const createwebToken = (id) => {
   return jwt.sign({ id }, process.env.ACCESS_TOKEN_SECRET, {
-    expiresIn: maxage,
+    expiresIn: MAX_AGE,
   });
 };
 
