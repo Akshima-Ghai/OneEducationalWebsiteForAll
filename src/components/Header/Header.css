@@ -10,9 +10,8 @@
   overflow: hidden;
   height: 6em;
 }
-
 .header__h1 {
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   color: #f8f8f8;
   letter-spacing: 0.25rem;
   font-weight: 900;
@@ -30,12 +29,20 @@
   text-shadow: 2px 1px 3px grey;
   font-weight: 900;
 }
-
+.header_name{
+  width:17%;
+}
 .header__logo {
   width: 22%;
   float: left;
 }
-
+.nav_links{
+width:40%;
+display:flex;
+flex-direction:row;
+justify-content: space-evenly;
+padding:auto;
+}
 .header_toggle--btn {
   padding-right: 10px;
   display: none;
@@ -48,7 +55,6 @@
   background-color: var(--header-color);
   margin: 6px 0;
 }
-
 .header_toggle--btn:hover div{ 
   background: white;
 }
@@ -73,8 +79,8 @@
 .header__btn--login a {
   /* border-radius: 20px; */
   margin-right: 2rem;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 2rem;
+  padding-left: 2rem;
   color: whitesmoke;
   border: 2px solid #9e352c;
   font-weight: bold;
@@ -91,8 +97,8 @@
   margin-right: 2rem;
   /* color: white; */
   color: var(--primary-footer-text);
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right:2rem;
+  padding-left: 2rem;
   background-color: var(--header-button);
   border: 2px solid #b8b8b8;
 }
@@ -102,21 +108,52 @@
   border: 2px solid #b8b8b8;
   color: white;
 }
+.header__btn--container{
+ width:20%;
+ display:flex;
+flex-direction:row;
+justify-content: flex-end;
 
-.dark_mode_toogle {
-  margin-right: -5em;
 }
 
-.header__btn--container {
-  margin-right: -12em;
+@media (max-width:1280px){
+  .header_name{
+    margin-left:-1rem;
+    width:23%;
+  }
 }
-
-@media (max-width: 700px) {
+@media (max-width:1040px){
+  .header__btn--container{
+    width:23%;
+  }
+}
+@media (max-width:865px){
+.header__h1{
+  font-size: 1.5rem;
+}
+.header__btn--get a,.header__btn--login a{
+  margin-right:1rem;
+}
+}
+@media (max-width: 750px) {
   .header_toggle--btn {
     display: inline-block;
   }
+  .dark_mode_toogle{
+   margin-left:20rem;
+  }
+  
+  .header_name{
+    width:35%;
+  }
+  .header__h1{
+    font-size:2rem;
+  }
   .header__btn--container {
     display: none;
+  }
+  .nav_links{
+    display:none;
   }
 }
 .header__switch {
@@ -177,4 +214,27 @@
 
 .slider.round:before {
   border-radius: 50%;
+}
+@media (max-width: 530px){
+   .header_name{
+     width:40%;
+   }
+}
+@media (max-width: 500px){
+  .header_name{
+    width:45%;
+  }
+  .dark_mode_toogle{
+    margin-left:10rem;
+    size:45;
+  }
+}
+@media (max-width: 400px){
+  .header_name{
+    width:55%;
+  }
+  .dark_mode_toogle{
+    margin-left:3rem;
+    size:45;
+  }
 }

@@ -118,11 +118,17 @@ label {
   .inside_cont3-box{
     display:flex;
     flex-direction:row;
-    width:80%;
+    width:90%;
     margin:3rem auto;
     justify-content: space-between;
     align-items: center;
 
+  }
+
+  .inside_cont3-box .containers{
+    width: 40rem;
+    height: 60rem;
+    /* background-color: red; */
   }
 .inside_container3{
    display:flex;

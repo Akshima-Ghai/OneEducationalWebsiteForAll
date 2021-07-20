@@ -1,6 +1,7 @@
-import React, { useState , useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import ImgSrc from "./../../shared/ImgSrc";
+import Headroom from "react-headroom";
 import DarkModeToggle from "react-dark-mode-toggle";
 import { Link, withRouter } from "react-router-dom";
 import Nav from "./../Nav/Nav";
@@ -8,18 +9,19 @@ import useDarkMode from "../../hooks/useDarkMode";
 
 
 const Header = (props) => {
+  const [theme,setTheme]=useState();
   const [isDarkMode, setIsDarkMode] = useState(() => false);
   const [theme, setTheme] = useState('light');
   const handleThemeBtn = () => {
     let currentTheme = isDarkMode;
-    if (currentTheme === true) {
+    // if (currentTheme === true) {
 
-      document.documentElement.dataset.theme = "light";
-      setTheme("light")
-    } else {
-      document.documentElement.dataset.theme = "dark";
-      setTheme("dark")
-    }
+    //   document.documentElement.dataset.theme = "light";
+    //   setTheme("light")
+    // } else {
+    //   document.documentElement.dataset.theme = "dark";
+    //   setTheme("dark")
+    // }
 
     setIsDarkMode((prev) => !prev);
 
@@ -28,7 +30,7 @@ const Header = (props) => {
   return (
     <div>
       <header className="header">
-        <div onClick={() => props.history.push("/")}>
+        <div onClick={() => props.history.push("/")} className="header_name">
           <img
             src={ImgSrc.Logo}
             alt="LearnZania Logo"
@@ -40,14 +42,9 @@ const Header = (props) => {
           </h1>
         </div>
 
-        <div onClick={props.toggleSD} className="header_toggle--btn">
-          {/* for responsiveness in small screen  */}
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <Nav />
-
+       
+        <div className="nav_links"><Nav /></div>
+        
         <div className="header__btn--container">
           <ul className="header__btn--ul">
             <li className="header__btn--login header__btn--a">
@@ -59,13 +56,19 @@ const Header = (props) => {
               <Link to="/signup">Sign up</Link>
             </li>
           </ul>
-        </div>
+          </div>
         <DarkModeToggle
           className="dark_mode_toogle"
           onChange={handleThemeBtn}
           checked={isDarkMode}
           size={55}
         />
+         <div onClick={props.toggleSD} className="header_toggle--btn">
+          {/* for responsiveness in small screen  */}
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </header>
     </div>
   );

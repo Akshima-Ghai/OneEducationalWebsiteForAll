@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.11.4",
+    "@material-ui/core": "^4.12.1",
     "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -12,6 +12,8 @@
     "react": "^17.0.2",
     "react-dark-mode-toggle": "^0.2.0",
     "react-dom": "^17.0.2",
+    "react-headroom": "^3.0.0",
+    "react-pretty-carousel": "^1.0.19",
     "react-redux": "^7.2.4",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",

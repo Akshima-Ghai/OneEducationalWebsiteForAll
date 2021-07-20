@@ -1,0 +1,155 @@
+.signup__container {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: linear-gradient(
+    -30deg,
+    rgb(255, 164, 164) 0%,
+    #f24638 50%,
+    var(--primary-footer-text) 50%,
+    var(--primary-home-p) 100%
+  );
+}
+
+.signup__form {
+  width: 35%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--primary-form);
+  margin: 30px 0;
+  margin-left: -200px;
+  border-radius: 6px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+
+input{
+  width: 100%;
+  padding: 11px !important;
+  margin: 10px 0 !important;
+  display: inline-block;
+  border: 2px solid #f24638 !important;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.signup__form--button {
+  background-color: #f24638;
+  color: white;
+  padding: 0.75rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+  border: 2px solid #f24638;
+  transition: all 0.4s;
+  letter-spacing: 2px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.signup__form--button:hover {
+  background-color: var(--header-button);
+  color: #f24638;
+}
+
+.signup__form--p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  /* margin-right: -100px; */
+  text-align: right;
+  font-weight: bold;
+  color: var(--primary-footer-text);
+}
+
+.signup__form--p a {
+  color: #f24638;
+  text-decoration: none;
+}
+
+.signup__heading--container {
+  padding: 1rem 0 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.signup__heading--container h1 {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  color: var(--primary-footer-text);
+}
+
+.signup__img {
+  width: 30%;
+}
+
+.signup__img img {
+  width: 600px;
+  height: 600px;
+}
+
+@media (max-width: 991px) {
+  .signup__img img {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media (max-width: 782px) {
+  .signup__img img {
+    width: 400px;
+    height: 450px;
+  }
+  .signup__form {
+    width: 40%;
+    margin-left: -120px;
+  }
+}
+
+@media (max-width: 700px) {
+  .signup__container {
+    flex-direction: column-reverse;
+  }
+  .signup__form {
+    width: 70%;
+    margin-left: 0;
+  }
+  .signup__img {
+    width: 50%;
+  }
+  .signup__img img{
+    margin-left: -100px;
+    height: 500px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .signup__img {
+    width: 30%;
+  }
+  .signup__img img {
+    width: 350px;
+    height: 350px;
+  }
+  .signup__form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 360px) {
+  .signup__img {
+    width: 30%;
+  }
+  .signup__img img {
+    width: 300px;
+    height: 300px;
+  }
+  .signup__form {
+    width: 80%;
+  }
+}
