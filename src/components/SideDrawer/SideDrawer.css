@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   z-index: 20;
-  height: 100vh;
+  height: 100%;
   width: 82.5%;
   transition: all 0.4s;
   background-color: #dc1c13;
