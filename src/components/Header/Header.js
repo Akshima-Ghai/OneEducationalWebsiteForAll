@@ -9,6 +9,7 @@ import useDarkMode from "../../hooks/useDarkMode";
 
 const Header = (props) => {
   const [isDarkMode, setIsDarkMode] = useState(() => false);
+  const [theme, setTheme] = useState('light');
   const handleThemeBtn = () => {
     let currentTheme = isDarkMode;
     if (currentTheme === true) {
