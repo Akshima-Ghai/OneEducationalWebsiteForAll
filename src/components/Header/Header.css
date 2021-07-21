@@ -124,8 +124,9 @@ justify-content: flex-end;
 }
 @media (max-width:1040px){
   .header__btn--container{
-    width:23%;
+    display: none;
   }
+  
 }
 @media (max-width:865px){
 .header__h1{
