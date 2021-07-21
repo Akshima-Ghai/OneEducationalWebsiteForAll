@@ -26,9 +26,9 @@ const teacherSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  created_at: {
+  password_reset_token: {
     type: String,
-    required: true,
+    default: "",
   },
   quiz_list:[
     {
@@ -39,6 +39,10 @@ const teacherSchema = new mongoose.Schema({
     }
     }
   ],
+  created_at: {
+    type: String,
+    required: true,
+  },
 });
 
 const Teacher = mongoose.model("teacher", teacherSchema);
