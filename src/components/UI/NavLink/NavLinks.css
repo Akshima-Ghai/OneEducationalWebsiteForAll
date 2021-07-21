@@ -5,6 +5,7 @@
   font-weight: 900;
   font-size: 1.3rem;
   padding: 1.5rem;
+  white-space: nowrap;
 }
 
 .nav_scroll_color_change.ac:hover {

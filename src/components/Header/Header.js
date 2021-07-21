@@ -60,7 +60,7 @@ const Header = (props) => {
           className="dark_mode_toogle"
           onChange={handleThemeBtn}
           checked={isDarkMode}
-          size={55}
+          size={50}
         />
          <div onClick={props.toggleSD} className="header_toggle--btn">
           {/* for responsiveness in small screen  */}
