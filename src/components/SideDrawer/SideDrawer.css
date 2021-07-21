@@ -11,6 +11,16 @@
   background-color: #dc1c13;
 }
 
+.sidedrawer__container::-webkit-scrollbar{
+  width: 10px;
+}
+
+.sidedrawer__container::-webkit-scrollbar-track{
+  background-color: white;
+}
+
+
+
 .sidedrawer__container ul {
   margin-top: 10rem;
   list-style: none;
@@ -40,5 +50,6 @@
 @media (max-width: 750px) {
   .sidedrawer__container {
     display: inline-block;
+    overflow-y:scroll;
   }
 }
