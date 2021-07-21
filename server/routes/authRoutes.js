@@ -1,6 +1,6 @@
 const express = require('express');
 const authRouter = express.Router();
-const { studentSignUp, teacherSignUp, studentLogin, teacherLogin } = require('./../controllers/auth');
+const { studentSignUp, teacherSignUp, studentLogin, teacherLogin, studentForgotPassword, teacherForgotPassword } = require('./../controllers/auth');
 
 //Tags
 /**
@@ -143,7 +143,7 @@ authRouter.post('/teacher-signup', teacherSignUp);
  *                       properties:
  *                             error: 
  *                                 type: string
- *                                 description: error message for Internal error accures
+ *                                 description: error message for Internal error 
  */
  authRouter.post('/student-login', studentLogin);
 
@@ -206,12 +206,113 @@ authRouter.post('/teacher-signup', teacherSignUp);
  *                       properties:
  *                             error: 
  *                                 type: string
- *                                 description: error message for Internal error accures
+ *                                 description: error message for Internal error 
  */
  authRouter.post('/teacher-login', teacherLogin);
 
- module.exports = authRouter;
+ /**
+ * @swagger
+ * /student-forgotpassword:
+ *  post:
+ *     description: student forgot-password route
+ *     tags: [Auth]
+ *     requestBody:
+ *        required: true
+ *        content: 
+ *            application/json: 
+ *                schema:
+ *                    type: object  
+ *                    properties:
+ *                          email: 
+ *                              type: string
+ *                              description: email entered 
+ *                          
+ *     responses:
+ *        '200':
+ *            summary: Email having reset password link sent successfully 
+ *            content:
+ *               application/json:
+ *                   schema: 
+ *                      type: object  
+ *                      properties:
+ *                            msg: 
+ *                               type: string
+ *                               description: success message if email sent successfully
+ *        '401': 
+ *           summary: Student not found with this email
+ *           content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for student not found with this email
+ *        '500':
+ *            summary: Internal Error / No student found having id associated with email
+ *            content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for Internal error / Student not found with id 
+ */
+  authRouter.post('/student-forgotpassword', studentForgotPassword);
 
+ /**
+ * @swagger
+ * /teacher-forgotpassword:
+ *  post:
+ *     description: teacher forgot-password route
+ *     tags: [Auth]
+ *     requestBody:
+ *        required: true
+ *        content: 
+ *            application/json: 
+ *                schema:
+ *                    type: object  
+ *                    properties:
+ *                          email: 
+ *                              type: string
+ *                              description: email entered 
+ *                          
+ *     responses:
+ *        '200':
+ *            summary: Email having reset password link sent successfully 
+ *            content:
+ *               application/json:
+ *                   schema: 
+ *                      type: object  
+ *                      properties:
+ *                            msg: 
+ *                               type: string
+ *                               description: success message if email sent successfully
+ *        '401': 
+ *           summary: Teacher not found with this email
+ *           content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for teacher not found with this email
+ *        '500':
+ *            summary: Internal Error / No teacher found having id associated with email
+ *            content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for Internal error / Teacher not found with id 
+ */
+  authRouter.post('/teacher-forgotpassword', teacherForgotPassword);
+
+ module.exports = authRouter;
 
 // Models
 /**

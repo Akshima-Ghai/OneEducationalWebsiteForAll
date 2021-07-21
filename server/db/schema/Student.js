@@ -26,9 +26,9 @@ const studentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  created_at: {
+  password_reset_token: {
     type: String,
-    required: true,
+    default: "",
   },
   my_queries:[
     {
@@ -43,7 +43,11 @@ const studentSchema = new mongoose.Schema({
       quiz_total:Number,
       quiz_percent:Number,
     }
-  ]
+  ],
+  created_at: {
+    type: String,
+    required: true,
+  }
 });
 
 const Student = mongoose.model("student", studentSchema);
