@@ -1,118 +1,122 @@
 import React from "react";
 import "./Student.css";
 import ImgSrc from "../../shared/ImgSrc";
-import{Link}from "react-router-dom";
+import { Fragment } from "react";
+import Slide from "react-reveal/Slide";
+import Bounce from "react-reveal/Bounce";
 import Footer from "../../components/Footer/Footer";
 
-function Student() {
-    return (
-        <div>
-            <section className="student__container">
-      <div className="student__main">
-        <div className="student__info--container">
-          <div className="student__info">
-            <h1 className="student__h1"><span style={{color: '#FF450B'}}>Basics </span>
-            For Students</h1>
-            <p className="student_p">to improve life by improving online education</p><br/>
-            <a href="https://google.com" role="button" class="button1">Try for Free</a>
+const Feature_student = (props) => {
+  return (
+    <Fragment>
+      {/* This is for first block */}
+    <div className="whole_body">
+      <div className="student_container1">
+        <Slide left>
+          <div className="student_inside_container1 student_down">
+            <div className="student_main_info1">
+              <h1 className="student_heading_block1_1">Basics</h1>
+              <h1 className="student_heading_block1_2">For Students</h1>
+              <div className="student_paragraph1">
+                to improve life by improving online education
+              </div>
+              <button className="student_btn">Try for Free</button>
+            </div>
+            <img className="student_image1" src={ImgSrc.FeatureStudentImage1} alt="" />
           </div>
-        </div>
-        <div className="teacher1">
-          <img
-            src={ImgSrc.teacher1}
-            alt="teacher"
-            className="teacher1--img"
-          />
-        </div>
-        </div>
-        </section>
+        </Slide>
+      </div>
 
-<section className="student__container1">
-      <div className="student__main1">
-      <div className="Aboutedu1">
-          <img
-            src={ImgSrc.Aboutedu1}
-            alt="About"
-            className="Aboutedu1--img"
-          />
+      {/* This is for second block */}
+
+      <div className="student_container2">
+        <div className="student_inside_container2">
+          <Slide right>
+            <img className="student_image2" src={ImgSrc.FeatureStudentImage2} alt="" />
+            <div className="student_main_info2">
+              <h1 className="student_heading_block2">
+                About <label>Education</label>
+              </h1>
+              <div className="student_paragraph2">
+                Video Lectures , Theory/Notes , TestSeries , Data Analysis of
+                results , Blogs to motivate or for Guidance , Attendance System
+                and many more features.
+              </div>
+            </div>
+          </Slide>
         </div>
-        <div className="student__info--container1">
-          <div className="student__info1">
-            <h1 className="student__h11"> About<span style={{color: '#FF450B'}}> Learnzania </span></h1>
-            <p className="student_p1">Video Lectures , Theory/Notes , <br/>
-            TestSeries , Data Analysis of results ,<br/>
-            Blogs to motivate or for Guidance  ,<br/>
-            Attendance System and many more features.<br/></p>
+
+        
+          <div className="student_inside_container2 student_down">
+          <Slide left>
+            <div className="student_student_main_info2">
+              <h1 className="student_heading_block2">
+                Why <label>Education?</label>
+              </h1>
+              <div className="student_paragraph2">
+                We provide , students with free and right guidance and help them
+                in selecting their correct career path
+              </div>
+            </div>
+            <img className="student_image2" src={ImgSrc.FeatureStudentImage3} alt="" />
+            </Slide>
           </div>
-        </div>
-        </div>
-        </section>
+        
+      </div>
 
-
-        <section className="student__container2">
-        <div className="student__main2">
-        <div className="student__info--container2">
-          <div className="student__info2">
-            <h1 className="student__h12"> Why<span style={{color: '#FF450B'}}> Learnzania ?</span></h1>
-            <p className="student_p2">We provide , students with free  <br/>
-            and right guidance and help them <br/>
-            in selecting their correct career path<br/></p>
+      {/* This is third block */}
+      <div className="student_container3">
+        <Bounce up>
+          <div className="student_heading3">
+            <h1>
+              Choose Your <label>Role</label>
+            </h1>
           </div>
-        </div>
-      <div className="Whyedu1">
-          <img
-           src={ImgSrc.Whyedu1}
-            alt="Why"
-            className="Whyedu1--img"
-          />
-        </div>
-        </div>
-        </section>
+        </Bounce>
 
-        <h1 className="student__h3"> Choose Your &nbsp;<span style={{color: '#FF450B'}}>Role</span></h1>
-
-      
-
-
-    <section className="student__containerj">
-      <div className="student__mainj">
-           <div class="cards">
-           <img
-            src={ImgSrc.studentjoin}
-            alt="Joins"
-            className="studentjoin--img"
-          />
-          <div class="containers">
-                 <h4 class="joinhs">As a <span style={{color: '#FF450B'}}>
-                   Student</span></h4> 
-                 <p class="ps">Are you ready to start learning from the best teachers!</p> <br/><br/>
-                 <div class="jcenter1">
-                 <Link to="/Student_join" role="button" class="buttons">Join</Link>
-                 </div>
-          </div>
-          </div>
-          <div class="cardtt">
-           <img
-            src={ImgSrc.teacherjoin}
-            alt="Joint"
-            className="teacherjoin--img"
-          />
-          <div class="containertt">
-                 <h4 class="joinhtt">As a <span style={{color: '#FF450B'}}>Teacher</span></h4> 
-                 <p class="ptt"> Are you ready to share your knowledge and experience?</p> <br/><br/>
-                 <div class="jcenter">
-                 <Link to="/Teacher_join" role="button" class="buttons">Join</Link>
-                 </div>
+        <div className="student_inside_cont3-box">
+          <Slide left>
+            <div className="student_inside_container3 student_containers">
+              <img
+                className="student_image3"
+                src={ImgSrc.FeatureStudentImage4}
+                alt=""
+              />
+              <div className="student_main_info3">
+                <h1 className="student_heading_block3">
+                  As a <label>Student</label>
+                </h1>
+                <div className="student_paragraph3">
+                  Start learning from the best teachers!
+                </div>
+                <button className="student_btn3">Join</button>
+              </div>
+            </div>
+          </Slide>
+          <Slide right>
+            <div className="student_inside_container3 student_containers">
+              <img
+                className="student_image3"
+                src={ImgSrc.FeatureStudentImage5}
+                alt=""
+              />
+              <div className="student_main_info3">
+                <h1 className="student_heading_block3">
+                  As a <label>Teacher</label>
+                </h1>
+                <div className="student_paragraph3">
+                  Are you ready to share your knowledge and experience ?
+                </div>
                 
-          </div>
-          </div>
+              </div>
+            </div>
+          </Slide>
         </div>
-     </section>
+      </div>
+      </div>
+      <Footer />
+    </Fragment>
+  );
+};
 
-</div>
-)
-   
-}
-
-export default Student
-
+export default Feature_student;
