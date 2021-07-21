@@ -1,23 +1,48 @@
 .quizbox__container {
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  padding: 5rem;
   flex-direction: column;
+}
+
+.quizbox__head--container{
+  display: flex;
+  margin: 0 auto;
+  width: 50rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.quizbox__progress{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2rem .5rem;
+  padding-bottom: 0;
+}
+
+.quizbox__progress--score{
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background-color: #f24638;
+  font-size: 1.75rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .quizbox__head {
   color: #f24638;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-bottom: 4rem;
 }
 
 .quizbox__main {
+  width: 50rem;
+  margin: 0 auto;
   padding: 3rem;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  min-width: 50rem;
   min-height: 32.5rem;
 }
 
@@ -28,6 +53,8 @@
 }
 
 .quizbox__main ul {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 1rem 0;
   margin-top: 2rem;
