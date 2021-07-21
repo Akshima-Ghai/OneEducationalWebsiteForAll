@@ -2,13 +2,24 @@ import React, { Component } from "react";
 import "./SingleQuiz.css";
 import QuestionBox from "./../../../components/QuestionBox/QuestionBox";
 import ResultBox from "./../../../components/ResultBox/ResultBox";
+import Instruction from './../../../components/Instruction/Instruction'
 
 class SingleQuiz extends React.Component {
   state = {
     questionData: [],
     progress: 0,
     score: 0,
+    time:Date.now() + 180000,
+    showInstruction:true
   };
+
+  finishTimer = () => {
+    setTimeout(() => {
+      this.setState({
+        progress:5
+      })
+    },180000)
+  }
 
   componentDidMount() {
     this.fetchData();
@@ -69,6 +80,9 @@ class SingleQuiz extends React.Component {
   };
 
   checkAnswer = (index) => {
+    if(!this.state.questionData[this.state.progress]){
+      return;
+    }
     var correct = this.state.questionData[this.state.progress].correct;
     var newScore = 0,
       newProgress = 0;
@@ -84,11 +98,29 @@ class SingleQuiz extends React.Component {
   };
 
   resetQuiz = () => {
-    this.setState({ score: 0, progress: 0 });
+    this.setState({ score: 0, progress: 0,time:Date.now() + 180000 });
+    this.finishTimer()
   };
 
   render() {
+
+    // NEED ISAUTH VARIABLE WHICH WILL KEEP RECORD IF USER IS AUTHENTICATED
+    // IF YES THEN ALLOW THE USER TO TAKE THE QUIZ
+    // IF NOT THEN REDIRECT TO LOGIN PAGE
+
+
     var questionDatum = this.state.questionData[this.state.progress];
+
+    if (this.state.showInstruction){
+      return (
+      <Instruction closeInstruction={() => {
+          this.setState({showInstruction:false,time:Date.now() + 180000})
+          this.finishTimer()
+        }} 
+      />
+      )
+    }
+
     if (this.state.questionData.length > this.state.progress) {
       return (
         <div>
@@ -97,6 +129,9 @@ class SingleQuiz extends React.Component {
             answers={questionDatum.answers}
             answerCallback={this.checkAnswer}
             questionDatum={questionDatum}
+            time={this.state.time}
+            attempted={this.state.progress}
+            notattempted={this.state.questionData.length-this.state.progress}
           />
         </div>
       );
@@ -104,6 +139,9 @@ class SingleQuiz extends React.Component {
       return (
         <ResultBox
           resetQuiz={this.resetQuiz}
+          correct={this.state.score}
+          incorrect={this.state.questionData.length - this.state.score}
+          total={this.state.questionData.length}
           score={(this.state.score / this.state.questionData.length) * 100}
         />
       );

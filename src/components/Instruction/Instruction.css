@@ -1,0 +1,43 @@
+.instruction__container{
+    padding: 7.5rem;
+    min-height: 90vh;
+}
+
+.ins__main{
+    margin: 0 auto;
+    background-color: var(--primary-main);
+    padding: 3rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.ins__list{
+    margin: 0 0 3rem 0;
+    list-style-type: circle;
+    
+}
+
+.ins__list li{
+    color: white;
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+.ins__btn{
+    background-color: white;
+    color:var(--primary-main);
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all .4s;
+    border-radius: 5px;
+}
+
+.ins__btn:hover{
+    background-color: #f1f1f1;
+}
