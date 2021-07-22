@@ -1,6 +1,7 @@
 const express = require('express');
 const authRouter = express.Router();
-const { studentSignUp, teacherSignUp, studentLogin, teacherLogin, studentForgotPassword, teacherForgotPassword } = require('./../controllers/auth');
+const { studentSignUp, teacherSignUp, studentLogin, teacherLogin, studentForgotPassword, teacherForgotPassword, 
+         studentResetPassword, teacherResetPassword } = require('./../controllers/auth');
 
 //Tags
 /**
@@ -311,6 +312,115 @@ authRouter.post('/teacher-signup', teacherSignUp);
  *                                 description: error message for Internal error / Teacher not found with id 
  */
   authRouter.post('/teacher-forgotpassword', teacherForgotPassword);
+
+ /**
+ * @swagger
+ * /student-resetpassword:
+ *  post:
+ *     description: student reset-password route
+ *     tags: [Auth]
+ *     requestBody:
+ *        required: true
+ *        content: 
+ *            application/json: 
+ *                schema:
+ *                    type: object  
+ *                    properties:
+ *                          token: 
+ *                              type: string
+ *                              description: token sent via reset-link
+ *                          password: 
+ *                              type: string
+ *                              description: new password entered by student
+ *                          
+ *     responses:
+ *        '200':
+ *            summary: Password has been reset and saved in db successfully 
+ *            content:
+ *               application/json:
+ *                   schema: 
+ *                      type: object  
+ *                      properties:
+ *                            msg: 
+ *                               type: string
+ *                               description: success message if password reset successfully
+ *        '401': 
+ *           summary: token sent via link is expired now
+ *           content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message because of expiration of password_reset_token
+ *        '500':
+ *            summary: Internal Error / No student found having id associated with email
+ *            content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for Internal error / Student not found with id 
+ */
+ authRouter.post('/student-resetpassword', studentResetPassword);
+
+ /**
+ * @swagger
+ * /teacher-resetpassword:
+ *  post:
+ *     description: teacher reset-password route
+ *     tags: [Auth]
+ *     requestBody:
+ *        required: true
+ *        content: 
+ *            application/json: 
+ *                schema:
+ *                    type: object  
+ *                    properties:
+ *                          token: 
+ *                              type: string
+ *                              description: token sent via reset-link
+ *                          password: 
+ *                              type: string
+ *                              description: new password entered by teacher
+ *                          
+ *     responses:
+ *        '200':
+ *            summary: Password has been reset and saved in db successfully 
+ *            content:
+ *               application/json:
+ *                   schema: 
+ *                      type: object  
+ *                      properties:
+ *                            msg: 
+ *                               type: string
+ *                               description: success message if password reset successfully
+ *        '401': 
+ *           summary: token sent via link is expired now
+ *           content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message because of expiration of password_reset_token
+ *        '500':
+ *            summary: Internal Error / No teacher found having id associated with email
+ *            content:
+ *               application/json:        
+ *                    schema: 
+ *                       type: object  
+ *                       properties:
+ *                             error: 
+ *                                 type: string
+ *                                 description: error message for Internal error / Teacher not found with id 
+ */
+ authRouter.post('/teacher-resetpassword', teacherResetPassword);
+
 
  module.exports = authRouter;
 
