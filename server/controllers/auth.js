@@ -230,6 +230,82 @@ exports.teacherForgotPassword = async (req, res) =>
   }
 };
 
+exports.studentResetPassword = async (req, res) =>
+{
+  const { token, password } = req.body;
+  try
+  {
+    jwt.verify(
+      token,
+      process.env.ACCESS_TOKEN_SECRET_FOREGETPASS,
+      async (err, student_tokendata) =>
+      {
+        if (err)
+        {
+          return res.status(401).json({ error: "This Link with token has been expired, Please Try again" });
+        }
+        const { id } = student_tokendata;
+        const salt = await bcrypt.genSalt();
+        const newpassword = await bcrypt.hash(password, salt);
+        Student.findByIdAndUpdate(
+          id,
+          { password_reset_token: "", password: newpassword },
+          { new: true },
+          function (err, doc)
+          {
+            if (err) {
+              return res.status(500).json({ error: "Student not found with this id" });
+            } else {
+              return res.status(200).json({ msg: "Password has been reset successfully" });
+            }
+          }
+        );
+      }
+    );
+  } catch (err) {
+    return res.status(500).json({ error: "500 internal error" });
+  }
+};
+
+exports.teacherResetPassword = async (req, res) =>
+{
+  const { token, password } = req.body;
+  try
+  {
+    jwt.verify(
+      token,
+      process.env.ACCESS_TOKEN_SECRET_FOREGETPASS,
+      async (err, teacher_tokendata) =>
+      {
+        if (err)
+        {
+          return res.status(401).json({ error: "This Link with token has been expired, Please Try again" });
+        }
+        const { id } = teacher_tokendata;
+        const salt = await bcrypt.genSalt();
+        const newpassword = await bcrypt.hash(password, salt);
+        Teacher.findByIdAndUpdate(
+          id,
+          { password_reset_token: "", password: newpassword },
+          { new: true },
+          function (err, doc)
+          {
+            if (err)
+            {
+              return res.status(500).json({ error: "Teacher not found with this id" });
+            } else
+            {
+              return res.status(200).json({ msg: "Password has been reset successfully" });
+            }
+          }
+        );
+      }
+    );
+  } catch (err) {
+    return res.status(500).json({ error: "500 internal error" });
+  }
+};
+
 
 
 
