@@ -30,6 +30,12 @@ const teacherSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
+  messages_sent:[
+    {
+      type: String,
+      default: "",
+    }
+  ],
   quiz_list:[
     {
       qid:{

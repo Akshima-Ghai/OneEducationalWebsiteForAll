@@ -33,6 +33,7 @@ app.use(express.json());
 require("./db/connection");
 
 app.use(require("./routes/authRoutes"));
+app.use(require("./routes/protectedRoutes"));
 
 app.use("/", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
