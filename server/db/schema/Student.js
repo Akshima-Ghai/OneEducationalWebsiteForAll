@@ -30,6 +30,12 @@ const studentSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
+  messages_sent:[
+    {
+      type: String,
+      default: "",
+    }
+  ],
   my_queries:[
     {
       title:String,
