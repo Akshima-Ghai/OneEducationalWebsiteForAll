@@ -1,12 +1,14 @@
 import React from "react";
 import Sectionscard from "../../components/UI/Sectionscard/SectionCard";
 import "./Section.css";
+import Chatbot from '../../components/UI/Chatbot/Chatbot'
 import ImgSrc from "../../shared/ImgSrc";
 import Footer from "../../components/Footer/Footer";
 
 const Section = () => {
   return (
     <div>
+     
       <section>
         <div className="main-container">
           <div className="main_section">
@@ -54,6 +56,7 @@ const Section = () => {
           </div>
         </div>
       </section>
+      <div id="chatbot"><Chatbot/></div>
       <Footer />
     </div>
   );
