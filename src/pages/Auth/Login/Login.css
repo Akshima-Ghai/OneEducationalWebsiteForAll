@@ -54,8 +54,8 @@
 }
 
 .login__form--p {
-  font-size: 1.1rem;
-  margin: 0.5rem 1rem;
+  font-size: 1.3rem;
+  margin: 1rem;
   margin-left: 2px;
   font-weight: bold;
   color: var(--primary-footer-text);

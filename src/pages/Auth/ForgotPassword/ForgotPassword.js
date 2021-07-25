@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "./Login.css";
-import { Link } from "react-router-dom";
 import Footer from "../../../components/Footer/Footer";
 import InputField from "./../../../components/UI/InputField/InputField";
 import RoleField from "./../../../components/UI/RoleField/RoleField";
@@ -17,19 +15,17 @@ const inputValidator = (field) => {
   return isValid;
 };
 
-const Login = () => {
+const ForgotPassword = () => {
+  const [role, setRole] = useState("student");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [role, setRole] = useState("");
   const [error, setError] = useState("");
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    let isValid = inputValidator([email, password, role]);
+    let isValid = inputValidator([role,email]);
     if (!isValid) {
       return setError("Invalid input");
     }
-    // Login Server Rq
   };
 
   return (
@@ -37,7 +33,7 @@ const Login = () => {
       <section className="login__container">
         <form className="login__form" onSubmit={onSubmitHandler}>
           <div className="login__heading--container">
-            <h1 className="login__heading">Login</h1>
+            <h1 className="login__heading">Forgot Password ?</h1>
           </div>
           <InputField
             value={email}
@@ -45,25 +41,12 @@ const Login = () => {
             placeholder="Email"
             onChange={(event) => setEmail(event.target.value)}
           />
-          <InputField
-            value={password}
-            type="password"
-            placeholder="Password"
-            onChange={(event) => setPassword(event.target.value)}
-          />
           <RoleField 
             value={role}
             onChange={(event) => setRole(event.target.value)}
           />
-          <p className="login__form--p">
-            Not a User, Don't worry you can <Link to="/signup"> SignUp </Link>{" "}
-            here
-          </p>
-          <p className="login__forgot--button">
-            <Link to="/forgot-password">Forgot Password</Link>
-          </p>
           <button className="login__form--button" type="submit">
-            Login
+            Submit
           </button>
         </form>
       </section>
@@ -72,4 +55,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ForgotPassword;

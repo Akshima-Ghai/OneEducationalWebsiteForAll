@@ -1,0 +1,67 @@
+.rolediv{
+    margin:10px 0;
+}
+
+.iam{
+    position: relative;
+    padding-right:20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--primary-footer-text);
+}
+
+.container{
+    position: relative;
+    padding-left:25px;
+    padding-right:20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--primary-footer-text);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ 
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border:1px solid #f24638;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #eee;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #f24638;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
