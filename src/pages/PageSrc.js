@@ -3,6 +3,8 @@ export { default as Login } from "./Auth/Login/Login";
 export { default as Signup } from "./Auth/Signup/Signup";
 export { default as SignupStudent } from "./Auth/SignupStudent/SignupStudent";
 export { default as SignupTeacher } from "./Auth/SignupTeacher/SignupTeacher";
+export { default as ForgotPassword } from "./Auth/ForgotPassword/ForgotPassword";
+export { default as ResetPassword } from "./Auth/ResetPassword/ResetPassword";
 export { default as About } from "./About/About";
 export { default as Section } from "./Section/Section";
 export { default as FAQ } from "./FAQ/FAQ";

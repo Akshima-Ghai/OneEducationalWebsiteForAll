@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Signup.css";
 import Footer from "../../../components/Footer/Footer";
 import {Link} from "react-router-dom"
@@ -6,7 +6,7 @@ import Slide from "react-reveal/Slide";
 import Student from "../../../assets/Student_option.png"
 import Teacher from "../../../assets/Teacher_option.png"
 
-const Login = () => {
+const SignUp = () => {
   return (
     <div>
       <section className="signup--options__container">
@@ -54,4 +54,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
