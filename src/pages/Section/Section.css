@@ -50,6 +50,13 @@
   margin: 3rem auto 5rem auto;
   height: 40vh;
 }
+#chatbot ::-webkit-scrollbar{
+  width:10px;
+  
+}
+#chatbot ::-webkit-scrollbar-thumb{
+  background: #FF6A42;
+}
 @media (max-width: 1300px) {
   .section_under {
     height: 40vh;
@@ -75,8 +82,7 @@
 }
 @media (max-width: 800px) {
   .choose_sec {
-    background: url("../../assets/section-img.png")
-      no-repeat center;
+    background: url("../../assets/section-img.png") no-repeat center;
     height: 150vh;
     background-size: 100%;
   }
@@ -95,9 +101,12 @@
     height: 150vh;
   }
   .choose_sec {
-    background: url("../../assets/section-img.png")
-      no-repeat center;
+    background: url("../../assets/section-img.png") no-repeat center;
     height: 300vh;
     color: black;
+  }
+  #chatbot ::-webkit-scrollbar{
+    width:8px;
+    
   }
 }
