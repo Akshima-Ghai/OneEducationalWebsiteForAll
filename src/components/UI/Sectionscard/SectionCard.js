@@ -3,7 +3,7 @@ import "./Sectionscard.css";
 const Sectionscard = (props) => {
   return (
     <section>
-      <div className="section-div">
+      <div className="section-div" >
         <img className="section-img" src={props.image} alt="" />
         <div className="sections">
           <div className="sec-data">

@@ -1,7 +1,8 @@
 import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot'
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './Chatbot.css';
+
 
 const steps = [
     {
@@ -88,7 +89,7 @@ const steps = [
     },
     {
       id:'11',
-      message:'Have any further doubts ?',
+      message:'Have any other query ? ',
       trigger:'12'
     },
     {
@@ -98,7 +99,22 @@ const steps = [
         {value:2,label:'No',trigger:'14'},
       ]
     },
-    { id:'13',
+    {  id:'13',
+    message:'Please type in your query.',
+    trigger:'15'
+     
+    },
+    {
+      id:'15',
+      user:true,
+      trigger:'16'
+    },
+    {  id:'16',
+    message:'We have received your query. We will answer you soon.',
+    trigger:'17'
+
+    },
+    { id:'17',
        component:(
 <div className="links">Feel free to contact us at : <a href="mailto:example123@gmail.com">Email</a>
 <br></br>Thanks for visiting.
@@ -115,10 +131,10 @@ const steps = [
         </div>
                ),
       asMessage:true,
-     trigger:'15'
+     trigger:'18'
     },
     {
-      id:'15',
+      id:'18',
       message:'Thanks for visiting...',
      end:true
     },
@@ -143,12 +159,29 @@ const steps = [
     userBubbleColor: '#FF7F50',
     userFontColor: '#fff',
   };
-  const Chatbot=()=>{
-      return(
+  const Chatbot=(props)=>{
+if(props.open===true){
+  const [opens, setOpens] = useState(props.open);
+  useEffect(() => {
+   setOpens(props.open);
+}, [props.open]);
+console.log(opens);
+  return(
     <ThemeProvider theme={theme}>
-    <ChatBot steps={steps} floating={true}/>
+    <ChatBot steps={steps} floating={true} opened={opens} toggleFloating={()=>{
+      setOpens(!opens);
+      
+    }}/>
     </ThemeProvider>
       );
+}
+else{
+      return(
+    <ThemeProvider theme={theme}>
+    <ChatBot steps={steps} floating={true} />
+    </ThemeProvider>
+      );
+  }
   }
   export default Chatbot;
   

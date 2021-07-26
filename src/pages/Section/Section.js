@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import Sectionscard from "../../components/UI/Sectionscard/SectionCard";
 import "./Section.css";
 import Chatbot from '../../components/UI/Chatbot/Chatbot'
@@ -6,6 +6,10 @@ import ImgSrc from "../../shared/ImgSrc";
 import Footer from "../../components/Footer/Footer";
 
 const Section = () => {
+ const [opened, setOpened] = useState(false);
+useEffect(() => {
+  setOpened(false);
+}, [opened])
   return (
     <div>
      
@@ -29,16 +33,25 @@ const Section = () => {
                 />
               </div>
               <div className="sec-middle">
+                <button className="doubt" onClick={()=>{
+                      setOpened(!opened);
+                }}
+                style={{background:'transparent',border:"none"}} 
+>
                 <Sectionscard
                   name="Doubt Assistance"
                   image={ImgSrc.doubt}
                   para="Have doubts? We are here to help."
-                />
+                  
+                  />
+                 </button>
+                 <button style={{background:'transparent',border:"none"}} >
                 <Sectionscard
                   name="Blogs"
                   image={ImgSrc.blog}
                   para="Read blogs related to on any topic of yor study."
                 />
+                </button>
               </div>
               <div className="section_under">
                 <Sectionscard
@@ -56,10 +69,17 @@ const Section = () => {
           </div>
         </div>
       </section>
-      <div id="chatbot"><Chatbot/></div>
+      {(opened===true)?(
+        <div id="chatbot"><Chatbot open={opened}/></div>
+      ):(
+        <div id="chatbot"><Chatbot/></div>
+      )}
+      
       <Footer />
     </div>
   );
-};
+}
+
 
 export default Section;
+

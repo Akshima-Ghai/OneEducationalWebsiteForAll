@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.16.6",
     "axios": "^0.21.1",
+    "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-countdown": "^2.3.2",
     "react-dark-mode-toggle": "^0.2.0",
