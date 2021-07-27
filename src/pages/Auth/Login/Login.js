@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Footer from "../../../components/Footer/Footer";
 import InputField from "./../../../components/UI/InputField/InputField";
 import RoleField from "./../../../components/UI/RoleField/RoleField";
+import { ToastContainer, toast } from 'react-toastify';
+import { StudentLogin, TeacherLogin } from '../../../axios/instance';
 
 const inputValidator = (field) => {
   let isValid = true;
@@ -20,21 +22,59 @@ const inputValidator = (field) => {
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [role, setRole] = useState("");
+  const [role, setRole] = useState("student");
   const [error, setError] = useState("");
 
-  const onSubmitHandler = (event) => {
+  const onSubmitHandler = async (event) => {
     event.preventDefault();
     let isValid = inputValidator([email, password, role]);
     if (!isValid) {
-      return setError("Invalid input");
+      toast.error('Please fill all inputs')
     }
-    // Login Server Rq
+
+    else{
+
+    const body = {
+      email: email,
+      password: password
+    }
+    console.log(body);
+
+    try
+     {
+      if(role === 'student')
+      {
+        const res = await StudentLogin(body);
+
+        if (!res.data.error)
+        {
+          localStorage.setItem('token', res.data.accesstoken);
+          // Save UserLoginData and make authenticated using redux 
+        }
+      }
+      else {
+        const res = await TeacherLogin(body);
+
+        if (!res.data.error)
+        {
+          localStorage.setItem('token', res.data.accesstoken);
+          // Save UserLoginData and make authenticated using redux 
+        }
+      }
+    
+     } catch (err) {
+      if (err.response)
+      {
+        toast.error(`${ err.response.data.error }`);
+      }
+    }
+   }
   };
 
   return (
     <div>
       <section className="login__container">
+        <ToastContainer position="bottom-center" bodyClassName="toastBody"/>
         <form className="login__form" onSubmit={onSubmitHandler}>
           <div className="login__heading--container">
             <h1 className="login__heading">Login</h1>
