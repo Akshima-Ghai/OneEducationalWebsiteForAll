@@ -13,6 +13,11 @@
   );
 }
 
+.toastBody {
+  font-size: 2rem !important;
+  font-family: "Montserrat", sans-serif;
+}
+
 .signup__form {
   width: 35%;
   padding: 3rem;

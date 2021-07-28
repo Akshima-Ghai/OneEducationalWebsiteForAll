@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import InputField from "./../../../components/UI/InputField/InputField";
 import Footer from "../../../components/Footer/Footer";
 import studentimg from "../../../assets/student_signup.png";
+import { ToastContainer, toast } from 'react-toastify';
+import { StudentSignUp } from '../../../axios/instance';
 
 const inputValidator = (field) => {
   let isValid = true;
@@ -26,7 +28,7 @@ const SignupStudent = () => {
   const [year, setYear] = useState("");
   const [error, setError] = useState("");
 
-  const onSubmitHandler = (event) => {
+  const onSubmitHandler = async (event) => {
     event.preventDefault();
     let isValid = inputValidator([
       name,
@@ -37,10 +39,10 @@ const SignupStudent = () => {
       year,
     ]);
     if (!isValid) {
-      return setError("Invalid input");
+      toast.error('Please fill all inputs');
     }
-    // SignUp Server Rq
-    const user = {
+    else{
+    const body = {
       name,
       email,
       password,
@@ -48,27 +50,28 @@ const SignupStudent = () => {
       course,
       year,
     };
-    fetch("http://localhost:3001/student-signup", {
-      method: "POST",
-      body: JSON.stringify(user),
-    })
-      .then((res) => {
-        if (res.status == 200) {
-          return res.json();
-        }
-      })
-      .then((resBody) => {
-        const token = resBody.accesstoken;
-        // Save this Token using redux to authenticate user
-      })
-      .catch((err) => {
-        alert(err.message);
-      });
+   
+    try
+     {
+      const res = await StudentSignUp(body);
+      if (!res.data.error)
+      {
+        localStorage.setItem('token', res.data.accesstoken);
+        // Save UserData using redux 
+      }
+     } catch (err) {
+      if (err.response)
+      {
+        toast.error(`${ err.response.data.error }`);
+      }
+    }
+   }
   };
 
   return (
     <div>
       <section className="signup__container">
+        <ToastContainer position="bottom-center" bodyClassName="toastBody"/>
         <form className="signup__form" onSubmit={onSubmitHandler}>
           <p className="signup__form--p">
             Already a user you can <Link to="/login"> Login </Link> here
