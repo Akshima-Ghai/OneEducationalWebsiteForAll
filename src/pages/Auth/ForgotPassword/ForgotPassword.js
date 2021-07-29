@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Footer from "../../../components/Footer/Footer";
 import InputField from "./../../../components/UI/InputField/InputField";
 import RoleField from "./../../../components/UI/RoleField/RoleField";
+import { ToastContainer, toast } from 'react-toastify';
+import { StudentForgotPassword, TeacherForgotPassword } from '../../../axios/instance';
 
 const inputValidator = (field) => {
   let isValid = true;
@@ -18,19 +20,49 @@ const inputValidator = (field) => {
 const ForgotPassword = () => {
   const [role, setRole] = useState("student");
   const [email, setEmail] = useState("");
-  const [error, setError] = useState("");
 
-  const onSubmitHandler = (event) => {
+  const onSubmitHandler = async (event) => {
     event.preventDefault();
     let isValid = inputValidator([role,email]);
     if (!isValid) {
-      return setError("Invalid input");
+      toast.error('Please fill all inputs')
+    }
+    else {
+
+      const body = {
+        email: email,
+      }
+
+    try{
+
+      if(role === 'student')
+      {
+        const res = await StudentForgotPassword(body);
+        if (!res.data.error)
+        {
+           toast.success(`${ res.data.msg }`);
+        }
+      }
+      else{
+        const res = await TeacherForgotPassword(body);
+        if (!res.data.error)
+        {
+           toast.success(`${ res.data.msg }`);
+        }
+      }
+    } catch(err) {
+        if (err.response)
+        {
+          toast.error(`${ err.response.data.error }`);
+        }
+      }
     }
   };
 
   return (
     <div>
       <section className="login__container">
+        <ToastContainer position="bottom-center" bodyClassName="toastBody"/>
         <form className="login__form" onSubmit={onSubmitHandler}>
           <div className="login__heading--container">
             <h1 className="login__heading">Forgot Password ?</h1>
