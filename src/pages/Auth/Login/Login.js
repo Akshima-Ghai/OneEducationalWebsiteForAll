@@ -23,7 +23,6 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("student");
-  const [error, setError] = useState("");
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
@@ -38,7 +37,6 @@ const Login = () => {
       email: email,
       password: password
     }
-    console.log(body);
 
     try
      {

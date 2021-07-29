@@ -26,7 +26,6 @@ const SignupStudent = () => {
   const [college, setCollege] = useState("");
   const [course, setCourse] = useState("");
   const [year, setYear] = useState("");
-  const [error, setError] = useState("");
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
