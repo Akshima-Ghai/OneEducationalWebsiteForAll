@@ -1,39 +1,124 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Footer.css'
+import { StudentContact, TeacherContact } from '../../axios/instance';
+import RoleField from "../UI/RoleField/RoleField";
+import { ToastContainer, toast } from 'react-toastify';
+
+const inputValidator = (field) => {
+    let isValid = true;
+  
+    field.forEach((item) => {
+      if (item.length === 0) {
+        isValid = false;
+      }
+    });
+  
+    return isValid;
+};
 
 const Footer = () => {
+
+    const [name, setName] = useState("");
+    const [role, setRole] = useState("student");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    const onSubmitHandler = async (event) => {
+    event.preventDefault();
+    let isValid = inputValidator([role,email]);
+    if (!isValid) {
+        toast.error('Please fill all inputs')
+    }
+    else {
+      const body = {
+        name: name,
+        email: email,
+        message: message
+      }
+
+    try{
+
+        if(role === 'student')
+        {
+            const res = await StudentContact(body);
+            if (!res.data.error)
+            {
+                toast.success(`${ res.data.msg }`);
+            }
+        }
+        else{
+            const res = await TeacherContact(body);
+            if (!res.data.error)
+            {
+                toast.success(`${ res.data.msg }`);
+            }
+        }
+        clearFields();
+    } catch(err) {
+        if (err.response)
+        {
+            toast.error(`${ err.response.data.error }`);
+        }
+      }
+    }
+};
+
+const clearFields = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+}
+
     return (
         <footer className="footer">
-    <div className="footer__main-content">         
+        <ToastContainer position="bottom-center" bodyClassName="toastBody"/>
+        <div className="footer__main-content">         
         <div className="footer_top">
             <div className="footer_top_box">
-        <h2>Get in touch</h2>
-        <div className="hr"></div>
-        <p>Enjoy free access to all LearnZania resources and study material anytime, anywhere from your comfort and ace 
-            your preparation.You can get in touch with us through any of the means below. </p>
+            <h2>Get in touch</h2>
+            <div className="hr"></div>
+            <p>Enjoy free access to all LearnZania resources and study material anytime, anywhere from your comfort and ace 
+                your preparation.You can get in touch with us through any of the means below. </p>
 
-        <div className="footer_top_contact">
-                        <div className="cont-icon">
-                            <span className="fas fa-phone"></span>
-                            <span className="fas fa-envelope"></span>
-                            <span className="fas fa-map-marker-alt"></span>
-                        </div>
-                        <div className="text">
-                            
-                            <span className="text">+91 1234567890</span>
-                            <span className="text">example123@gmail.com</span>
-                            <span className="text">India</span>
-                        </div>
-                        
-                    </div>
-                    </div>
+            <div className="footer_top_contact">
+                <div className="cont-icon">
+                    <span className="fas fa-phone"></span>
+                    <span className="fas fa-envelope"></span>
+                    <span className="fas fa-map-marker-alt"></span>
+                </div>
+                <div className="text">  
+                    <span className="text">+91 1234567890</span>
+                    <span className="text">example123@gmail.com</span>
+                    <span className="text">India</span>
+                </div>
+                
+            </div>
+        </div>
      
         <div className="footer_mid-box">
-        <form className="qf--form">
+        <form className="qf--form" onSubmit={onSubmitHandler}>
             <h1>Have something to say ?</h1>
-            <input placeholder="Name" type="text" />
-            <input placeholder="Email" type="email" />
-            <textarea placeholder="Message"></textarea>
+            <input 
+              placeholder="Name" 
+              type="text" 
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+            />
+            <RoleField 
+              value={role}
+              onChange={(event) => setRole(event.target.value)}
+            />
+            <input 
+              placeholder="Email" 
+              type="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)} />
+            <textarea 
+              placeholder="Message"
+              value={message}
+              onChange={(event) => setMessage(event.target.value)}
+            >
+            </textarea>
             <button className="signup__form--button" type="submit">
               Send Message
             </button>

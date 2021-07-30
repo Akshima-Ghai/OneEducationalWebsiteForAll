@@ -69,7 +69,7 @@ exports.studentContact = async (req, res) =>
         }
       );
 
-      res.status(200).send({ success: "You message has been sent, check your mailbox to find response sent by us" });
+      res.status(200).send({ msg: "You message has been sent, check your mailbox to find response sent by us" });
     } else
     {
       return res.status(401).json({ error: "Student not found registered with this email" });
@@ -147,7 +147,7 @@ exports.teacherContact = async (req, res) =>
         }
       );
 
-      res.status(200).send({ success: "You message has been sent, check your mailbox to find response sent by us" });
+      res.status(200).send({ msg: "You message has been sent, check your mailbox to find response sent by us" });
     } else
     {
       return res.status(401).json({ error: "Teacher not found registered with this email" });

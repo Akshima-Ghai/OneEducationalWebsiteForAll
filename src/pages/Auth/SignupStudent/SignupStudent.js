@@ -57,6 +57,7 @@ const SignupStudent = () => {
       {
         localStorage.setItem('token', res.data.accesstoken);
         // Save UserData using redux 
+        clearFields();
       }
      } catch (err) {
       if (err.response)
@@ -66,6 +67,15 @@ const SignupStudent = () => {
     }
    }
   };
+
+  const clearFields = () => {
+    setName("");
+    setEmail("");
+    setPassword("");
+    setCollege("");
+    setCourse("");
+    setYear("");
+  }
 
   return (
     <div>

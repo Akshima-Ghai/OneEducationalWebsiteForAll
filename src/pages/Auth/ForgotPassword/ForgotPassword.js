@@ -50,6 +50,7 @@ const ForgotPassword = () => {
            toast.success(`${ res.data.msg }`);
         }
       }
+      clearFields();
     } catch(err) {
         if (err.response)
         {
@@ -58,6 +59,10 @@ const ForgotPassword = () => {
       }
     }
   };
+
+  const clearFields = () => {
+    setEmail("");
+  }
 
   return (
     <div>
