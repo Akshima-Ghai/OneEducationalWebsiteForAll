@@ -59,6 +59,8 @@ const Login = () => {
           // Save UserLoginData and make authenticated using redux 
         }
       }
+
+      clearFields();
     
      } catch (err) {
       if (err.response)
@@ -68,6 +70,11 @@ const Login = () => {
     }
    }
   };
+
+  const clearFields = () => {
+    setEmail("");
+    setPassword("");
+  }
 
   return (
     <div>

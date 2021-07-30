@@ -53,6 +53,7 @@ const ResetPassword = () => {
            toast.success(`${ res.data.msg }`);
         }
       }
+      clearFields();
     } catch(err) {
         if (err.response)
         {
@@ -61,6 +62,10 @@ const ResetPassword = () => {
       }
     }
   };
+
+  const clearFields = () => {
+    setPassword("");
+  }
 
   return (
     <div>

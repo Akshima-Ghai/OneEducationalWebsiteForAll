@@ -17,3 +17,5 @@ export const StudentForgotPassword = (data) => server.post(`${url}/student-forgo
 export const TeacherForgotPassword = (data) => server.post(`${url}/teacher-forgotpassword`, data);
 export const StudentResetPassword = (data) => server.post(`${url}/student-resetpassword`, data);
 export const TeacherResetPassword = (data) => server.post(`${url}/teacher-resetpassword`, data);
+export const StudentContact = (data) => server.post(`${url}/student-contact`, data);
+export const TeacherContact = (data) => server.post(`${url}/teacher-contact`, data);
