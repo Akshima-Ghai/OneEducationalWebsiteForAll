@@ -57,6 +57,22 @@
 #chatbot ::-webkit-scrollbar-thumb{
   background: #FF6A42;
 }
+
+.home_hover{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.hovertext{
+  font-size:14px!important;
+}
+
+.home_btns a{
+  margin:1rem;
+}
+
+
 @media (max-width: 1300px) {
   .section_under {
     height: 40vh;

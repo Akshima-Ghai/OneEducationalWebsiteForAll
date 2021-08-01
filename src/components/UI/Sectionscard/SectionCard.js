@@ -9,6 +9,9 @@ const Sectionscard = (props) => {
           <div className="sec-data">
             <span>{props.name}</span>
             <p>{props.para}</p>
+            <div className="hover-div">
+              {props.children}
+            </div>
           </div>
         </div>
       </div>

@@ -7,6 +7,9 @@ import Working from './../assets/computer.png'
 import Woman from './../assets/woman.png'
 import home from './../assets/home.png'
 import doubt from './../assets/doubt.png'
+import doubtassistant from './../assets/doubtassistant.gif'
+import videolec1 from './../assets/videolec1.jpg'
+import videolec2 from './../assets/videolec2.jpg'
 import Quiz from './../assets/Quiz.png'
 import blog from './../assets/blog.png'
 import video from './../assets/video.png'
@@ -55,6 +58,9 @@ export default {
     Woman,
     home,
     doubt,
+    doubtassistant,
+    videolec1,
+    videolec2,
     Quiz,
     blog,
     video,

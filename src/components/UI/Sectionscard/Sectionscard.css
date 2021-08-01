@@ -1,7 +1,7 @@
 .sections {
   border-radius: 25px;
-background:#f24638;;
-box-shadow:  6px 6px 12px var(--primary-section-box),
+  background:#f24638;
+  box-shadow:  6px 6px 12px var(--primary-section-box),
              -6px -6px 12px var(--primary-form);
   border-radius: 5px;
   border: none;
@@ -12,25 +12,24 @@ box-shadow:  6px 6px 12px var(--primary-section-box),
   flex-direction: row;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  transition: 1s ease out;
+  position: relative;
   border-radius: 7px;
 }
 .sections span {
   font-size: 2rem;
-  width: 90%;
   padding: auto;
   text-align: center;
   font-weight: 600;
   word-wrap: break-word;
+  margin-bottom:1rem;
 }
 .sections p {
-  width: 90%;
   margin: auto;
-  height: 40%;
   font-size: medium;
   text-align: center;
   border-radius: 5px;
   word-wrap: break-word;
+  margin-bottom:1rem;
 }
 .section-img {
   width: 10%;
@@ -46,19 +45,51 @@ box-shadow:  6px 6px 12px var(--primary-section-box),
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  height: 20vh;
   color: #ffffff;
-  margin: auto;
+  width:100%;
 }
-.sections:hover {
-  transform: scale(1);
-  background-color: rgb(172, 183, 243);
+
+.hover-div{
+ display: flex;
+ align-items:center;
+ justify-content:center;
+ height:0;
+ width:100%;
+ border-radius: 15px;
+ background-color:#ffffff;
+ color: #f24638;
+ border:10px solid #f24638;
+ overflow:hidden;
+ opacity:0;
+ transition: opacity 1s;
+ animation: hidehover 0.5s ease-in-out;
 }
-.sections:hover {
-  width: 73%;
-  height: 28vh;
+
+.sections:hover .hover-div{
+  animation: showhover 0.5s ease-in-out;
+  opacity:1;
+  height:10rem;
 }
+
+@keyframes hidehover{
+  from{
+    height:10rem;
+ }
+ to {
+    height:0;
+ }
+}
+
+@keyframes showhover {
+  from{
+     height:0;
+  }
+  to {
+     height:10rem;
+  }
+
+}
+
 /* Media Queries */
 @media (max-width: 1300px) {
   .section-div {
