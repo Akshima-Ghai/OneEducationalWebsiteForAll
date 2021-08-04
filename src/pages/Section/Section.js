@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import { Link } from "react-router-dom";
+import Scrolltop from "../../components/ScrollTop/Scrolltop";
 import Sectionscard from "../../components/UI/Sectionscard/SectionCard";
 import Chatbot from '../../components/UI/Chatbot/Chatbot'
 import ImgSrc from "../../shared/ImgSrc";
@@ -104,7 +105,7 @@ useEffect(() => {
       ):(
         <div id="chatbot"><Chatbot/></div>
       )}
-      
+      <Scrolltop showBelow={250} showLeft={true}/>
       <Footer />
     </div>
   );

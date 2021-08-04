@@ -27,8 +27,30 @@ const useStyles = makeStyles((theme) => ({
       right: "2.5%",
     },
   },
+  toLeft: {
+    zIndex: 5,
+    position: "fixed",
+    bottom: "5vh",
+    backgroundColor: "#DCDCDC",
+    color: "black",
+    "&:hover, &.Mui-focusVisible": {
+      transition: "0.3s",
+      color: "#f24638",
+      backgroundColor: "#DCDCDC",
+    },
+    [theme.breakpoints.up("xs")]: {
+      left: "8%",
+      backgroundColor: "#f24638",
+    },
+    [theme.breakpoints.up("sm")]: {
+      left: "4%",
+    },
+    [theme.breakpoints.up("lg")]: {
+      left: "2.5%",
+    },
+  }
 }));
-const Scrolltop = ({ showBelow }) => {
+const Scrolltop = ({ showBelow,showLeft }) => {
   const classes = useStyles();
 
   const [show, setShow] = useState(showBelow ? false : true);
@@ -57,7 +79,8 @@ const Scrolltop = ({ showBelow }) => {
       {show && (
         <IconButton
           onClick={handleClick}
-          className={classes.toTop}
+          className={showLeft ? `${classes.toLeft}` : `${classes.toTop}`}
+          
           aria-label="to top"
           component="span"
         >
