@@ -1,12 +1,12 @@
 .sections {
   border-radius: 25px;
-  background:#f24638;
-  box-shadow:  6px 6px 12px var(--primary-section-box),
-             -6px -6px 12px var(--primary-form);
+  background: #f24638;
+  box-shadow: 6px 6px 12px var(--primary-section-box),
+    -6px -6px 12px var(--primary-form);
   border-radius: 5px;
   border: none;
   width: 70%;
-  height: 25vh;
+  min-height: 25vh;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -21,7 +21,7 @@
   text-align: center;
   font-weight: 600;
   word-wrap: break-word;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 .sections p {
   margin: auto;
@@ -29,7 +29,7 @@
   text-align: center;
   border-radius: 5px;
   word-wrap: break-word;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 .section-img {
   width: 10%;
@@ -46,48 +46,52 @@
   flex-direction: column;
   align-items: center;
   color: #ffffff;
-  width:100%;
+  width: 100%;
 }
 
-.hover-div{
- display: flex;
- align-items:center;
- justify-content:center;
- height:0;
- width:100%;
- border-radius: 15px;
- background-color:#ffffff;
- color: #f24638;
- border:10px solid #f24638;
- overflow:hidden;
- opacity:0;
- transition: opacity 1s;
- animation: hidehover 0.5s ease-in-out;
+.hover-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #f24638;
+  border: 10px solid #f24638;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+  animation: hidehover 0.5s ease-in-out;
 }
 
-.sections:hover .hover-div{
+.sections:hover {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.sections:hover .hover-div {
   animation: showhover 0.5s ease-in-out;
-  opacity:1;
-  height:10rem;
+  opacity: 1;
+  height: 10rem;
 }
 
-@keyframes hidehover{
-  from{
-    height:10rem;
- }
- to {
-    height:0;
- }
+@keyframes hidehover {
+  from {
+    height: 10rem;
+  }
+  to {
+    height: 0;
+  }
 }
 
 @keyframes showhover {
-  from{
-     height:0;
+  from {
+    height: 0;
   }
   to {
-     height:10rem;
+    height: 10rem;
   }
-
 }
 
 /* Media Queries */
@@ -122,11 +126,10 @@
     width: 43rem;
     height: 40vh;
   }
-  .section{
-    height:50vh;
+  .section {
+    height: 50vh;
   }
   .section-img {
     width: 20%;
   }
 }
-
