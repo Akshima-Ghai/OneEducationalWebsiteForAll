@@ -4,6 +4,7 @@
   "description": "learnzania-web server",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently \"npm run start\" \"cd .. && npm run start\"",
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,5 +33,8 @@
     "mongoose": "^5.13.2",
     "swagger-jsdoc": "^6.1.0",
     "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
   }
 }
