@@ -105,7 +105,7 @@
   flex-direction: column;
   align-items: flex-start;
   color: var(--primary-footer-text);
-  font-weight: bold
+  font-weight: bold;
 }
 .cont-icon span {
   margin: 1rem;
@@ -124,6 +124,7 @@
   background-color: white;
 }
 .qf--form {
+  padding: 2rem;
   background-color: var(--primary-footer);
   display: flex;
   flex-direction: column;
@@ -341,7 +342,6 @@
 }
 
 @media (max-width: 700px) {
-  
   .footer {
     height: 128vh;
   }
@@ -353,7 +353,7 @@
   }
   .bottom_content {
     height: 60%;
-    margin-top: 3rem;
+    margin-top: 8rem;
   }
 }
 @media (max-width: 600px) {
@@ -380,8 +380,9 @@
   }
   .footer_mid-box {
     width: 70%;
-    height: 40rem;
+    height: 50rem;
     margin-bottom: 2rem;
+    margin-top: 5rem;
   }
   .footer_bottom_links {
     width: 90%;
@@ -394,5 +395,9 @@
     align-items: center;
     width: 60%;
     margin: auto;
+  }
+  .qf--form {
+    height: 55rem;
+    padding: 5rem 0;
   }
 }
