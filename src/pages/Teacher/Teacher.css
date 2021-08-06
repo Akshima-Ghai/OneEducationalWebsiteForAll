@@ -13,12 +13,11 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-
-  width:85%;
+  width:80%;
   margin:auto;
 }
 .teacher_image1 {
-  width: 40%;
+  width: 35%;
 }
 .teacher_main_info1 {
   display: flex;
@@ -125,7 +124,7 @@ label {
 
   }
 
-  .teacher_inside_cont3-box .containers{
+  .teacher_inside_cont3-box .teacher_containers{
     width: 40rem;
     height: 60rem;
     /* background-color: red; */
