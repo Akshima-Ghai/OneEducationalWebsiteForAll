@@ -13,12 +13,11 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-
-  width:85%;
+  width:80%;
   margin:auto;
 }
 .student_image1 {
-  width: 40%;
+  width: 35%;
 }
 .student_main_info1 {
   display: flex;
@@ -59,7 +58,6 @@
 }
 
 /* This is block 2 */
-
 .student_container2 {
   display: flex;
  flex-direction: column;
@@ -73,8 +71,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-   align-items: center;
-   margin:2rem auto 3rem auto;
+  align-items: center;
+  margin:2rem auto 3rem auto;
   width:80%;
   
 }
@@ -85,7 +83,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
- 
   width:37%;
 }
 .student_heading_block2{
@@ -105,55 +102,55 @@ label {
   color: #868999;
 }
 
-    /* This is block 3 */
-    .student_container3{
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      width:80%;
-      margin:8rem auto 0rem auto;
-      padding-bottom: 2rem;
-    }
-  .student_inside_cont3-box{
-    display:flex;
-    flex-direction:row;
-    width:90%;
-    margin:3rem auto;
-    justify-content: space-between;
-    align-items: center;
+/* This is block 3 */
+.student_container3{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width:80%;
+  margin:8rem auto 0rem auto;
+  padding-bottom: 2rem;
+}
+.student_inside_cont3-box{
+  display:flex;
+  flex-direction:row;
+  width:90%;
+  margin:3rem auto;
+  justify-content: space-between;
+  align-items: center;
 
-  }
+}
 
-  .student_inside_cont3-box .containers{
-    width: 40rem;
-    height: 60rem;
-    /* background-color: red; */
-  }
+.student_inside_cont3-box .student_containers{
+  width: 40rem;
+  height: 60rem;
+  /* background-color: red; */
+}
 .student_inside_container3{
-   display:flex;
-   flex-direction:column;
-   align-items: center;
-   margin:2rem;
-   justify-content: space-evenly;
-   width:27%;
-   height:47rem;
-   border:2px solid rgb(230, 230, 230);
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  margin:2rem;
+  justify-content: space-evenly;
+  width:27%;
+  height:47rem;
+  border:2px solid rgb(230, 230, 230);
 }
 .student_heading3{
   font-size: 2.2rem;
- text-align: center;
- margin:2rem;
- color: var(--primary-home-head);
+  text-align: center;
+  margin:2rem;
+  color: var(--primary-home-head);
 }
 .student_main_info3{
-   display:flex;
-   flex-direction: column;  
-   align-items: center;
-   justify-content: space-evenly;
-   width:80%;
-   height:75%;
-   margin:0rem auto 1rem auto;
+  display:flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: space-evenly;
+  width:80%;
+  height:75%;
+  margin:0rem auto 1rem auto;
 }
 .student_image3{
   width: 80%;
@@ -166,12 +163,12 @@ label {
   color: var(--primary-home-head);
 }
 .student_paragraph3{
-    font-size: 1.5rem;
-    line-height: 23px;
-    text-align: center;
-    margin: 1rem;
-    font-weight: 600;
-    color: #868999;
+  font-size: 1.5rem;
+  line-height: 23px;
+  text-align: center;
+  margin: 1rem;
+  font-weight: 600;
+  color: #868999;
 }
 .student_btn3{
   width:35%;

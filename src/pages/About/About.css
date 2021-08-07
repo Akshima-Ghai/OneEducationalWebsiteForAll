@@ -30,7 +30,7 @@
 }
 
 .about__div p {
-  color: #868999;
+  color: var(--primary-footer-para);
   font-size: 1.5rem;
   line-height: 2.5rem;
   letter-spacing: 2px;
@@ -87,8 +87,7 @@
   flex-direction: column;
   justify-content:center;
   align-items:center;
-  background-color: rgb(245, 245, 245);
-  background-color:#fff;
+  background-color: var(--primary-ourteam-card);
 }
 
 .contributor__details a {
@@ -102,8 +101,8 @@
 
 .fa-github{
   font-size:20px;
-  color:#333;
-  background-color:#FFF;
+  color: var(--primary-footer-text);
+  background-color:var(--primary-ourteam-card);
   margin-right:5px;
   border-radius:50%;
 }
@@ -116,15 +115,24 @@
 
 .contributor__details p{
   font-size:12px;
+  color:var(--primary-footer-para);
 }
 
 .mentor__details{
   background-color:rgb(209, 57, 57);
-  color:#FFF;
 }
 
 .mentor__details h3{
-  color:#FFF;
+  color:var(--primary-ourteam-card);
+}
+
+.mentor__details p{
+  color: #111;
+}
+
+.mentor__details .fa-github{
+  color: var(--primary-ourteam-card);
+  background-color: var(--primary-footer-text);
 }
 
 .view__options{
@@ -134,7 +142,7 @@
 
 .view__more--button {
   background-color: #f24638;
-  color: white;
+  color: #fff;
   padding: 0.75rem 1.75rem;
   margin: 2rem 1rem;
   font-weight: bold;

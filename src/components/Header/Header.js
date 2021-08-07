@@ -13,14 +13,15 @@ const Header = (props) => {
   const [isDarkMode, setIsDarkMode] = useState(() => false);
   const handleThemeBtn = () => {
     let currentTheme = isDarkMode;
-    // if (currentTheme === true) {
+    
+    if (currentTheme === true) {
 
-    //   document.documentElement.dataset.theme = "light";
-    //   setTheme("light")
-    // } else {
-    //   document.documentElement.dataset.theme = "dark";
-    //   setTheme("dark")
-    // }
+      document.documentElement.dataset.theme = "light";
+      setTheme("light")
+    } else {
+      document.documentElement.dataset.theme = "dark";
+      setTheme("dark")
+    }
 
     setIsDarkMode((prev) => !prev);
 
@@ -61,6 +62,7 @@ const Header = (props) => {
           onChange={handleThemeBtn}
           checked={isDarkMode}
           size={50}
+          speed={2.5}
         />
          <div onClick={props.toggleSD} className="header_toggle--btn">
           {/* for responsiveness in small screen  */}

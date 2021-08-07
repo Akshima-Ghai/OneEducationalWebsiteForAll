@@ -27,7 +27,6 @@
   --primary-ourteam-card: white;
   --primary-home-head: #141639;
   --primary-home-p: #73747b;
-
   --primary-form: white;
 }
 
@@ -43,10 +42,9 @@
   --primary-footer-para: #aaaaaa;
   --primary-footer-form-border: #ddd;
   --primary-section-box: #111;
-  --primary-ourteam-card: #333;
+  --primary-ourteam-card: #111;
   --primary-home-head: #fff;
   --primary-home-p: #818391;
-
   --primary-form: #141414;
 }
 

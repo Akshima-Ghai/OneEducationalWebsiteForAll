@@ -40,7 +40,7 @@
 }
 
 .container:hover input ~ .checkmark {
-    background-color: #eee;
+    background-color: inherit;
 }
 
 .container input:checked ~ .checkmark {
@@ -63,5 +63,5 @@
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: white;
+    background: var(--primary-footer);
 }
