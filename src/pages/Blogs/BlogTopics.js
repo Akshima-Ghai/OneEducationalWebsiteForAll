@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
@@ -26,6 +26,18 @@ const useStyles = makeStyles((theme) => ({
 
 function BlogTopics() {
   const classes = useStyles();
+  const itemsPerPage = 6;
+  const totalPages = Math.ceil(TopicsData.length / itemsPerPage);
+  const [page, setPage] = useState(1);
+
+  const handlePageChange = (event, value) =>
+  {
+    setPage(value);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
   return (
     <div className="App">
@@ -34,14 +46,22 @@ function BlogTopics() {
           Find Blogs on various Topics
         </Typography>
         <Grid container spacing={3}>
-          {TopicsData.map((topicobj,index) => {
+          {TopicsData.slice((page - 1) * itemsPerPage, page * itemsPerPage).map((topicobj,index) => {
               return (
                 <TopicCard key={index} title={topicobj.title} cardimg={topicobj.cardimg} />
               )
           })}
         </Grid>
         <Box my={3} className={classes.paginationContainer}>
-          <Pagination count={10} size="large" variant="outlined" color="secondary"/>
+          <Pagination 
+            count={totalPages}
+            page={page}
+            onChange={handlePageChange}
+            defaultPage={1}
+            size="large" 
+            variant="outlined" 
+            color="secondary"
+          />
         </Box>
       </Container>
     </div>

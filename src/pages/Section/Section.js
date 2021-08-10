@@ -14,7 +14,6 @@ useEffect(() => {
 }, [opened])
   return (
     <div>
-     
       <section>
         <div className="main-container">
           <div className="main_section">
@@ -23,6 +22,7 @@ useEffect(() => {
             </h1>
             <div className="choose_sec">
               <div className="section_under">
+                <Link to="/" style={{textDecoration: 'none'}}>
                 <Sectionscard
                   name="Home Page"
                   image={ImgSrc.home}
@@ -37,6 +37,7 @@ useEffect(() => {
                   </p>
                   </div>
                 </Sectionscard>
+                </Link>
                 
                 <Link to="/lecture" style={{textDecoration: 'none'}}>
                 <Sectionscard
