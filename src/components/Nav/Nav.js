@@ -9,7 +9,8 @@ export default function Nav(props) {
       <ul className="header__ul">
         <NavLink href="/section">Get Started</NavLink>
         <NavLink href="/about">About</NavLink>
-        <NavLink href="/Feature_Student">Features</NavLink>
+        <NavLink href="/quiz">Quiz</NavLink>
+        <NavLink href="/lecture">Videos</NavLink>
         <NavLink href="/student">Students</NavLink>
         <NavLink href="/teacher">Teachers</NavLink>
         {/* <NavLink href="/guidance">Guidance</NavLink> 

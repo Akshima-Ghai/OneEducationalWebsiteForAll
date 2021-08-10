@@ -1,0 +1,42 @@
+.video__container {
+    padding: 5rem;
+}
+
+.video__container h1{
+    font-size: 3rem;
+    color: #121212;
+    text-align: center;
+}
+
+.video__card--ul{
+    margin: 4rem auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.video__card {
+    background: linear-gradient(
+      to right bottom,
+      #ff5040,
+      #f24638,
+      rgb(209, 57, 57)
+    );
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+  
+  
+.video__card a{
+    width: 100%;
+    padding: 2rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
