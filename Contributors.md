@@ -1,7 +1,7 @@
 ## Contributors
 
-| Name                          |                         Github Username                          |
-| ----------------------------- | :--------------------------------------------------------------: |
+| Name                          |                         Github Username                          |          Scores and Issues         |
+| ----------------------------- | :--------------------------------------------------------------: |  :------------------------------:  |
 | Sujith Dachepally             |          [@sujith248](https://www.github.com/sujith248)          |
 | Nikhil Virdhi                 |              [@nikhv](https://www.github.com/nikhv)              |
 | Aakanksha Contributor         |                                -                                 |
@@ -22,3 +22,4 @@
 | Aman Bisht                    |          [@AmanBisht01](https://github.com/AmanBisht01)          |
 | Yashoda Rajmani               |          [@yashoda203](https://github.com/yashoda203)            |
 | Fathimathul Afra M P          |          [@AfraMP](https://www.github.com/AfraMP)                |
+| Swastik Raj Singh             |          [@Swastik1710](https://www.github.com/Swastik1710)      |  [140][#39 #52 #94 #111 #112 #130]    |
