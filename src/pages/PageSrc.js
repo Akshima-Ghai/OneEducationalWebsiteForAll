@@ -10,3 +10,5 @@ export { default as Section } from "./Section/Section";
 export { default as FAQ } from "./FAQ/FAQ";
 export { default as SingleQuiz } from "./Quiz/SingleQuiz/SingleQuiz";
 export { default as QuizList } from "./Quiz/QuizList/QuizList";
+export { default as Video } from "./Video/Video";
+export { default as SingleVideo } from "./SingleVideo/SingleVideo";

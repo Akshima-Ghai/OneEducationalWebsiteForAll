@@ -1,0 +1,22 @@
+.video__player--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+
+.video__player--head{
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+.video__player{
+    width: 80rem;
+    height: 50rem;
+    border: 4px solid var(--primary-main);
+    border-radius: 20px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+}
