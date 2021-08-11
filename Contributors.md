@@ -6,6 +6,7 @@
 | Nikhil Virdhi                 |              [@nikhv](https://www.github.com/nikhv)              |
 | Aakanksha Contributor         |                                -                                 |
 | Harshita Tripathi             |           [@ht170900](https://www.github.com/ht170900)           |
+| Harshit Pandey                |     [@HarshitPandey251](https://github.com/HarshitPandey251)     |
 | Neha Jha                      |            [@neha030](https://www.github.com/neha030)            |
 | NOSSAM VENKATA YASWANTH REDDY |     [@nossamyaswanth](https://www.github.com/nossamyaswanth)     |
 | Nikhil Sharma                 |     [@NikhilSharma03](https://www.github.com/NikhilSharma03)     |
