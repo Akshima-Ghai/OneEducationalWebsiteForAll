@@ -13,4 +13,4 @@ export { default as QuizList } from "./Quiz/QuizList/QuizList";
 export { default as Video } from "./Video/Video";
 export { default as SingleVideo } from "./SingleVideo/SingleVideo";
 export { default as BlogTopics } from "./Blogs/BlogTopics";
-export { default as TopicBlogs } from "./Blogs/TopicBlogs";
+export { default as TopicBlogs } from "./Blogs/BlogTopics.data";
