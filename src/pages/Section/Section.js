@@ -14,7 +14,6 @@ useEffect(() => {
 }, [opened])
   return (
     <div>
-     
       <section>
         <div className="main-container">
           <div className="main_section">
@@ -23,6 +22,7 @@ useEffect(() => {
             </h1>
             <div className="choose_sec">
               <div className="section_under">
+                <Link to="/" style={{textDecoration: 'none'}}>
                 <Sectionscard
                   name="Home Page"
                   image={ImgSrc.home}
@@ -37,6 +37,9 @@ useEffect(() => {
                   </p>
                   </div>
                 </Sectionscard>
+                </Link>
+                
+                <Link to="/lecture" style={{textDecoration: 'none'}}>
                 <Sectionscard
                   name="Video Lectures"
                   image={ImgSrc.video}
@@ -47,13 +50,14 @@ useEffect(() => {
                     <img src={ImgSrc.videolec2}></img>
                   </div>
                 </Sectionscard>
+                </Link>
               </div>
               <div className="sec-middle">
                 <button className="doubt" onClick={()=>{
                       setOpened(!opened);
                 }}
                 style={{background:'transparent',border:"none"}} 
->
+                >
                 <Sectionscard
                   name="Doubt Assistance"
                   image={ImgSrc.doubt}
@@ -63,6 +67,8 @@ useEffect(() => {
                   </Sectionscard>
                  </button>
                  <button style={{background:'transparent',border:"none"}} >
+
+                <Link to="/blogs" style={{textDecoration: 'none'}}>
                 <Sectionscard
                   name="Blogs"
                   image={ImgSrc.blog}
@@ -72,9 +78,11 @@ useEffect(() => {
                   <p className="hovertext">Find Blogs about learning and teaching </p>
                 </div>
                 </Sectionscard>
+                </Link>
                 </button>
               </div>
               <div className="section_under">
+              <Link to="/quiz" style={{textDecoration: 'none'}}>
                 <Sectionscard
                   name="Test Series/Quiz Section"
                   image={ImgSrc.Quiz}
@@ -85,6 +93,7 @@ useEffect(() => {
                   <p className="hovertext">Which is the most popular NoSQL Database ? </p>
                 </div>
                 </Sectionscard>
+              </Link>
                 <Sectionscard
                   name="More Features"
                   image={ImgSrc.more}
