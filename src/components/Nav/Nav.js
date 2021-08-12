@@ -11,6 +11,7 @@ export default function Nav(props) {
         <NavLink href="/about">About</NavLink>
         <NavLink href="/quiz">Quiz</NavLink>
         <NavLink href="/lecture">Videos</NavLink>
+        <NavLink href="/blogs">Blogs</NavLink>
         <NavLink href="/student">Students</NavLink>
         <NavLink href="/teacher">Teachers</NavLink>
         {/* <NavLink href="/guidance">Guidance</NavLink> 
