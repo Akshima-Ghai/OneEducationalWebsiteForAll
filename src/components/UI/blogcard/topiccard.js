@@ -29,7 +29,7 @@ function TopicCard({title, cardimg}) {
 
   return (
       <Grid item xs={12} sm={6} md={4}>
-        <Link to={`/blogs/${title.toLowerCase().replace(' ','-')}`}>
+        <Link to={`/blogs/${title.toLowerCase().replace(' ','-')}`} style={{textDecoration: 'none'}}>
         <Card className={classes.card}>
             <CardActionArea>
             <CardMedia
@@ -39,6 +39,7 @@ function TopicCard({title, cardimg}) {
             />
             <CardContent className={classes.cardcontent}>
                 <Typography gutterBottom variant="h5" component="h2" className={classes.title}>{title}</Typography>
+                
             </CardContent>
             </CardActionArea>
         </Card>

@@ -57,6 +57,7 @@ const SignupStudent = () => {
       {
         localStorage.setItem('token', res.data.accesstoken);
         // Save UserData using redux 
+        toast.success('You have signed up successfully, Start Learning with us');
         clearFields();
       }
      } catch (err) {

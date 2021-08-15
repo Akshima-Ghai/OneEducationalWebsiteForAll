@@ -48,6 +48,7 @@ const Login = () => {
         {
           localStorage.setItem('token', res.data.accesstoken);
           // Save UserLoginData and make authenticated using redux 
+          toast.success('You are logged in successfully');
         }
       }
       else {
@@ -57,6 +58,7 @@ const Login = () => {
         {
           localStorage.setItem('token', res.data.accesstoken);
           // Save UserLoginData and make authenticated using redux 
+          toast.success('You are logged in successfully');
         }
       }
 
