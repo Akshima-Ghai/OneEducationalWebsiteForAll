@@ -156,7 +156,7 @@ git push -u origin <your_branch_name>
 <p align="center"><img src="https://media.tenor.com/images/b562ddcfb131e962f9dfa01bd32a30d1/tenor.gif" width=30%></p>
 
 ## Project Admin 👩: Akshima Ghai
-
+<img src="[https://media.tenor.com/images/b562ddcfb131e962f9dfa01bd32a30d1/tenor.gif](https://avatars.githubusercontent.com/u/58785998?v=4)" width=30%>
 <a href="https://www.linkedin.com/in/akshima-ghai-196932197/">
 <h5 align="center"><b>Akshima Ghai</b></a>
 
